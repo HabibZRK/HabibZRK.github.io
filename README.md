@@ -1,44 +1,48 @@
-# Habib Zreik's Online CV
+# Habib Zreik's CV
 
-This repository contains the code for my personal CV website hosted on GitHub Pages. It includes a 5-star rating system for skills, with the ability to update ratings using a secure login.
+Welcome to my CV repository! This project is a personal CV designed to showcase my education, experiences, skills, and hobbies. It is available in both English and German to cater to a wider audience.
 
-## Features
+## Project Overview
 
-- Display of my projects and skill ratings.
-- Skill levels are displayed using a 5-star system.
-- Secure login system for updating skill ratings.
+This CV is built using HTML, CSS, and PHP, featuring a user-friendly interface where you can view my professional background. The design is structured and modern, with a focus on clarity and accessibility. 
+
+### Key Features
+- **Bilingual**: Switch between English and German profiles with ease.
+- **Interactive**: Button to navigate between language versions.
+- **Structured Layout**: Clearly defined sections for education, relevant experience, skills, hobbies, and a short bio.
+- **Responsive Design**: Compatible with various screen sizes for easy viewing on different devices.
 
 ## How to Use
+- Simply visit HabibZRK.github.io to see my CV.
+- To create a similar CV for yourself, feel free to clone the repository and edit accordingly. 
 
-1. Visit the [live page](https://HabibZRK.github.io).
-2. Skills are rated using a 5-star system. Only I can update them via a secure login form.
-3. To edit the skill ratings, log in using the password **alohomora** at `/login.php`.
+## About Me
+My name is Habib Zreik, and I am a Mechanical Engineer specializing in Mechatronics. I created this CV to present my qualifications and experiences to potential employers and collaborators.
 
-## Technologies Used
+Feel free to explore and provide feedback!
 
-- HTML, CSS, JavaScript for the front end.
-- PHP for backend processing.
-- JSON for storing skill ratings.
+---
 
-## Setup Instructions
+# Lebenslauf von Habib Zreik
 
-1. Clone the repository:
-    ```bash
-    git clone https://github.com/HabibZRK/HabibZRK.github.io.git
-    ```
+Willkommen in meinem Lebenslauf-Repository! Dieses Projekt ist ein persönlicher Lebenslauf, der meine Ausbildung, Erfahrungen, Fähigkeiten und Hobbys präsentiert. Er ist sowohl in Englisch als auch in Deutsch verfügbar, um ein breiteres Publikum anzusprechen.
 
-2. Navigate to the project directory:
-    ```bash
-    cd HabibZRK.github.io
-    ```
+## Projektübersicht
 
-3. Start a local PHP server to test the website:
-    ```bash
-    php -S localhost:8000
-    ```
+Dieser Lebenslauf wurde mit HTML, CSS und PHP erstellt und bietet eine benutzerfreundliche Oberfläche, auf der Sie meinen beruflichen Werdegang einsehen können. Das Design ist strukturiert und modern, mit einem Fokus auf Klarheit und Zugänglichkeit.
 
-4. Visit `http://localhost:8000` in your browser.
+### Hauptmerkmale
+- **Zweisprachig**: Einfaches Umschalten zwischen den englischen und deutschen Profilen.
+- **Interaktiv**: Schaltfläche zur Navigation zwischen den Sprachversionen.
+- **Strukturierter Aufbau**: Deutlich definierte Abschnitte für Ausbildung, relevante Erfahrungen, Fähigkeiten, Hobbys und eine kurze Biografie.
+- **Responsives Design**: Kompatibel mit verschiedenen Bildschirmgrößen für eine einfache Anzeige auf unterschiedlichen Geräten.
 
-## License
+## Nutzungshinweise
+1. Klonen oder laden Sie dieses Repository auf Ihren lokalen Computer herunter.
+2. Öffnen Sie die Datei `index.html` in Ihrem Webbrowser, um die englische Version des Lebenslaufs anzuzeigen.
+3. Klicken Sie auf die Schaltfläche "Deutsch", um zur deutschen Version des Lebenslaufs zu wechseln.
 
-MIT License
+## Über mich
+Mein Name ist Habib Zreik und ich bin Maschinenbauingenieur mit Schwerpunkt Mechatronik. Ich habe diesen Lebenslauf erstellt, um meine Qualifikationen und Erfahrungen potenziellen Arbeitgebern und Partnern zu präsentieren.
+
+Zögern Sie nicht, sich umzusehen und Feedback zu geben!
