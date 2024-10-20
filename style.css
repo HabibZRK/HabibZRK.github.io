@@ -1,27 +1,97 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 20px;
-}
-
-header {
-    text-align: center;
-}
-
-section {
-    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif; /* Font family */
+    background-color: #FFFFFF; /* Background color */
+    color: #4A4A4A; /* Body text color */
+    line-height: 1.6; /* Line height for readability */
+    margin: 0; /* Remove default margin */
+    padding: 20px; /* Add some padding */
 }
 
 h1, h2 {
-    color: #333;
+    color: #1F3A93; /* Navy Blue for headings */
 }
 
-.stars {
-    color: gold;
+h2 {
+    border-bottom: 2px solid #5DADE2; /* Light Blue for subheadings */
+    padding-bottom: 5px; /* Padding under the heading */
 }
 
-footer {
-    text-align: center;
-    margin-top: 20px;
-    font-size: 0.9em;
+.banner {
+    background-color: #5DADE2; /* Light Blue for the banner background */
+    padding: 10px 20px; /* Padding in the banner */
+    margin-bottom: 20px; /* Margin below the banner */
+    border-radius: 5px; /* Rounded corners */
+    display: flex; /* Flexbox for layout */
+    align-items: center; /* Center items vertically */
+}
+
+.banner-content {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+}
+
+.profile-pic {
+    width: 100px; /* Set the width of the profile picture */
+    height: 100px; /* Set the height of the profile picture */
+    border-radius: 50%; /* Make it circular */
+    border: 3px solid #ecf0f1; /* Light border for the profile picture */
+    margin-right: 15px; /* Space between the picture and text */
+    object-fit: cover; /* Ensure the image covers the area */
+}
+
+h1 {
+    font-size: 24px; /* Font size for main headings */
+}
+
+h2 {
+    font-size: 20px; /* Font size for subheadings */
+}
+
+.entry {
+    margin-bottom: 20px; /* Margin between entries */
+    padding: 10px; /* Padding inside each entry */
+    border: 1px solid #2C3E50; /* Charcoal for borders */
+    border-radius: 5px; /* Rounded corners for entries */
+    background-color: #f8f9fa; /* Light background for entries */
+}
+
+.location {
+    color: #A3E4D7; /* Mint for location text */
+    font-size: 14px; /* Smaller font for location */
+}
+
+.dates {
+    font-size: 14px; /* Smaller font for dates */
+    color: #4A4A4A; /* Dark Gray for dates */
+}
+
+.description {
+    margin-top: 10px; /* Margin above the description */
+    font-size: 14px; /* Font size for description text */
+}
+
+.button {
+    background-color: #D4AC0D; /* Gold for the button */
+    color: #FFFFFF; /* White text on the button */
+    border: none; /* No border */
+    padding: 10px 15px; /* Padding inside the button */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.button:hover {
+    background-color: #BDAF0A; /* Darker gold on hover */
+}
+
+.bio {
+    margin-bottom: 20px; /* Margin below the bio section */
+    padding: 10px; /* Padding inside the bio section */
+    border: 1px solid #2C3E50; /* Charcoal for bio border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #f8f9fa; /* Light background for bio */
+}
+
+.motto {
+    font-style: italic; /* Italic style for the motto */
+    margin-top: 5px; /* Margin above the motto */
 }

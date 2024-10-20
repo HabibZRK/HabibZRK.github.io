@@ -3,34 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Habib Zreik - CV</title>
+    <title>CV Template</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> <!-- Link for Roboto font -->
 </head>
 <body>
-    <header>
-        <h1>Habib Zreik</h1>
-        <p>Mechanical Engineer with Mechatronics focus</p>
-    </header>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <!-- List your projects here -->
+    <!-- Contact Information Banner -->
+    <div class="banner">
+        <div class="banner-content">
+            <img src="profile.jpg" alt="Profile Picture" class="profile-pic"> <!-- Placeholder for profile picture -->
+            <div>
+                <h1>Contact Information</h1>
+                <p>
+                    Phone: +49 123 456 7890 | Email: syrius@duck.com | 
+                    <a href="https://github.com/HabibZRK" target="_blank">GitHub</a> | 
+                    <a href="https://linkedin.com/in/habibzreik" target="_blank">LinkedIn</a>
+                </p>
+            </div>
+        </div>
+        <button class="button" onclick="switchLanguage()">Switch to Deutsch</button> <!-- Language switch button -->
+    </div>
+
+    <!-- Short Bio Section -->
+    <section class="bio">
+        <h1>About Me</h1>
+        <p>Your short bio goes here. Briefly describe who you are and what you do.</p> <!-- Placeholder for your bio -->
+        <p class="motto">"Innovating for a Sustainable Future" <!-- Placeholder for your motto --></p>
     </section>
 
+    <!-- Education Section -->
+    <section id="education">
+        <h1>Education</h1> 
+        
+        <div class="entry">
+            <div class="headline2">
+                <h2>Bachelor of Science in Mechanical Engineering</h2> 
+                <span class="location">Damascus, Syria</span> 
+            </div>
+            <div class="dates">
+                <span>2016 - 2020</span> 
+            </div>
+            <p class="description"> 
+                Studied core mechanical engineering concepts with a focus on thermodynamics and fluid dynamics.
+                <ul>
+                    <li>Graduation Project: Thermal Simulation of a Turbofan Jet Engine</li>
+                    <li>Coursework: Thermodynamics, Fluid Mechanics, Material Science</li>
+                </ul>
+            </p>
+        </div>
+    </section>
+
+    <!-- Professional Experience Section -->
+    <section id="experience">
+        <h1>Professional Experience</h1> 
+        
+        <div class="entry">
+            <div class="headline2">
+                <h2>LEGO Robotics Coach at ITQ GmbH</h2> 
+                <span class="location">Munich, Germany</span> 
+            </div>
+            <div class="dates">
+                <span>Jan 2017 – Present</span> 
+            </div>
+            <p class="description"> 
+                Mentored and coached students in LEGO Robotics, leading teams to national and international recognition.
+                <ul>
+                    <li>Developed robotics programs for middle school and high school students</li>
+                    <li>Organized and led training camps for competition preparation</li>
+                </ul>
+            </p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
     <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Python: <span class="stars" id="python"></span></li>
-            <li>C++: <span class="stars" id="cpp"></span></li>
-            <li>Git: <span class="stars" id="git"></span></li>
-            <!-- Add more skills as needed -->
-        </ul>
+        <h1>Skills</h1>
+
+        <div class="entry">
+            <h2>Computer Skills</h2>
+            <ul>
+                <li>Python</li>
+                <li>C/C++</li>
+                <li>Git</li>
+                <li>ROS (Basic Knowledge)</li>
+            </ul>
+        </div>
+
+        <div class="entry">
+            <h2>Engineering Skills</h2>
+            <ul>
+                <li>Mechatronics</li>
+                <li>Thermal Systems</li>
+                <li>Fluid Dynamics</li>
+            </ul>
+        </div>
+
+        <div class="entry">
+            <h2>Soft Skills</h2>
+            <ul>
+                <li>Team Collaboration</li>
+                <li>Problem-Solving</li>
+                <li>Effective Communication</li>
+            </ul>
+        </div>
+
+        <div class="entry">
+            <h2>Business Skills</h2>
+            <ul>
+                <li>Project Management</li>
+                <li>Customer Relations</li>
+                <li>Technical Sales</li>
+            </ul>
+        </div>
     </section>
 
-    <footer>
-        <p>&copy; 2024 Habib Zreik</p>
-    </footer>
+    <!-- Hobbies Section -->
+    <section id="hobbies">
+        <h1>Hobbies</h1>
 
-    <script src="skills.js"></script>
+        <div class="entry">
+            <h2>Photography</h2>
+            <p>Brief description of your interest in photography.</p> <!-- Placeholder for description -->
+        </div>
+
+        <div class="entry">
+            <h2>Book Discussions</h2>
+            <p>Brief description of your interest in book discussions.</p> <!-- Placeholder for description -->
+        </div>
+
+        <div class="entry">
+            <h2>Ping Pong</h2>
+            <p>Brief description of your interest in ping pong.</p> <!-- Placeholder for description -->
+        </div>
+    </section>
+
 </body>
 </html>
