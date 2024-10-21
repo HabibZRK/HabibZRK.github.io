@@ -19,20 +19,21 @@
         </div>
     </header>
 
-  <!-- Navigation Section -->
-<nav>
-    <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="sections/education.html">Education</a></li>
-        <li><a href="sections/work-experience.html">Work Experience</a></li>
-        <li><a href="sections/projects.html">Engineering Projects</a></li>
-        <li><a href="sections/translation-projects.html">Translation Projects</a></li>
-        <li><a href="sections/volunteering.html">Volunteering</a></li>
-        <li><a href="sections/skills.html">Skills</a></li>
-        <li><a href="sections/hobbies.html">Hobbies</a></li>
-        <li><a href="sections/plans.html">Plans</a></li>
-    </ul>
-</nav>
+    <!-- Navigation Section -->
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="work-experience.html">Work Experience</a></li>
+            <li><a href="projects.html">Engineering Projects</a></li>
+            <li><a href="translation-projects.html">Translation Projects</a></li>
+            <li><a href="volunteering.html">Volunteering</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="hobbies.html">Hobbies</a></li>
+            <li><a href="languages.html">Languages</a></li>
+            <li><a href="plans.html">Plans</a></li>
+        </ul>
+    </nav>
 
     <!-- Main Content Section -->
     <main>
