@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Single Page Application Example</title>
+  <style>
+    /* Basic reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f3f4f6;
+      color: #333;
+    }
+
+    /* Sidebar styling */
+    .sidebar {
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 200px;
+      height: 100%;
+      background-color: #1E3A8A;
+      padding: 20px;
+      color: #E0F2FE;
+    }
+
+    .sidebar a {
+      display: block;
+      margin-bottom: 15px;
+      padding: 10px;
+      color: #E0F2FE;
+      text-decoration: none;
+      font-size: 18px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+      cursor: pointer;
+    }
+
+    .sidebar a:hover {
+      background-color: #3B82F6;
+    }
+
+    .active-link {
+      background-color: #3B82F6; /* Highlight color for the active link */
+    }
+
+    /* Content styling */
+    .content {
+      margin-left: 220px;
+      padding: 20px;
+      background-color: #fff;
+      min-height: 100vh;
+    }
+
+    #content > div {
+      display: none; /* All sections hidden by default */
+      opacity: 0;
+      transition: opacity 0.5s ease;
+    }
+
+    .active {
+      display: block;
+      opacity: 1;
+    }
+
+    h2 {
+      color: #1E3A8A;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 16px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Sidebar -->
+<div class="sidebar">
+  <h2>Navigation</h2>
+  <a id="link-home" onclick="showSection('home', this)">Home</a>
+  <a id="link-about" onclick="showSection('about', this)">About</a>
+  <a id="link-projects" onclick="showSection('projects', this)">Projects</a>
+  <a id="link-contact" onclick="showSection('contact', this)">Contact</a>
+</div>
+
+<!-- Content -->
+<div id="content" class="content">
+  <div id="home" class="active">
+    <h2>Home Section</h2>
+    <p>Welcome to the home section.</p>
+  </div>
+
+  <div id="about">
+    <h2>About Section</h2>
+    <p>Learn more about me in this section.</p>
+  </div>
+
+  <div id="projects">
+    <h2>Projects Section</h2>
+    <p>See my portfolio of work here.</p>
+  </div>
+
+  <div id="contact">
+    <h2>Contact Section</h2>
+    <p>Get in touch with me here.</p>
+  </div>
+</div>
+
+<!-- JavaScript to switch sections -->
+<script>
+  function showSection(sectionId, link) {
+    // Hide all sections
+    const sections = document.querySelectorAll('#content > div');
+    sections.forEach(section => {
+      section.classList.remove('active');
+      section.style.display = 'none'; // Hide sections
+    });
+    
+    // Show the selected section
+    const activeSection = document.getElementById(sectionId);
+    activeSection.classList.add('active');
+    activeSection.style.display = 'block'; // Show active section
+
+    // Highlight the active link
+    const links = document.querySelectorAll('.sidebar a');
+    links.forEach(link => link.classList.remove('active-link')); // Remove active class from all links
+    link.classList.add('active-link'); // Add active class to the clicked link
+  }
+
+  // Show the default section (home)
+  document.addEventListener("DOMContentLoaded", function() {
+    showSection('home', document.getElementById('link-home'));
+  });
+</script>
+
+</body>
+</html>

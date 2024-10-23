@@ -1,61 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
+    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Portfolio</title>
-    <link rel="stylesheet" href="css/styles.css"> <!-- Main CSS File -->
-    <script src="js/scripts.js" defer></script> <!-- Main JS File -->
+    <title>Habib Zreik's Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 <body>
-
-    <!-- Header Section -->
-    <header>
-        <div class="profile">
-            <img src="media/profile.jpg" alt="Profile Picture" class="profile-pic">
-            <h1>Your Name</h1>
-            <p>Your Motto or Tagline</p>
-            <p>Contact Info: your.email@example.com</p>
+    <header class="header">
+        <a href="#" class="logo"><span>Habib Zreik</span></a>
+        <ul class="nav-links">
+            <li><a href="#">Journey</a></li>
+            <li><a href="#">Skills</a></li>
+            <!--
+            <li><a href="#">Education</a></li>
+            <li><a href="#">Experience</a></li>
+            <li><a href="#">Translations</a></li>
+            <li><a href="#">Hobbies</a></li>
+            <li><a href="#">Plans</a></li>
+            -->
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Translations</a></li>
+        </ul>
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+        <button class="visit-btn">Visit my GitHub</button>
+    <!--
+    <div class="banner">
+        <img src="media/profile.jpg" alt="Profile Picture" class="profile-pic">
+        <div class="bio">
+            <h2>Motto</h2>
+            <p>Short bio goes here. This is a brief introduction about Habib Zreik.</p>
         </div>
+        <div class="icons">
+            <i class="fa-brands fa-github"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+    </div>
+    -->
     </header>
+    <section id="about" class="about">  
+        <div class="about-container">
+            <img src="media/profile.jpg" alt="Profile Picture">
+            <div class="info-box">
+                <div class="text">
+                    <h3>Hi, I'm</h3>
+                    <h1>Habib Zreik</h1>
+                    <span>An engineer, and a bit more!</span>
+                </div>
 
-  <!-- Navigation Section -->
-<nav>
-    <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="sections/education.html">Education</a></li>
-        <li><a href="sections/work-experience.html">Work Experience</a></li>
-        <li><a href="sections/projects.html">Engineering Projects</a></li>
-        <li><a href="sections/translation-projects.html">Translation Projects</a></li>
-        <li><a href="sections/volunteering.html">Volunteering</a></li>
-        <li><a href="sections/skills.html">Skills</a></li>
-        <li><a href="sections/hobbies.html">Hobbies</a></li>
-        <li><a href="sections/plans.html">Plans</a></li>
-    </ul>
-</nav>
+                <div class="btn-group">
+                    <div class="btn"> Download CV</div>
+                    <div class="btn"> Contact</div>
+                </div>
 
-    <!-- Main Content Section -->
-    <main>
-        <!-- About Section -->
-        <section id="about">
-            <h2>About Me</h2>
-            <p>This is where you introduce yourself, your background, and your interests.</p>
-            <!-- Additional content can be dynamically loaded or included -->
-        </section>
-
-        <!-- Optionally, embed other sections here -->
-        <!-- This can be a static inclusion or dynamic loading using JS -->
-    </main>
-
-    <!-- Footer Section -->
-    <footer>
-        <p>&copy; 2024 Your Name. All rights reserved.</p>
-        <div class="contact-info">
-            <h3>Contact Me</h3>
-            <p>Email: your.email@example.com</p>
-            <p>Phone: +123456789</p>
+                <div class="socials">
+                    <i class="fa-brands fa-github"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                </div>
+            </div>
         </div>
-    </footer>
+    </section>
+    <section id="experience" class="experience">
+        <h1 class="section-title">Journey</h1>
+        <h2 class="section-subtitle">Education</h2>
+        <div class="experience-info" id="educaton-info">
+            <div class="grid" id="education">
+                <div class="grid-card">
+                    <div class="organization">
+                        <i class="fa-solid fa-gear"></i>
+                        <h5>Damascus University</h5>
+                    </div>
+                    <span>B.Sc. Mechanical Engineering</span>
+                    <h4 class="date">Class of 2020</h4>
+                    <p>CGPA 73.29% Good</p>
+                    <p><strong>Graduation Project:</strong><em>Thermal Analysis of Trent 7000 Jet Engine</em> GPA: 90% <em>Top in Class</em></p>
+                    <p>Notable Achievements: Top 5 Best Presentations in Industrial Management (Unordered List)</p>
+                    <p>References: <a href="mailto:example1@example.com">Dr. Eng. Mouath Al-Khayat</a>, <a href="mailto:example2@example.com">Dr. Eng. Bassam Badran</a></p>
+                </div>
+                <div class="grid-card">
+                    <div class="organization">
+                        <i class="fa-solid fa-computer"></i>
+                        <h5>University of the People</h5>
+                    </div>
+                    <span>Associate Degree Computer Science</span>
+                    <h4 class="date">Class of 2023</h4>
+                    <p>CGPA: 3.86 <em>High Honors</em> </p>
+                </div>
+                <div class="grid-card">
+                    <div class="organization">
+                        <i class="fa-solid fa-suitcase"></i>
+                        <h5>Syrian Virtual University</h5>
+                    </div>
+                    <span>MBA</span>
+                    <h4 class="date">2020-present</h4>
+                    <p>CGPA: 3.86 <em>High Honors</em> </p>
+                </div>
+                <div class="grid-card">
+                    <div class="organization">
+                        <i class="fa-solid fa-robot"></i>
+                        <h5>Damascus University</h5>    
+                    </div>         
+                    <span>M.Sc. Maschinenbau (Mechatronik)</span>
+                    <h4 class="date">2023-present</h4>
+                    <p> </p>
+                </div>
+        </div>
 
+
+
+        </div>
+        <h2 class="section-subtitle">Work Experience</h2>
+        <div class="experience-info" id="work-info">
+            <div class="grid" id="work">
+                <div class="grid-card">
+                    <span>Technical Sales Engineer</span>
+                    <h4></h4>
+                </div>
+            </div>
+           
+        </div>
+
+    </section><div class="work-info">
+        <div class="header">
+            <i class="fa-solid fa-robot"></i>
+            <div class="organization">Tech Solutions Inc.</div>
+            <div class="location">Hamburg, Germany</div>
+        </div>
+        <div class="dates">January 2020 - Present</div>
+        <div class="position">Senior Mechatronics Engineer</div>
+        <div class="description">
+            Leading the development of advanced robotics systems and overseeing software integration projects.
+        </div>
+        <div class="reference">
+            Reference: <a href="mailto:reference@example.com">reference@example.com</a>
+        </div>
+    </div>
+    
+    <div class="work-info">
+        <div class="header">
+            <i class="fa-solid fa-robot"></i>
+            <div class="organization">Innovative Robotics</div>
+            <div class="location">Berlin, Germany</div>
+        </div>
+        <div class="dates">June 2017 - December 2019</div>
+        <div class="position">Mechatronics Engineer</div>
+        <div class="description">
+            Worked on the design and implementation of robotic systems for industrial automation.
+        </div>
+        <div class="reference">
+            Reference: <a href="mailto:reference2@example.com">reference2@example.com</a>
+        </div>
+    </div>
+    
+    <div class="work-info">
+        <div class="header">
+            <i class="fa-solid fa-robot"></i>
+            <div class="organization">Future Tech Labs</div>
+            <div class="location">Munich, Germany</div>
+        </div>
+        <div class="dates">September 2014 - May 2017</div>
+        <div class="position">Junior Mechatronics Engineer</div>
+        <div class="description">
+            Assisted in the development of prototypes and conducted testing for new robotic technologies.
+        </div>
+        <div class="reference">
+            Reference: <a href="mailto:reference3@example.com">reference3@example.com</a>
+        </div>
+    </div>
+    
+    <div class="experience">
+        <div class="section-banner">
+            <i class="fa-solid fa-briefcase"></i> <!-- Icon for work/experience -->
+            <h2 class="section-subtitle">Professional Journey</h2>
+        </div>
+        <!-- Other content -->
+    </div>
+    
+    <main>
+    </main>
+    <footer>
+        <p>&copy; 2024 Habib Zreik</p>
+    </footer>
+    <script src="js/scripts.js"></script>
 </body>
 </html>
