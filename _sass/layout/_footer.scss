@@ -13,11 +13,7 @@
   width: 100%;
   clear: both;
 
-  /* sticky footer fix start */
-  position: absolute;
-  bottom: 0em;
-  height: auto;
-  /* sticky footer fix end */
+  /* footer is now static, not covering content */
 
   margin-top: 3em;
 
