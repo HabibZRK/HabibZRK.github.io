@@ -15,6 +15,6 @@ You are free to use this template and code for your own site! Please contribute 
 ## License
 This project uses a custom license:
 - The original template and code are MIT-licensed (see LICENSE).
-- All modifications and content by Habib Zreik © 2025. See LICENSE for details.
+- All modifications and content by Habib Zreik © 2025. See [LICENSE](LICENSE) for details.
 
 Enjoy building your own site!

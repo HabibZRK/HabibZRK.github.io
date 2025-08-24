@@ -7,7 +7,10 @@
   background: var(--global-bg-color);
   height: fit-content;
   top: 0;
-  width: 100%;
+  width: 100vw;
+  left: 0;
+  right: 0;
+  z-index: 1000;
 
   -webkit-animation: intro 0.3s both;
           animation: intro 0.3s both;
@@ -28,6 +31,10 @@
     @include container;
     @include clearfix;
     padding: 0.5em 1em;
+    @media (max-width: 600px) {
+      padding-left: 1.2rem;
+      padding-right: 1.2rem;
+    }
     font-family: $sans-serif-narrow;
 
     @include breakpoint($x-large) {

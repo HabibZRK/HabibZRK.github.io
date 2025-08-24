@@ -15,6 +15,23 @@ body {
   margin: 0;
   padding: $masthead-height 0 0;
   padding-bottom: 9em;
+
+  // Add universal horizontal margin for mobile
+  @media (max-width: 600px) {
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+  }
+// Prevent content from being hidden behind the fixed masthead on mobile
+@media (max-width: 600px) {
+  #main, .page, .page__content {
+    margin-top: 3.5rem !important;
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    box-sizing: border-box;
+  }
+}
   font-family: $global-font-family;
   line-height: 1.5;
 
