@@ -13,7 +13,7 @@ title                    : "Habib Zreik"
 title_separator          : "-"
 name                     : &name "Habib Zreik"
 description              : &description "The personal profile and portfolio of Habib Zreik"
-url                      : https://HabibZRK.github.io # the base hostname & protocol for the site
+url                      : https://zreik.me # the base hostname & protocol for the site
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "HabibZRK/academic_profile"
 

@@ -3,7 +3,7 @@ docker compose up
 
 # Welcome to My Personal Website
 
-🌐 Online at: [habibzrk.github.io](https://habibzrk.github.io)
+🌐 Online at: [zreik.me](https://zreik.me) (also available at [habibzrk.github.io](https://habibzrk.github.io))
 
 This repository contains the source code for my personal website.
 
