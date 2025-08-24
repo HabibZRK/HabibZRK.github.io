@@ -1,0 +1,152 @@
+/* Tech theme enhancements for dark mode */
+
+/* Apply these styles only in dark mode */
+html[data-theme="dark"] {
+  /* Background subtle tech pattern */
+  body {
+    background-image: 
+      linear-gradient(to right, rgba(0, 183, 255, 0.03) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(0, 183, 255, 0.03) 1px, transparent 1px);
+    background-size: 20px 20px;
+    background-attachment: fixed;
+  }
+  
+  /* Tech-inspired accent borders and hover effects */
+  .page__content a:not(.btn):hover {
+    text-decoration: none;
+    box-shadow: inset 0 -2px 0 #00b7ff;
+    transition: box-shadow 0.3s;
+  }
+  
+  /* Button enhancements */
+  .btn {
+    border: 1px solid rgba(123, 104, 238, 0.3);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+  }
+  
+  .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  }
+  
+  .btn--primary {
+    background-color: #00b7ff;
+    color: #ffffff;
+  }
+  
+  .btn--primary:hover {
+    background-color: #7b68ee;
+  }
+  
+  /* Masthead styling */
+  .masthead {
+    border-bottom: 1px solid rgba(123, 104, 238, 0.2);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Author profile enhancements */
+  .author__avatar img {
+    border: 2px solid #00b7ff;
+    box-shadow: 0 0 10px rgba(0, 183, 255, 0.3);
+  }
+  
+  .author__urls-wrapper button {
+    background-color: #2d2d2d;
+    border: 1px solid rgba(123, 104, 238, 0.3);
+  }
+  
+  .author__urls-wrapper button:hover {
+    background-color: #3d3d3d;
+  }
+  
+  /* Code block styling */
+  div.highlighter-rouge, figure.highlight {
+    border-radius: 4px;
+    border-left: 3px solid #00d364;
+  }
+  
+  /* Table styling */
+  table {
+    border: 1px solid #2d2d2d;
+  }
+  
+  thead {
+    background-color: #2d2d2d;
+    color: #e0e0e0;
+  }
+  
+  tr:nth-child(even) {
+    background-color: rgba(45, 45, 45, 0.5);
+  }
+  
+  /* Notice boxes styling */
+  .notice {
+    border-left: 4px solid #7b68ee;
+    background-color: rgba(123, 104, 238, 0.05);
+  }
+  
+  .notice--primary {
+    border-left-color: #00b7ff;
+    background-color: rgba(0, 183, 255, 0.05);
+  }
+  
+  .notice--info {
+    border-left-color: #00b7ff;
+    background-color: rgba(0, 183, 255, 0.05);
+  }
+  
+  .notice--warning {
+    border-left-color: #ffab00;
+    background-color: rgba(255, 171, 0, 0.05);
+  }
+  
+  .notice--success {
+    border-left-color: #00d364;
+    background-color: rgba(0, 211, 100, 0.05);
+  }
+  
+  .notice--danger {
+    border-left-color: #ff5252;
+    background-color: rgba(255, 82, 82, 0.05);
+  }
+  
+  /* Footer styling */
+  .page__footer {
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Page sections with subtle border */
+  .archive__item {
+    border: 1px solid rgba(45, 45, 45, 0.7);
+    border-radius: 4px;
+    padding: 1em;
+    margin-bottom: 1em;
+    transition: all 0.3s ease;
+    background: rgba(19, 19, 19, 0.5);
+  }
+  
+  .archive__item:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+    border-color: rgba(123, 104, 238, 0.3);
+  }
+  
+  /* Pulsing effect for active nav links */
+  .greedy-nav .visible-links a.active:after {
+    background: #00d364;
+    animation: pulse 2s infinite;
+  }
+  
+  @keyframes pulse {
+    0% {
+      box-shadow: 0 0 0 0 rgba(0, 211, 100, 0.4);
+    }
+    70% {
+      box-shadow: 0 0 0 6px rgba(0, 211, 100, 0);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba(0, 211, 100, 0);
+    }
+  }
+}

@@ -1,0 +1,1314 @@
+---
+layout: archive
+permalink: /resume/
+---
+
+<div class="title-container">
+  <h1 id="page-title-text" class="page-title">CV</h1>
+  <div class="controls-container">
+    <div class="language-selector">
+      <button class="lang-btn" data-lang="en">en</button>
+      <button class="lang-btn" data-lang="de">de</button>
+      <button class="lang-btn" data-lang="ar">ar</button>
+    </div>
+  </div>
+</div>
+
+<div id="cv-container" class="cv-container">
+  <!-- CV content will be loaded here -->
+</div>
+
+<script type="text/javascript">
+// Inject CV data directly from Jekyll's data system
+const cvData = {{ site.data.cv-multi-lang | jsonify }};
+
+document.addEventListener('DOMContentLoaded', function() {
+  // Language Management
+  // Get language from localStorage or default to English
+  let currentLang = localStorage.getItem('cv-language') || 'en';
+  
+  // Store data globally for language switching
+  window.cvData = cvData;
+  
+  // Initial render
+  renderCV(cvData, currentLang);
+  
+  // Set active language button
+  document.querySelector(`.lang-btn[data-lang="${currentLang}"]`).classList.add('active');
+  
+  // Language switcher event listeners
+  document.querySelectorAll('.lang-btn').forEach(btn => {
+    btn.addEventListener('click', function() {
+      const lang = this.getAttribute('data-lang');
+      
+      if (lang !== currentLang) {
+        currentLang = lang;
+        
+        // Save language preference to localStorage
+        localStorage.setItem('cv-language', lang);
+        
+        // Update active button
+        document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+        this.classList.add('active');
+        
+        // Apply RTL only to the CV container, not the entire document
+        // document.documentElement.setAttribute('dir', lang === 'ar' ? 'rtl' : 'ltr');
+        
+        // Re-render CV
+        renderCV(window.cvData, currentLang);
+      }
+    });
+  });
+  
+  // Function to render CV based on language
+  function renderCV(data, lang) {
+    const container = document.getElementById('cv-container');
+    
+    // Clear previous content
+    container.innerHTML = '';
+    
+    // Add language-specific class
+    container.className = `cv-container lang-${lang}`;
+    container.setAttribute('dir', lang === 'ar' ? 'rtl' : 'ltr');
+    
+    // Update page title based on language
+    const pageTitleElem = document.getElementById('page-title-text');
+    if (pageTitleElem) {
+      if (lang === 'en') {
+        pageTitleElem.textContent = '';
+      } else if (lang === 'de') {
+        pageTitleElem.textContent = '';
+      } else if (lang === 'ar') {
+        pageTitleElem.textContent = '';
+      }
+    }
+    
+    // Basic information section
+    const header = document.createElement('header');
+    header.className = 'cv-header';
+    header.innerHTML = `
+      <h1>${typeof data.basics.name === 'object' ? data.basics.name.lang[lang] : data.basics.name}</h1>
+      <p class="cv-summary">${data.basics.summary.lang[lang]}</p>
+      <p class="cv-contact">
+        ${data.basics.email ? `<span class="email"><i class="fas fa-envelope"></i> ${data.basics.email}</span>` : ''}
+        ${data.basics.website ? `<span class="website"><i class="fas fa-globe"></i> <a href="${data.basics.website}" target="_blank">${data.basics.website.replace('https://', '')}</a></span>` : ''}
+      </p>
+      <p class="cv-location"><i class="fas fa-map-marker-alt"></i> ${data.basics.location.city}, ${data.basics.location.countryCode}</p>
+    `;
+    
+    // Profile links
+    if (data.basics.profiles && data.basics.profiles.length > 0) {
+      const profilesDiv = document.createElement('div');
+      profilesDiv.className = 'cv-profiles';
+      
+      // Add profiles only if both URL and username are present
+      data.basics.profiles.forEach(profile => {
+        // Only display profile if both URL and username are not empty
+        if (profile.url) {
+          const profileLink = document.createElement('a');
+          profileLink.href = profile.url;
+          profileLink.target = '_blank';
+          profileLink.innerHTML = `<i class="fab fa-${profile.network.toLowerCase().replace(' ', '-')}"></i> ${profile.network}`;
+          profilesDiv.appendChild(profileLink);
+        }
+      });
+      
+      header.appendChild(profilesDiv);
+    }
+    
+    container.appendChild(header);
+    
+    // Create content wrapper for proper styling
+    const contentWrapper = document.createElement('div');
+    contentWrapper.className = 'cv-content';
+    
+    // Create sections
+    
+    // Work Experience - Now as a standalone section
+    if (data.work && data.work.length > 0) {
+      const sectionLabels = {
+        'en': 'Work Experience',
+        'de': 'Berufserfahrung',
+        'ar': 'الخبرة المهنية'
+      };
+      
+      const workSection = createSection(sectionLabels[lang], 'work');
+      
+      data.work.forEach(job => {
+        const jobDiv = document.createElement('div');
+        jobDiv.className = 'cv-item';
+        
+        const dateRange = formatDateRange(job.startDate, job.endDate, lang);
+        const company = job.company.lang[lang];
+        const position = job.position.lang[lang];
+        const location = job.location.lang[lang];
+        const summary = job.summary.lang[lang];
+        
+        jobDiv.innerHTML = `
+          <div class="cv-item-header">
+            <h3>${position} | <span class="cv-company">${company}</span></h3>
+            <span class="cv-date">${dateRange}</span>
+          </div>
+          <div class="cv-item-subheader">
+            <span class="cv-location"><i class="fas fa-map-marker-alt"></i> ${location}</span>
+            ${job.website ? `<span class="cv-website"><i class="fas fa-globe"></i> <a href="${job.website}" target="_blank">${job.website.replace('https://', '')}</a></span>` : ''}
+          </div>
+          <p class="cv-summary">${summary}</p>
+        `;
+        
+        // Add highlights
+        if (job.highlights && job.highlights.length > 0) {
+          const highlightsList = document.createElement('ul');
+          highlightsList.className = 'cv-highlights';
+          
+          job.highlights.forEach(highlight => {
+            const li = document.createElement('li');
+            li.textContent = highlight.lang[lang];
+            highlightsList.appendChild(li);
+          });
+          
+          jobDiv.appendChild(highlightsList);
+        }
+        
+        // Add project links if any
+        if (job.projectLinks && job.projectLinks.length > 0) {
+          const projectLinks = document.createElement('div');
+          projectLinks.className = 'cv-project-links';
+          
+          const projectLabels = {
+            'en': 'Projects:',
+            'de': 'Projekte:',
+            'ar': 'المشاريع:'
+          };
+          
+          projectLinks.innerHTML = `<strong>${projectLabels[lang]}</strong> `;
+          
+          job.projectLinks.forEach((project, idx) => {
+            const link = document.createElement('a');
+            link.href = project.url;
+            link.target = '_blank';
+            link.textContent = project.name;
+            projectLinks.appendChild(link);
+            
+            if (idx < job.projectLinks.length - 1) {
+              projectLinks.appendChild(document.createTextNode(', '));
+            }
+          });
+          
+          jobDiv.appendChild(projectLinks);
+        }
+        
+        workSection.appendChild(jobDiv);
+      });
+      
+      contentWrapper.appendChild(workSection);
+    }
+    
+    // Education and Volunteering in a two-column container
+    if (data.education && data.education.length > 0) {
+      // Create a container for education and volunteering columns
+      const eduVolContainer = document.createElement('div');
+      eduVolContainer.className = 'cv-two-column-container';
+      
+      // Education Column
+      const eduColumn = document.createElement('div');
+      eduColumn.className = 'cv-column education-column';
+      
+      const eduSectionLabels = {
+        'en': 'Education',
+        'de': 'Ausbildung',
+        'ar': 'التعليم'
+      };
+      
+      const eduSection = createSection(eduSectionLabels[lang], 'education');
+      
+      data.education.forEach(edu => {
+        const eduDiv = document.createElement('div');
+        eduDiv.className = 'cv-item';
+        
+        const dateRange = formatDateRange(edu.startDate, edu.endDate, lang);
+        const institution = edu.institution.lang[lang];
+        const area = edu.area.lang[lang];
+        
+        eduDiv.innerHTML = `
+          <div class="cv-item-header">
+            <h3>${area}</h3>
+            <span class="cv-date">${dateRange}</span>
+          </div>
+          <div class="cv-item-subheader">
+            <span class="cv-institution">${institution}</span>
+            ${edu.gpa ? `<span class="cv-gpa">GPA: ${edu.gpa}</span>` : ''}
+          </div>
+        `;
+        
+        eduSection.appendChild(eduDiv);
+      });
+      
+      eduColumn.appendChild(eduSection);
+      eduVolContainer.appendChild(eduColumn);
+      
+      // Volunteering Experience Column
+      if (data.volunteering && data.volunteering.length > 0) {
+        const volColumn = document.createElement('div');
+        volColumn.className = 'cv-column volunteering-column';
+        
+        const volSectionLabels = {
+          'en': 'Volunteering',
+          'de': 'Ehrenamtliche Tätigkeit',
+          'ar': 'العمل التطوعي'
+        };
+        
+        const volSection = createSection(volSectionLabels[lang], 'volunteering');
+        
+        data.volunteering.forEach(vol => {
+          const volDiv = document.createElement('div');
+          volDiv.className = 'cv-item';
+          
+          const dateRange = formatDateRange(vol.startDate, vol.endDate, lang);
+          const organization = vol.organization.lang[lang];
+          const position = vol.position.lang[lang];
+          const location = vol.location.lang[lang];
+          const summary = vol.summary.lang[lang];
+          
+          volDiv.innerHTML = `
+            <div class="cv-item-header">
+              <h3>${position} | ${organization}</h3>
+              <span class="cv-date">${dateRange}</span>
+            </div>
+            <div class="cv-item-subheader">
+              <span class="cv-location"><i class="fas fa-map-marker-alt"></i> ${location}</span>
+              ${vol.website ? `<span class="cv-website"><i class="fas fa-globe"></i> <a href="${vol.website}" target="_blank">${vol.website.replace('https://', '')}</a></span>` : ''}
+            </div>
+            <p class="cv-summary">${summary}</p>
+          `;
+          
+          // Add highlights if any
+          if (vol.highlights && vol.highlights.length > 0) {
+            const highlightsList = document.createElement('ul');
+            highlightsList.className = 'cv-highlights';
+            
+            vol.highlights.forEach(highlight => {
+              const li = document.createElement('li');
+              li.textContent = highlight.lang[lang];
+              highlightsList.appendChild(li);
+            });
+            
+            volDiv.appendChild(highlightsList);
+          }
+          
+          volSection.appendChild(volDiv);
+        });
+        
+        volColumn.appendChild(volSection);
+        eduVolContainer.appendChild(volColumn);
+      }
+      
+      contentWrapper.appendChild(eduVolContainer);
+    }
+    
+    // Skills
+    if (data.skills && data.skills.length > 0) {
+      const sectionLabels = {
+        'en': 'Skills',
+        'de': 'Fähigkeiten',
+        'ar': 'المهارات'
+      };
+      
+      const section = createSection(sectionLabels[lang], 'skills');
+      
+      data.skills.forEach(skillGroup => {
+        const groupDiv = document.createElement('div');
+        groupDiv.className = 'cv-skill-group';
+        
+        groupDiv.innerHTML = `<h3>${skillGroup.group.lang[lang]}</h3>`;
+        
+        const skillList = document.createElement('div');
+        skillList.className = 'cv-skill-list';
+        
+        skillGroup.items.forEach(skill => {
+          const skillItem = document.createElement('div');
+          skillItem.className = 'cv-skill-item';
+          
+          // Handle skill name that might be a string or object with translations
+          let skillName = skill.name;
+          if (typeof skill.name === 'object' && skill.name.lang) {
+            skillName = skill.name.lang[lang];
+          }
+          
+          const rating = skill.rating;
+          const ratingStars = '★'.repeat(rating) + '☆'.repeat(5 - rating);
+          
+          skillItem.innerHTML = `
+            <span class="cv-skill-name">${skillName}</span>
+            <span class="cv-skill-rating">${ratingStars}</span>
+          `;
+          
+          skillList.appendChild(skillItem);
+        });
+        
+        groupDiv.appendChild(skillList);
+        section.appendChild(groupDiv);
+      });
+      
+      contentWrapper.appendChild(section);
+    }
+    
+    // Languages
+    if (data.languages && data.languages.length > 0) {
+      const sectionLabels = {
+        'en': 'Languages',
+        'de': 'Sprachen',
+        'ar': 'اللغات'
+      };
+      
+      const section = createSection(sectionLabels[lang], 'languages');
+      
+      const langList = document.createElement('div');
+      langList.className = 'cv-language-list';
+      
+      data.languages.forEach(language => {
+        const langItem = document.createElement('div');
+        langItem.className = 'cv-language-item';
+        
+        // Handle C3 as Mother Tongue with appropriate translations
+        let fluencyDisplay = language.fluency;
+        if (language.fluency === 'C3') {
+          const motherTongueLabels = {
+            'en': 'Mother Tongue',
+            'de': 'Muttersprache',
+            'ar': 'لغة أم'
+          };
+          fluencyDisplay = motherTongueLabels[lang];
+        }
+        
+        langItem.innerHTML = `
+          <span class="cv-language-name">${language.language.lang[lang]}</span>
+          <span class="cv-language-level">${fluencyDisplay}</span>
+        `;
+        
+        langList.appendChild(langItem);
+      });
+      
+      section.appendChild(langList);
+      contentWrapper.appendChild(section);
+    }
+    
+    // Interests
+    if (data.interests && data.interests.length > 0) {
+      const sectionLabels = {
+        'en': 'Interests',
+        'de': 'Interessen',
+        'ar': 'الاهتمامات'
+      };
+      
+      const section = createSection(sectionLabels[lang], 'interests');
+      
+      const interestList = document.createElement('div');
+      interestList.className = 'cv-interest-list';
+      
+      data.interests.forEach(interest => {
+        const interestItem = document.createElement('div');
+        interestItem.className = 'cv-interest-item';
+        interestItem.textContent = interest.name.lang[lang];
+        
+        interestList.appendChild(interestItem);
+      });
+      
+      section.appendChild(interestList);
+      contentWrapper.appendChild(section);
+    }
+    
+    // References
+    if (data.references && data.references.length > 0) {
+      const sectionLabels = {
+        'en': 'References',
+        'de': 'Referenzen',
+        'ar': 'المراجع'
+      };
+      const section = createSection(sectionLabels[lang], 'references');
+      data.references.forEach(reference => {
+        const refDiv = document.createElement('div');
+        refDiv.className = 'cv-reference';
+        let refName = reference.name;
+        if (typeof reference.name === 'object' && reference.name.lang) {
+          refName = reference.name.lang[lang];
+        }
+        let position = '';
+        if (reference.position && reference.position.lang) {
+          position = reference.position.lang[lang];
+        }
+        refDiv.innerHTML = `
+          <div class="cv-reference-name">${refName}</div>
+          ${position ? `<div class="cv-reference-position">${position}</div>` : ''}
+          ${reference.affiliation ? `<div class="cv-reference-affiliation">${reference.affiliation}</div>` : ''}
+          ${reference.email ? `<div class="cv-reference-email">${reference.email}</div>` : ''}
+        `;
+        section.appendChild(refDiv);
+      });
+      // Add reference note if available
+      if (data.references_note && data.references_note.lang && data.references_note.lang[lang]) {
+        const noteDiv = document.createElement('div');
+        noteDiv.className = 'cv-reference-note';
+        noteDiv.innerHTML = `📧 <strong>${data.references_note.lang[lang]}</strong>`;
+        section.appendChild(noteDiv);
+      }
+      contentWrapper.appendChild(section);
+    }
+    
+    // Append content wrapper to container
+    container.appendChild(contentWrapper);
+  }
+  
+  // Helper function to create a section
+  function createSection(title, className) {
+    const section = document.createElement('section');
+    section.className = `cv-section cv-${className}`;
+    
+    const sectionTitle = document.createElement('h2');
+    sectionTitle.className = 'cv-section-title';
+    sectionTitle.textContent = title;
+    
+    section.appendChild(sectionTitle);
+    return section;
+  }
+  
+  // Format date range based on language
+  function formatDateRange(startDate, endDate, lang) {
+    // Format options for each language
+    const options = {
+      'en': { format: 'MMM YYYY', present: 'Present' },
+      'de': { format: 'MMM YYYY', present: 'Aktuell' },
+      'ar': { format: 'MMM YYYY', present: 'حالي' }
+    };
+    
+    let formattedStart = startDate;
+    let formattedEnd = endDate === 'present' ? options[lang].present : endDate;
+    
+    // Return formatted date range
+    return `${formattedStart} - ${formattedEnd}`;
+  }
+});
+</script>
+
+<style>
+/* Base Styles */
+:root {
+  --primary-color: #1e40af;       /* Deep blue */
+  --secondary-color: #0ea5e9;     /* Sky blue */
+  --accent-color: #6366f1;        /* Indigo */
+  --success-color: #059669;       /* Emerald */
+  --warning-color: #d97706;       /* Amber */
+  --text-primary: #0f172a;        /* Slate 900 */
+  --text-secondary: #475569;      /* Slate 600 */
+  --text-muted: #64748b;          /* Slate 500 */
+  --bg-primary: #ffffff;          /* White */
+  --bg-secondary: #f8fafc;        /* Slate 50 */
+  --bg-accent: #f1f5f9;           /* Slate 100 */
+  --border-color: #e2e8f0;        /* Slate 200 */
+  --border-light: #f1f5f9;        /* Slate 100 */
+  --card-shadow: 0 10px 25px -5px rgba(0,0,0,0.1), 0 8px 10px -6px rgba(0,0,0,0.1);
+  --card-shadow-hover: 0 20px 25px -5px rgba(0,0,0,0.1), 0 10px 10px -5px rgba(0,0,0,0.04);
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --gradient-primary: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+  --gradient-accent: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+  --bg-gradient: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+  --header-gradient: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%);
+  --reference-gradient: linear-gradient(135deg, #f1f5f9 0%, #ffffff 100%);
+}
+
+/* CV-specific CSS custom properties */
+:root {
+  /* Map CV variables to global theme variables with professional palette */
+  --cv-primary-color: var(--global-link-color);
+  --cv-secondary-color: var(--global-link-color-hover);
+  --cv-accent-color: var(--global-link-color);
+  --cv-success-color: #059669;
+  --cv-warning-color: #d97706;
+  
+  /* Enhanced text colors for better contrast */
+  --cv-text-primary: var(--global-text-color);
+  --cv-text-secondary: var(--global-text-color-light);
+  --cv-text-muted: var(--global-text-color-light);
+  --cv-name-color: #1e40af;           /* Deep professional blue for name in light mode */
+  --cv-title-color: #334155;          /* Darker slate gray for title in light mode */
+  --cv-job-title-color: #1e3a8a;      /* Very deep blue for job titles in light mode */
+  --cv-company-color: #1f2937;        /* Very dark gray for companies in light mode */
+  --cv-date-color: #4b5563;           /* Darker gray for dates in light mode */
+  --cv-location-color: #4b5563;       /* Darker gray for locations in light mode */
+  --cv-content-color: #374151;        /* Dark gray for content text in light mode */
+  
+  --cv-bg-primary: var(--global-bg-color);
+  --cv-bg-secondary: var(--global-bg-color);
+  --cv-bg-accent: var(--global-bg-color);
+  --cv-border-color: var(--global-border-color);
+  --cv-border-light: var(--global-border-color);
+  --cv-card-shadow: 0 10px 25px -5px rgba(0,0,0,0.1), 0 8px 10px -6px rgba(0,0,0,0.1);
+  --cv-card-shadow-hover: 0 20px 25px -5px rgba(0,0,0,0.1), 0 10px 10px -5px rgba(0,0,0,0.04);
+  --cv-gradient-primary: linear-gradient(135deg, var(--global-bg-color) 0%, var(--global-border-color) 100%);
+  --cv-gradient-accent: linear-gradient(135deg, var(--global-link-color) 0%, var(--global-link-color-hover) 100%);
+  --cv-bg-gradient: linear-gradient(135deg, var(--global-bg-color) 0%, var(--global-border-color) 100%);
+  --cv-header-gradient: linear-gradient(135deg, var(--global-bg-color) 0%, var(--global-border-color) 100%);
+  --cv-reference-gradient: linear-gradient(135deg, var(--global-border-color) 0%, var(--global-bg-color) 100%);
+  --cv-section-border: var(--global-border-color);
+}
+
+/* Dark mode overrides for CV-specific colors */
+html[data-theme="dark"] {
+  --cv-name-color: #e2e8f0;           /* Light gray for name in dark mode */
+  --cv-title-color: #cbd5e1;          /* Lighter gray for title in dark mode */
+  --cv-job-title-color: #60a5fa;      /* Light blue for job titles in dark mode */
+  --cv-company-color: #d1d5db;        /* Light gray for companies in dark mode */
+  --cv-date-color: #9ca3af;           /* Medium gray for dates in dark mode */
+  --cv-location-color: #9ca3af;       /* Medium gray for locations in dark mode */
+  --cv-content-color: #d1d5db;        /* Light gray for content text in dark mode */
+}
+
+/* Typography Enhancement */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap');
+
+body {
+  background: var(--cv-bg-gradient);
+  color: var(--cv-text-primary);
+  transition: var(--transition);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  line-height: 1.7;
+  letter-spacing: -0.01em;
+  min-height: 100vh;
+}
+
+.cv-container {
+  max-width: 920px;
+  margin: 2rem auto;
+  padding: 0;
+  font-family: inherit;
+  color: var(--cv-text-primary);
+  background: var(--cv-bg-primary);
+  border-radius: 20px;
+  box-shadow: var(--cv-card-shadow);
+  overflow: hidden;
+  position: relative;
+}
+
+.cv-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 6px;
+  background: var(--cv-gradient-primary);
+  z-index: 1;
+}
+
+/* RTL support for Arabic */
+.cv-container.lang-ar {
+  font-family: 'Noto Sans Arabic', 'Inter', system-ui, sans-serif;
+  text-align: right;
+  direction: rtl;
+}
+
+.cv-container.lang-ar .cv-item-header,
+.cv-container.lang-ar .cv-skill-item {
+  flex-direction: row-reverse;
+}
+
+/* Keep icons on the left (visually) for Arabic RTL */
+.cv-container.lang-ar .cv-contact span,
+.cv-container.lang-ar .cv-location,
+.cv-container.lang-ar .cv-website {
+  display: inline-flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.cv-container.lang-ar .cv-contact i,
+.cv-container.lang-ar .cv-location i,
+.cv-container.lang-ar .cv-website i {
+  margin-left: 0.5rem;
+  margin-right: 0;
+}
+
+/* Extra spacing for Latin text (email, website) in Arabic layout */
+.cv-container.lang-ar .cv-contact .email i,
+.cv-container.lang-ar .cv-contact .website i,
+.cv-container.lang-ar .cv-website i {
+  margin-left: 0.75rem;
+}
+
+/* Header Enhancement */
+.cv-header {
+  margin: 0;
+  text-align: center;
+  padding: 3rem 2rem 2rem;
+  background: var(--cv-header-gradient);
+  position: relative;
+  border-bottom: 1px solid var(--cv-border-light);
+}
+
+.cv-header::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 2px;
+  background: var(--cv-gradient-primary);
+}
+
+.cv-header h1 {
+  margin-bottom: 0.75rem;
+  font-size: 3rem;
+  color: var(--cv-name-color);
+  font-weight: 700;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: -0.02em;
+}
+
+.cv-summary {
+  font-style: italic;
+  margin-bottom: 1.5rem;
+  color: var(--cv-title-color);
+  font-size: 1.2rem;
+  font-weight: 400;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+.cv-contact span, .cv-location {
+  margin: 0 1rem;
+  display: inline-block;
+  color: var(--cv-location-color);
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+.cv-contact span:hover, .cv-location:hover {
+  color: var(--cv-primary-color);
+  transform: translateY(-1px);
+}
+
+.cv-contact i, .cv-location i {
+  margin-right: 0.5rem;
+  color: var(--cv-primary-color);
+}
+
+.cv-profiles {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.cv-profiles a {
+  color: var(--cv-content-color);
+  text-decoration: none;
+  padding: 0.75rem 1.25rem;
+  border-radius: 12px;
+  background: var(--cv-bg-primary);
+  border: 2px solid var(--cv-border-color);
+  transition: var(--transition);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 500;
+  box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+}
+
+.cv-profiles a:hover {
+  background: var(--cv-primary-color);
+  color: var(--cv-bg-primary);
+  transform: translateY(-3px);
+  box-shadow: var(--cv-card-shadow-hover);
+  border-color: var(--cv-primary-color);
+}
+
+/* Content Wrapper */
+.cv-content {
+  padding: 2rem;
+}
+
+/* Section Enhancement */
+.cv-section {
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.cv-section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: var(--cv-name-color);
+  margin-bottom: 2rem;
+  position: relative;
+  padding-bottom: 0.75rem;
+}
+
+.cv-section-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background: var(--cv-gradient-accent);
+  border-radius: 2px;
+}
+
+/* Two-column layout enhancement */
+.cv-two-column-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+.cv-column {
+  position: relative;
+}
+
+/* Item Enhancement */
+.cv-item {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: var(--cv-bg-primary);
+  border-radius: 16px;
+  border: 1px solid var(--cv-border-light);
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+}
+
+.cv-item::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: var(--cv-gradient-accent);
+  transform: scaleY(0);
+  transition: var(--transition);
+}
+
+.cv-item:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--cv-card-shadow-hover);
+  border-color: var(--cv-border-color);
+}
+
+.cv-item:hover::before {
+  transform: scaleY(1);
+}
+
+.cv-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.75rem;
+}
+
+.cv-item-header h3 {
+  margin: 0;
+  color: var(--cv-job-title-color);
+  font-weight: 600;
+  font-size: 1.1rem;
+  line-height: 1.4;
+}
+
+.cv-date {
+  color: var(--cv-date-color);
+  font-weight: 500;
+  font-size: 0.9rem;
+  background: var(--cv-bg-accent);
+  padding: 0.25rem 0.75rem;
+  border-radius: 8px;
+  border: 1px solid var(--cv-border-light);
+  white-space: nowrap;
+}
+
+.cv-item-subheader {
+  margin-bottom: 1rem;
+  color: var(--cv-content-color);
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.cv-location, .cv-website {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--cv-location-color);
+}
+
+.cv-highlights {
+  margin-top: 1rem;
+  padding-left: 1.5rem;
+  list-style: none;
+  position: relative;
+}
+
+.cv-highlights li {
+  position: relative;
+  margin-bottom: 0.5rem;
+  color: var(--cv-content-color);
+  line-height: 1.6;
+}
+
+.cv-highlights li::before {
+  content: '▸';
+  position: absolute;
+  left: -1.25rem;
+  color: var(--cv-primary-color);
+  font-weight: bold;
+}
+
+.lang-ar .cv-highlights {
+  padding-left: 0;
+  padding-right: 1.5rem;
+}
+
+.lang-ar .cv-highlights li::before {
+  left: auto;
+  right: -1.25rem;
+}
+
+/* Skills Enhancement */
+.cv-skill-group {
+  margin-bottom: 2rem;
+  background: var(--cv-bg-primary);
+  padding: 1.5rem;
+  border-radius: 16px;
+  border: 1px solid var(--cv-border-light);
+  transition: var(--transition);
+}
+
+.cv-skill-group:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--cv-card-shadow);
+}
+
+.cv-skill-group h3 {
+  margin-bottom: 1rem;
+  color: var(--cv-text-primary);
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.cv-skill-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 0.75rem;
+}
+
+.cv-skill-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  background: var(--cv-bg-accent);
+  border-radius: 10px;
+  border: 1px solid var(--cv-border-light);
+  transition: var(--transition);
+}
+
+.cv-skill-item:hover {
+  background: var(--cv-bg-primary);
+  transform: translateX(4px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.cv-skill-name {
+  font-weight: 500;
+  color: var(--cv-text-primary);
+}
+
+.cv-skill-rating {
+  color: var(--cv-warning-color);
+  font-size: 1.1rem;
+  letter-spacing: 0.1em;
+}
+
+/* Languages Enhancement */
+.cv-language-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.cv-language-item {
+  padding: 1rem 1.25rem;
+  background: var(--cv-bg-primary);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid var(--cv-border-light);
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+}
+
+.cv-language-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--cv-gradient-accent);
+  transform: scaleX(0);
+  transition: var(--transition);
+}
+
+.cv-language-item:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--cv-card-shadow);
+}
+
+.cv-language-item:hover::before {
+  transform: scaleX(1);
+}
+
+.cv-language-name {
+  font-weight: 600;
+  color: var(--cv-text-primary);
+}
+
+.cv-language-level {
+  font-weight: 500;
+  color: var(--cv-primary-color);
+  font-size: 0.9rem;
+  background: var(--cv-bg-accent);
+  padding: 0.25rem 0.75rem;
+  border-radius: 6px;
+}
+
+/* Interests Enhancement */
+.cv-interest-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.cv-interest-item {
+  padding: 0.75rem 1.25rem;
+  background: var(--cv-bg-primary);
+  border-radius: 25px;
+  border: 2px solid var(--cv-border-light);
+  transition: var(--transition);
+  font-weight: 500;
+  color: var(--cv-content-color);
+  position: relative;
+  overflow: hidden;
+}
+
+.cv-interest-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: var(--cv-gradient-accent);
+  transition: var(--transition);
+  z-index: -1;
+}
+
+.cv-interest-item:hover {
+  color: white;
+  border-color: transparent;
+  transform: translateY(-2px);
+}
+
+.cv-interest-item:hover::before {
+  left: 0;
+}
+
+/* References Enhancement */
+.cv-reference {
+  margin-bottom: 1.5rem;
+  padding: 1.5rem;
+  background: var(--cv-bg-primary);
+  border-radius: 16px;
+  border: 1px solid var(--cv-border-light);
+  transition: var(--transition);
+  position: relative;
+}
+
+.cv-reference:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--cv-card-shadow-hover);
+}
+
+.cv-reference-name {
+  font-weight: 600;
+  color: var(--cv-primary-color);
+  font-size: 1.1rem;
+  margin-bottom: 0.25rem;
+}
+
+.cv-reference-position {
+  color: var(--cv-content-color);
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+
+.cv-reference-affiliation {
+  color: var(--cv-text-muted);
+  font-style: italic;
+}
+
+.cv-reference-email {
+  color: var(--cv-content-color);
+  font-family: 'Monaco', 'Menlo', monospace;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+.cv-reference-note {
+  margin-top: 1.5rem;
+  padding: 1rem 1.25rem;
+  background: var(--cv-reference-gradient);
+  border-left: 4px solid var(--cv-primary-color);
+  border-radius: 0 12px 12px 0;
+  color: var(--cv-text-primary);
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+/* Language Selector Enhancement */
+.title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding: 0 2rem;
+}
+
+.controls-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.page-title {
+  margin: 0;
+  color: var(--global-text-color);
+  font-size: 2.75rem;
+  font-weight: 700;
+  font-family: 'Playfair Display', serif;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.language-selector {
+  display: flex;
+  gap: 0.5rem;
+  background: var(--cv-bg-primary);
+  padding: 0.5rem;
+  border-radius: 12px;
+  box-shadow: var(--cv-card-shadow);
+  border: 1px solid var(--cv-border-light);
+}
+
+.lang-btn {
+  padding: 0.75rem 1.25rem;
+  border: none;
+  border-radius: 8px;
+  background: transparent;
+  cursor: pointer;
+  transition: var(--transition);
+  font-weight: 500;
+  color: var(--global-text-color);
+  position: relative;
+  overflow: hidden;
+}
+
+.lang-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: var(--cv-gradient-primary);
+  transition: var(--transition);
+  z-index: -1;
+}
+
+.lang-btn:hover {
+  color: white;
+  transform: translateY(-1px);
+}
+
+.lang-btn:hover::before {
+  left: 0;
+}
+
+.lang-btn.active {
+  background: var(--cv-gradient-primary);
+  color: white;
+  box-shadow: 0 4px 12px rgba(30, 64, 175, 0.3);
+}
+
+.lang-btn.active::before {
+  left: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .cv-container {
+    margin: 1rem;
+    border-radius: 16px;
+  }
+  
+  .cv-header {
+    padding: 2rem 1rem 1.5rem;
+  }
+  
+  .cv-header h1 {
+    font-size: 2.25rem;
+  }
+  
+  .cv-content {
+    padding: 1.5rem;
+  }
+  
+  .cv-item-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .cv-date {
+    margin-top: 0.5rem;
+  }
+  
+  .title-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 0 1rem;
+  }
+  
+  .controls-container {
+    align-self: stretch;
+    justify-content: space-between;
+  }
+  
+  .page-title {
+    font-size: 2.25rem;
+  }
+  
+  .language-selector {
+    justify-content: center;
+  }
+  
+  .cv-two-column-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .cv-skill-list {
+    grid-template-columns: 1fr;
+  }
+  
+  .cv-language-list {
+    grid-template-columns: 1fr;
+  }
+  
+  .cv-profiles {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .cv-profiles a {
+    width: 100%;
+    max-width: 300px;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .cv-header h1 {
+    font-size: 2rem;
+  }
+  
+  .page-title {
+    font-size: 2rem;
+  }
+  
+  .cv-summary {
+    font-size: 1.1rem;
+  }
+  
+  .cv-item {
+    padding: 1rem;
+  }
+  
+  .cv-skill-group {
+    padding: 1rem;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .cv-container {
+    box-shadow: none;
+    border: none;
+    margin: 0;
+  }
+  
+  .language-selector {
+    display: none;
+  }
+  
+  .cv-item:hover {
+    transform: none;
+    box-shadow: none;
+  }
+}
+
+/* Animation Classes */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.cv-section {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.cv-item {
+  animation: fadeInUp 0.6s ease-out;
+  animation-fill-mode: both;
+}
+
+.cv-item:nth-child(1) { animation-delay: 0.1s; }
+.cv-item:nth-child(2) { animation-delay: 0.2s; }
+.cv-item:nth-child(3) { animation-delay: 0.3s; }
+.cv-item:nth-child(4) { animation-delay: 0.4s; }
+.cv-item:nth-child(5) { animation-delay: 0.5s; }
+</style>
+
+<!-- Add Font Awesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+<!-- Add Google Fonts for multi-language support -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@300;400;500;700&display=swap" rel="stylesheet">

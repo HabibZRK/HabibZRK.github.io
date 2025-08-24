@@ -1,0 +1,75 @@
+/* Force sidebar visibility reset */
+.sidebar-container, .sidebar {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  transform: none !important;
+  width: auto !important;
+  position: relative !important;
+  left: 0 !important;
+  z-index: 10 !important;
+  text-align: center !important;
+}
+
+/* Center author content */
+.author__content {
+  text-align: center !important;
+}
+
+.author__urls-wrapper {
+  text-align: center !important;
+}
+
+/* Fix sidebar width for larger screens */
+@media screen and (min-width: 1024px) {
+  .sidebar {
+    width: 16.66667% !important;
+    min-width: 180px !important;
+    transition: transform 0.3s ease, opacity 0.3s ease !important;
+  }
+  
+  .sidebar-container {
+    width: auto !important;
+  }
+  
+  /* Make sidebar hidden when the class is applied */
+  .sidebar-container.sidebar-hidden .sidebar {
+    transform: translateX(-100%) !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+  }
+
+  .archive, .page {
+    width: 83.33333% !important;
+    float: right !important;
+    transition: width 0.3s ease, margin-left 0.3s ease !important;
+  }
+  
+  /* Make content expand when sidebar is hidden */
+  .content-expanded {
+    width: 100% !important;
+    float: none !important;
+    margin-left: 0 !important;
+  }
+}
+
+/* Position the toggle button properly */
+.sidebar-toggle {
+  position: absolute !important;
+  display: flex !important;
+  left: calc(100% - 16px) !important;
+  right: auto !important;
+  top: 5em !important;
+  z-index: 1000 !important;
+}
+
+/* Move toggle button to left when sidebar is hidden */
+.sidebar-container.sidebar-hidden .sidebar-toggle {
+  left: 10px !important;
+  right: auto !important;
+}
+
+/* Override transform property only for the toggle icon */
+.sidebar-container.sidebar-hidden .sidebar-toggle .fa-chevron-left {
+  transform: rotate(180deg) !important;
+}

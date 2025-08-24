@@ -1,0 +1,52 @@
+/* 
+ * Dark Mode Extensions
+ * 
+ * This file contains dark mode compatibility extensions for various components
+ * that need specific styling in dark mode.
+ * 
+ * Created: May 15, 2025
+ */
+
+/* Dark mode adjustments for notices */
+html.dark {
+  .notice,
+  .notice--primary,
+  .notice--info,
+  .notice--warning,
+  .notice--success,
+  .notice--danger {
+    background-color: var(--global-code-background-color, #2d2d2d) !important;
+    color: var(--global-text-color, #e0e0e0) !important;
+    border-left: 0.25em solid var(--global-link-color, #00b7ff) !important;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25) !important;
+    
+    h4 {
+      color: var(--global-text-color, #e0e0e0) !important;
+    }
+    
+    a {
+      color: var(--global-link-color, #00b7ff) !important;
+      
+      &:hover {
+        color: var(--global-link-color-hover, lighten(#00b7ff, 10%)) !important;
+      }
+    }
+  }
+  
+  /* Specific styling for different notice types */
+  .notice--info {
+    border-left-color: var(--global-link-color, #00b7ff) !important;
+  }
+  
+  .notice--warning {
+    border-left-color: #ffab00 !important;
+  }
+  
+  .notice--success {
+    border-left-color: #00d364 !important;
+  }
+  
+  .notice--danger {
+    border-left-color: #ff5252 !important;
+  }
+}

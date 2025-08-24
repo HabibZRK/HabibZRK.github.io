@@ -1,0 +1,266 @@
+{% include base_path %}
+
+<style>
+  /* Light mode (default) */
+  .book-cover {
+    background-color: rgba(182, 181, 181, 0.19); /* Very light transparent layer */
+  }
+  
+  .book-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 2.5rem;
+  }
+  
+  .book-item {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .book-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+  }
+  
+  .book-cover {
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  .book-cover img {
+    max-height: 350px;
+    width: auto;
+    max-width: 110%;
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  }
+  
+  .book-cover:hover img {
+    transform: scale(1.08);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  }
+  
+  .book-icons {
+    position: absolute;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    display: flex;
+    gap: 0.5rem;
+    z-index: 2;
+  }
+  
+  .book-icon {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 50%;
+    padding: 0.5rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .book-icon:hover {
+    transform: scale(1.1);
+    box-shadow: 0 3px 7px rgba(0,0,0,0.3);
+  }
+  
+  .book-icon i {
+    font-size: 1.2rem;
+  }
+  
+  .url-icon i {
+    color: #0366d6;
+  }
+  
+  .goodreads-icon i {
+    color: #553b08;
+  }
+  
+  .goodreads-icon:hover i {
+    animation: pulse 1s infinite;
+  }
+  
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+  }
+  
+  .book-details {
+    padding: 1rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .book-title {
+    margin-top: 0;
+    margin-bottom: 0.25rem;
+    font-size: 1.2rem;
+  }
+  
+  .book-subtitle {
+    font-size: 1rem;
+    font-weight: normal;
+    font-style: italic;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    color: #4a4a4a;
+  }
+  
+  .book-author {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+  }
+  
+  .book-arabic-title {
+    direction: rtl;
+    text-align: right;
+    font-family: 'Amiri', 'Traditional Arabic', serif;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .book-summary {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    flex-grow: 1;
+  }
+  
+  .book-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: auto;
+  }
+  
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 0.85rem;
+    transition: all 0.2s ease;
+    margin-bottom: 0.5rem;
+  }
+  
+  .btn--pdf {
+    background-color: #dc3545;
+    color: white;
+    font-weight: 500;
+  }
+  
+  .btn--goodreads {
+    background-color: #553b08;
+    color: white;
+    font-weight: 500;
+  }
+  
+  .btn--url {
+    background-color: #0366d6;
+    color: white;
+    font-weight: 500;
+  }
+  
+  .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+    opacity: 0.9;
+  }
+  
+  .btn i {
+    margin-right: 0.35rem;
+  }
+  
+  @media (max-width: 768px) {
+    .book-grid {
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+    
+    .book-links {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    
+    .btn {
+      width: 100%;
+      justify-content: center;
+    }
+    
+    .book-cover img {
+      max-height: 320px;
+      max-width: 115%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .book-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .book-cover img {
+      max-height: 300px;
+      max-width: 120%;
+    }
+    
+    .book-title {
+      font-size: 1.1rem;
+    }
+  }
+</style>
+
+<div class="book-grid">
+  {% for book in site.data.books %}
+    <div class="book-item">
+      <div class="book-cover">
+        <a href="{% if book.url and book.url != '' %}{{ book.url }}{% else %}{{ base_path }}/files/books/{{ book.filename }}{% endif %}" title="{% if book.url and book.url != '' %}Visit original source for{% else %}Read Arabic translation of{% endif %} {{ book.main_title }}{% if book.subtitle %}: {{ book.subtitle }}{% endif %}" target="_blank">
+          <img src="{{ base_path }}/images/books/{{ book.cover_file }}" alt="{{ book.main_title }}{% if book.subtitle %}: {{ book.subtitle }}{% endif %} by {{ book.author }}">
+        </a>
+        <div class="book-icons">
+          {% if book.goodreads_url and book.goodreads_url != "" %}
+          <a href="{{ book.goodreads_url }}" class="book-icon goodreads-icon" title="View ratings and reviews on Goodreads" target="_blank" data-tooltip="Find this book on Goodreads">
+            <i class="fab fa-goodreads" aria-hidden="true"></i>
+          </a>
+          {% endif %}
+        </div>
+      </div>
+      <div class="book-details">
+        <h3 class="book-title">{{ book.main_title }}</h3>
+        {% if book.subtitle %}<h4 class="book-subtitle">{{ book.subtitle }}</h4>{% endif %}
+        <p class="book-author">by {{ book.author }} ({{ book.year }})</p>
+        {% if book.arabic_title %}<p class="book-arabic-title">{{ book.arabic_title }}</p>{% endif %}
+        <p class="book-summary">{{ book.summary }}</p>
+        <div class="book-links">
+          <a href="{{ base_path }}/files/books/{{ book.filename }}" title="Download translated PDF" class="btn btn--pdf" target="_blank">
+            <i class="fa fa-download" aria-hidden="true"></i> PDF
+          </a>
+          {% if book.goodreads_url and book.goodreads_url != "" %}
+          <a href="{{ book.goodreads_url }}" title="View on Goodreads" class="btn btn--goodreads" target="_blank">
+            <i class="fab fa-goodreads" aria-hidden="true"></i> Goodreads
+          </a>
+          {% endif %}
+          {% if book.url and book.url != "" %}
+          <a href="{{ book.url }}" title="Visit original source" class="btn btn--url" target="_blank">
+            <i class="fa fa-paperclip" aria-hidden="true"></i> Original Source
+          </a>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+</div>
+
+

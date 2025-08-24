@@ -1,0 +1,29 @@
+/* Custom styles for academic profile */
+
+/* Center author avatar and name */
+.author__avatar {
+  text-align: center !important;
+}
+
+.author__avatar img {
+  margin: 0 auto !important;
+}
+
+.author__name, 
+.author__pronouns {
+  text-align: center !important;
+}
+
+/* Make changes for large screens too */
+@media screen and (min-width: 1024px) {
+  .author__name, 
+  .author__pronouns {
+    text-align: center !important;
+  }
+  
+  .author__avatar {
+    text-align: center !important;
+    display: block !important;
+    width: 100% !important;
+  }
+}

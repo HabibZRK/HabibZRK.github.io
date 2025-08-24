@@ -1,0 +1,371 @@
+{
+  "basics": {
+    "name": "Habib Zreik",
+    "email": "h.zreik@ieee.org",
+    "phone": "",
+    "website": "https://HabibZRK.github.io",
+    "summary": "An engineer who writes!",
+    "location": {
+      "address": "",
+      "postalCode": "",
+      "city": "Duisburg",
+      "countryCode": "DE",
+      "state": "NRW"
+    },
+    "profiles": [
+      {
+        "network": "Google Scholar",
+        "username": "",
+        "url": ""
+      },
+      {
+        "network": "ORCID",
+        "username": "",
+        "url": "http://orcid.org/0009-0004-2098-1982"
+      },
+      {
+        "network": "GitHub",
+        "username": "HabibZRK",
+        "url": "https://github.com/HabibZRK"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "DST Development Center for Ship Technology and Transport Systems",
+      "position": "Research Assistant (Wissenschaftliche Hilfskraft)",
+      "website": "https://www.dst-org.de",
+      "startDate": "2024-11-01",
+      "endDate": "Present",
+      "location": "Duisburg, Germany",
+      "summary": "Supported research and development projects in ship technology and transport systems",
+      "highlights": [
+        "Developed comprehensive Git workflow documentation and guidelines for standardizing version control practices across the organization",
+        "Engineered control software for the Cobotank project, implementing remote operation functionality and precision end-effector positioning algorithms for the SCARA robotic arm",
+        "Optimized human-machine interface for remote operation capabilities, enhancing operator control precision in fine positioning tasks"
+      ],
+      "projectLinks": [
+        {
+          "name": "CoboTank",
+          "url": "https://cobotank.de"
+        }
+      ]
+    },
+    {
+      "company": "Ideas Beyond Borders || Bayt Al-Hikma 2.0",
+      "position": "Translator",
+      "website": "",
+      "startDate": "2019-11-01",
+      "endDate": "present",
+      "location": "New York, United States (Remote)",
+      "summary": "Translating Wikipedia articles from English to Arabic",
+      "highlights": [
+        "Translate Wikipedia articles from English to Arabic",
+        "Subject areas: Mechanical Engineering, History of Science, Sustainability (Energy - Environmental - Economic - Social), Scientific Method, Culture"
+      ]
+    },
+    {
+      "company": "Self-employed (Freelance)",
+      "position": "Translator",
+      "website": "",
+      "startDate": "2022-09-01",
+      "endDate": "2023-06-30",
+      "location": "Erbil, Iraq (Remote)",
+      "summary": "Translated from English to Arabic",
+      "highlights": [
+        "Translated 'How to Write Like Chekhov' for Hayat Publishing in Jeddah, Saudi Arabia",
+        "Translated various articles (including academic research) and documents for different clients"
+      ],
+      "publications": [
+        {
+          "title": "How to Write Like Chekhov",
+          "publisher": "Hayat Publishing",
+          "url": "https://hayat-publishing.com/ar/%D9%83%D9%8A%D9%81-%D8%AA%D9%83%D8%AA%D8%A8-%D8%B9%D9%84%D9%89-%D8%B7%D8%B1%D9%8A%D9%82%D8%A9-%D8%AA%D8%B4%D9%8A%D8%AE%D9%88%D9%81/p884176519",
+          "publisherUrl": "https://hayat-publishing.com/"
+        }
+      ]
+    },
+    {
+      "company": "Sovka GmbH (Vapiano Restaurant)",
+      "position": "Rotation System Employee",
+      "website": "",
+      "startDate": "2023-11-01",
+      "endDate": "2024-08-31",
+      "location": "Düsseldorf, Germany",
+      "summary": "Worked in service and cashier positions at a Vapiano franchise restaurant",
+      "highlights": [
+        "Rotated between various service positions and cash register operations",
+        "Provided customer service in a fast-paced restaurant environment"
+      ]
+    },
+    {
+      "company": "MK Academic Services",
+      "position": "Head of English and STEM Departments",
+      "website": "",
+      "startDate": "2020-06-01",
+      "endDate": "2022-08-30",
+      "location": "Damascus (remote)",
+      "summary": "Provided academic services and consultation for students at universities in multiple countries",
+      "highlights": [
+        "Responsible for recruiting employees to work in STEM, English and Business departments",
+        "Generated guideline documents for various academic services"
+      ]
+    },
+    {
+      "company": "Paper Airplanes",
+      "position": "Translation Intern",
+      "website": "www.paper-airplanes.org",
+      "startDate": "2020-04-16",
+      "endDate": "2020-12-31",
+      "location": "United States (Remote)",
+      "summary": "Translated documents and provided training materials from English to Arabic",
+      "highlights": [
+        "Translated all documents and training from English to Arabic",
+        "Trained the other translation intern and proofread her work",
+        "Created the Translations Guidelines document for future interns at Paper Airplanes"
+      ]
+    },
+    {
+      "company": "Syrian Trust for Development",
+      "position": "Trainer (Contract)",
+      "website": "",
+      "startDate": "2019-10-01",
+      "endDate": "2019-12-31",
+      "location": "Damascus, Syria",
+      "summary": "Short-term consultant hired to establish a book club initiative at Bab Sharqi Lighthouse center",
+      "highlights": [
+        "Planned and established the book club initiative at \"Bab Sharqi Lighthouse - Syrian Trust for Development\"",
+        "Recruited and trained members for the permanent operation of the club",
+        "Conducted the first 8 book discussion events in the book club"
+      ]
+    },
+    {
+      "company": "Syrian Computer Society",
+      "position": "Teacher/Coach",
+      "website": "",
+      "startDate": "2016",
+      "endDate": "2018",
+      "location": "Damascus, Syria",
+      "summary": "Taught robotics and coached competition teams using Lego EV3 kits",
+      "highlights": [
+        "Taught robotics essentials using Lego EV3 kits to children (9-16 yrs)",
+        "Trained teams to participate in the World Robot Olympiad"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Damascus University",
+      "area": "B.Sc. in General Mechanical Engineering (mechanical forces)",
+      "studyType": "",
+      "startDate": "2012",
+      "endDate": "2020",
+      "gpa": "73.29%",
+      "courses": []
+    },
+    {
+      "institution": "University of Duisburg-Essen",
+      "area": "M.Sc. Maschinenbau (Mechatronics)",
+      "studyType": "Full-time",
+      "startDate": "2021",
+      "endDate": "present",
+      "gpa": "1.7 (current)",
+      "courses": []
+    }
+  ],
+  "skills": [
+    {
+      "group": "Programming Languages & Scripting",
+      "items": [
+        { "name": "Python", "rating": 3 },
+        { "name": "C++", "rating": 3 },
+        { "name": "MATLAB", "rating": 3 },
+        { "name": "R", "rating": 4 }
+      ]
+    },
+    {
+      "group": "Robotics & Embedded Systems",
+      "items": [
+        { "name": "ROS2", "rating": 3 },
+        { "name": "LEGO Mindstorms EV3/NXT", "rating": 5 },
+        { "name": "Arduino", "rating": 4 }
+      ]
+    },
+    {
+      "group": "Web Development",
+      "items": [
+        { "name": "HTML", "rating": 4 },
+        { "name": "CSS", "rating": 3 },
+        { "name": "Jekyll", "rating": 2 },
+        { "name": "PHP", "rating": 2 }
+      ]
+    },
+    {
+      "group": "Data & Statistical Analysis",
+      "items": [
+        { "name": "MySQL", "rating": 3 },
+        { "name": "SPSS", "rating": 3 }
+      ]
+    },
+    {
+      "group": "Engineering & Design Tools",
+      "items": [
+        { "name": "CFD", "rating": 2 },
+        { "name": "SurfCAM", "rating": 2 },
+        { "name": "AutoCAD", "rating": 2 },
+        { "name": "SolidWorks", "rating": 2 }
+      ]
+    },
+    {
+      "group": "Development & Collaboration Tools",
+      "items": [
+        { "name": "Git", "rating": 4 },
+        { "name": "Linux terminal", "rating": 4 },
+        { "name": "Microsoft Teams", "rating": 5 },
+        { "name": "Notion", "rating": 3 },
+        { "name": "Slack", "rating": 5 }
+      ]
+    },
+    {
+      "group": "Productivity Tools",
+      "items": [
+        { "name": "Microsoft Word", "rating": 5 },
+        { "name": "Microsoft Excel", "rating": 4 },
+        { "name": "Microsoft PowerPoint", "rating": 4 }
+      ]
+    },
+    {
+      "group": "Professional & Soft Skills",
+      "items": [
+        { "name": "Project management", "rating": 4 },
+        { "name": "Teamwork", "rating": 5 },
+        { "name": "Problem Solving", "rating": 5 }
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Arabic",
+      "fluency": "C2"
+    },
+    {
+      "language": "English",
+      "fluency": "C2"
+    },
+    {
+      "language": "German",
+      "fluency": "C1"
+    },
+    {
+      "language": "French",
+      "fluency": "A1"
+    }
+  ],
+  "interests": [
+    {
+      "name": "World Literature"
+    },
+    {
+      "name": "Astronomy"
+    },
+    {
+      "name": "Visual Arts"
+    }
+  ],
+  "references": [
+    {
+      "name": "Abdullah Alebrahim",
+      "position": "Director of Bab Sharqi Lighthouse",
+      "email": "",
+      "affiliation": "Syrian Trust for Development"
+    },
+    {
+      "name": "Alina-Sophie Breilich",
+      "position": "Assistant General Manager at Sovka GmbH",
+      "email": "",
+      "affiliation": "Sovka GmbH"
+    }
+  ],
+  "publications": [
+    {
+      "name": "",
+      "publisher": "",
+      "releaseDate": "",
+      "website": "",
+      "summary": ""
+    }
+  ],
+  "presentations": [
+    {
+      "name": "",
+      "event": "",
+      "date": "",
+      "location": "S",
+      "description": ""
+    }
+  ],
+  "volunteering": [
+    {
+      "organization": "Hamak's Reading Club",
+      "position": "Head Coordinator",
+      "website": "",
+      "startDate": "2016",
+      "endDate": "2020",
+      "summary": "Led the initiative from the beginning, handling structure, strategy, recruitment, and organization.",
+      "highlights": [
+        "Lead books and movies discussion sessions",
+        "Created and managed the database for the club's library"
+      ]
+    },
+    {
+      "organization": "Cham Reciprocal Library",
+      "position": "Head Coordinator",
+      "website": "",
+      "startDate": "2018",
+      "endDate": "2019",
+      "summary": "Damascus, Syria",
+      "highlights": [
+        "Led a team of 35 members to functionally operate within Damascus to manage the library's 8 branches",
+        "Communicated with property owners to cooperate and open up new branches (opened 5 new branches)",
+        "Managed the identity and communication of the initiative (promotion and social media accounts management)"
+      ]
+    },
+    {
+      "organization": "Cham Reading Club",
+      "position": "Coordinator",
+      "website": "",
+      "startDate": "2015",
+      "endDate": "2017",
+      "summary": "Damascus, Syria",
+      "highlights": [
+        "Created plans for events and managed them",
+        "Led book discussions online and on the ground"
+      ]
+    },
+    {
+      "organization": "Shaghlni",
+      "position": "Coordinator",
+      "website": "https://www.facebook.com/Build.your.career.path/",
+      "startDate": "2017",
+      "endDate": "2019",
+      "summary": "Linked employers to job-seekers",
+      "highlights": [
+        "Events Organization",
+        "Recruitment",
+        "Communication",
+        "Promotion"
+      ]
+    },
+    {
+      "organization": "Compass",
+      "position": "Lecturer",
+      "website": "",
+      "startDate": "2017",
+      "endDate": "2019",
+      "summary": "Damascus, Syria - Academic guidance and introduction to different possible majors for recent graduates",
+      "highlights": [
+        "Lectured about mechanical engineering studies and career paths"
+      ]
+    }
+  ]
+}

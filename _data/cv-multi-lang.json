@@ -1,0 +1,1142 @@
+{
+  "basics": {
+    "name": {
+      "lang": {
+        "en": "Habib Zreik",
+        "de": "Habib Zreik",
+        "ar": "حبيب زريق"
+      }
+    },
+    "email": "h.zreik@ieee.org",
+    "phone": "",
+    "website": "https://HabibZRK.github.io",
+    "summary": {
+      "lang": {
+        "en": "An engineer who writes!",
+        "de": "Ein Ingenieur, der schreibt!",
+        "ar": " مهندس كاتب!"
+      }
+    },
+    "location": {
+      "address": "",
+      "postalCode": "",
+      "city": "Duisburg",
+      "countryCode": "DE",
+      "state": "NRW"
+    },
+    "profiles": [
+      {
+        "network": "Google Scholar",
+        "username": "",
+        "url": ""
+      },
+      {
+        "network": "ORCID",
+        "username": "",
+        "url": "http://orcid.org/0009-0004-2098-1982"
+      },
+      {
+        "network": "GitHub",
+        "username": "HabibZRK",
+        "url": "https://github.com/HabibZRK"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "Habib Zreik",
+        "url": "https://linkedin.com/in/habib-zreik"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": {
+        "lang": {
+            "en": "DST Development Center for Ship Technology and Transport Systems",
+          "de": "DST Entwicklungszentrum für Schiffstechnik und Transport Systeme e.V.",
+          "ar": "مركز تطوير تقنيات السفن وأنظمة النقل (DST)"
+        }
+      },
+      "position": {
+        "lang": {
+          "en": "Research Assistant (Wissenschaftliche Hilfskraft)",
+          "de": "Wissenschaftliche Hilfskraft",
+          "ar": "مساعد باحث"
+        }
+      },
+      "website": "https://www.dst-org.de",
+      "startDate": "2024-11-01",
+      "endDate": "Present",
+      "location": {
+        "lang": {
+          "en": "Duisburg, Germany",
+          "de": "Duisburg, Deutschland",
+          "ar": "دويسبورغ، ألمانيا"
+        }
+      },
+      "summary": {
+        "lang": {
+          "en": "Supported research and development projects in ship technology and transport systems",
+          "de": "Unterstützung von Forschungs- und Entwicklungsprojekten in der Schiffstechnik und Transportsystemen",
+          "ar": "دعم مشاريع البحث والتطوير في تقنيات السفن وأنظمة النقل"
+        }
+      },
+      "highlights": [
+        {
+          "lang": {
+            "en": "Programming for the CoboTank project in C++ and Python using ROS2, and managing its repositories",
+            "de": "Programmierung für das CoboTank-Projekt in C++ und Python mit ROS2 und Verwaltung seiner Repositories",
+            "ar": "برمجة مشروع CoboTank بلغة C++ و Python باستخدام ROS2، وإدارة مستودعاته"
+          }
+        },
+        {
+          "lang": {
+            "en": "Creation of an internal guide for using Git in mechatronic projects",
+            "de": "Erstellung eines internen Leitfadens für die Verwendung von Git in mechatronischen Projekten",
+            "ar": "إنشاء دليل داخلي لاستخدام Git في المشاريع الميكاترونية"
+          }
+        },
+        {
+          "lang": {
+            "en": "Contribution to a scientific publication: writing the state of the art, participating and exchanging feedback in discussions and meetings",
+            "de": "Beitrag zu einer wissenschaftlichen Publikation: Verfassen des Stands der Technik, Teilnahme und Austausch von Feedback in Diskussionen und Meetings",
+            "ar": "المساهمة في منشور علمي: كتابة أحدث التطورات التقنية، والمشاركة وتبادل الملاحظات في النقاشات والاجتماعات"
+          }
+        }
+      ],
+      "projectLinks": [
+        {
+          "name": "Cobotank",
+          "url": "https://cobotank.de"
+        }
+      ]
+    },
+    {
+      "company": {
+        "lang": {
+          "en": "Ideas Beyond Borders || Bayt Al-Hikma 2.0",
+          "de": "Ideas Beyond Borders || Bayt Al-Hikma 2.0",
+          "ar": "أفكار بلا حدود || بيت الحكمة 2.0"
+        }
+      },
+      "position": {
+        "lang": {
+          "en": "Translator",
+          "de": "Übersetzer",
+          "ar": "مترجم"
+        }
+      },
+      "website": "",
+      "startDate": "2019-11-01",
+      "endDate": "present",
+      "location": {
+        "lang": {
+          "en": "New York, United States (Remote)",
+          "de": "New York, Vereinigte Staaten (Fernarbeit)",
+          "ar": "نيويورك، الولايات المتحدة (عن بعد)"
+        }
+      },
+      "summary": {
+        "lang": {
+          "en": "Translating Wikipedia articles from English to Arabic",
+          "de": "Übersetzung von Wikipedia-Artikeln vom Englischen ins Arabische",
+          "ar": "ترجمة مقالات ويكيبيديا من الإنجليزية إلى العربية"
+        }
+      },
+      "highlights": [
+        {
+          "lang": {
+            "en": "Translated Wikipedia articles from English to Arabic",
+            "de": "Übersetzte Wikipedia-Artikel vom Englischen ins Arabische",
+            "ar": "ترجمة مقالات ويكيبيديا من الإنجليزية إلى العربية"
+          }
+        },
+        {
+          "lang": {
+            "en": "Specialized in Mechanical Engineering, History of Science, Sustainability (Energy - Environmental - Economic - Social), Scientific Method, and Culture topics",
+            "de": "Spezialisiert auf Maschinenbau, Wissenschaftsgeschichte, Nachhaltigkeit (Energie - Umwelt - Wirtschaft - Sozial), Wissenschaftliche Methodik und Kultur",
+            "ar": "تخصص في الهندسة الميكانيكية، تاريخ العلوم، الاستدامة (الطاقة - البيئة - الاقتصاد - الاجتماعية)، المنهج العلمي، والثقافة"
+          }
+        }
+      ]
+    },
+    {
+      "company": {
+        "lang": {
+          "en": "Self-employed (Freelance)",
+          "de": "Selbstständig (Freiberuflich)",
+          "ar": "عمل حر (مستقل)"
+        }
+      },
+      "position": {
+        "lang": {
+          "en": "Translator",
+          "de": "Übersetzer",
+          "ar": "مترجم "
+        }
+      },
+      "website": "",
+      "startDate": "2022-09-01",
+      "endDate": "2023-06-30",
+      "location": {
+        "lang": {
+          "en": "Erbil, Iraq (Remote)",
+          "de": "Erbil, Irak (Fernarbeit)",
+          "ar": "أربيل، العراق (عن بعد)"
+        }
+      },
+      "summary": {
+        "lang": {
+          "en": "Translated from English to Arabic",
+          "de": "Übersetzte vom Englischen ins Arabische",
+          "ar": "ترجمة من الإنجليزية إلى العربية"
+        }
+      },
+      "highlights": [
+        {
+          "lang": {
+            "en": "Translated 'How to Write Like Chekhov' for Hayat Publishing in Jeddah, Saudi Arabia",
+            "de": "Übersetzte 'How to Write Like Chekhov' für Hayat Publishing in Dschidda, Saudi-Arabien",
+            "ar": "ترجمة كتاب 'كيف تكتب على طريقة تشيخوف' لدار حياة للنشر في جدة، المملكة العربية السعودية"
+          }
+        },
+        {
+          "lang": {
+            "en": "Completed translation projects for various articles (including academic research) and documents for different clients",
+            "de": "Abschluss von Übersetzungsprojekten für verschiedene Artikel (einschließlich akademischer Forschung) und Dokumente für verschiedene Kunden",
+            "ar": "إنجاز مشاريع ترجمة لمقالات متنوعة (منها أبحاث أكاديمية) ومحتويات لعملاء مختلفين"
+          }
+        }
+        
+      ],
+      "publications": [
+        {
+          "title": "كيف تكتب على طريقة تشيخوف",
+          "publisher": "Hayat Publishing",
+          "url": "https://hayat-publishing.com/ar/%D9%83%D9%8A%D9%81-%D8%AA%D9%83%D8%AA%D8%A8-%D8%B9%D9%84%D9%89-%D8%B7%D8%B1%D9%8A%D9%82%D8%A9-%D8%AA%D8%B4%D9%8A%D8%AE%D9%88%D9%81/p884176519",
+          "publisherUrl": "https://hayat-publishing.com/"
+        }
+      ]
+    },
+    {
+      "company": {
+        "lang": {
+          "en": "Sovka GmbH (Vapiano Restaurant)",
+          "de": "Sovka GmbH (Vapiano Restaurant)",
+          "ar": "شركة سوفكا (مطعم فابيانو)"
+        }
+      },
+      "position": {
+        "lang": {
+          "en": "Rotation System Employee",
+          "de": "Mitarbeiter im Rotationssystem",
+          "ar": "موظف في نظام التناوب"
+        }
+      },
+      "website": "",
+      "startDate": "2023-11-01",
+      "endDate": "2024-08-31",
+      "location": {
+        "lang": {
+          "en": "Düsseldorf, Germany",
+          "de": "Düsseldorf, Deutschland",
+          "ar": "دوسلدورف، ألمانيا"
+        }
+      },
+      "summary": {
+        "lang": {
+          "en": "Worked in service and cashier positions at a Vapiano franchise restaurant",
+          "de": "Tätig im Service und an der Kasse in einem Vapiano-Franchise-Restaurant",
+          "ar": "عملت في مواقع الخدمة والصندوق في مطعم فابيانو"
+        }
+      },
+      "highlights": [
+        {
+          "lang": {
+            "en": "Performed diverse service positions and cash register operations through rotation system",
+            "de": "Ausübung verschiedener Servicepositionen und Kassenoperationen durch Rotationssystem",
+            "ar": "أداء مناصب الخدمة المختلفة وعمليات الصندوق من خلال نظام التناوب"
+          }
+        },
+        {
+          "lang": {
+            "en": "Delivered exceptional customer service in a fast-paced restaurant environment",
+            "de": "Bereitstellung außergewöhnlicher Kundenbetreuung in einem schnelllebigen Restaurantumfeld",
+            "ar": "تقديم خدمة عملاء استثنائية في بيئة مطعم سريع الوتيرة"
+          }
+        }
+      ]
+    },
+    {
+      "company": {
+        "lang": {
+          "en": "MK Academic Services",
+          "de": "MK Academic Services",
+          "ar": "MK للخدمات الأكاديمية"
+        }
+      },
+      "position": {
+        "lang": {
+          "en": "Head of English and STEM Departments",
+          "de": "Leiter der Abteilungen für Englisch und MINT-Fächer",
+          "ar": "مشرف أقسام اللغة الإنجليزية والهندسة والأعمال"
+        }
+      },
+      "website": "",
+      "startDate": "2020-06-01",
+      "endDate": "2022-08-30",
+      "location": {
+        "lang": {
+          "en": "Damascus (remote)",
+          "de": "Damaskus (Fernarbeit)",
+          "ar": "دمشق (عن بعد)"
+        }
+      },
+      "summary": {
+        "lang": {
+          "en": "Provided academic services and consultation for students at universities in multiple countries",
+          "de": "Bot akademische Dienstleistungen und Beratung für Studenten an Universitäten in mehreren Ländern",
+          "ar": "تقديم الخدمات الأكاديمية والاستشارات للطلاب في عدة دول عربية"
+        }
+      },
+      "highlights": [
+        {
+          "lang": {
+            "en": "Recruited employees to work in STEM, English and Business departments",
+            "de": "Rekrutierte Mitarbeiter für die Abteilungen MINT, Englisch und Wirtschaft",
+            "ar": "استقطب العاملين للعمل في أقسام العلوم والتكنولوجيا والهندسة والرياضيات واللغة الإنجليزية والأعمال"
+          }
+        },
+        {
+          "lang": {
+            "en": "Developed comprehensive guideline documents for various academic services",
+            "de": "Entwickelte umfassende Richtliniendokumente für verschiedene akademische Dienstleistungen",
+            "ar": "طور وثائق إرشادية شاملة للخدمات الأكاديمية المختلفة"
+          }
+        }
+      ]
+    },
+    {
+      "company": {
+        "lang": {
+          "en": "Paper Airplanes",
+          "de": "Paper Airplanes",
+          "ar": "الطائرات الورقية"
+        }
+      },
+      "position": {
+        "lang": {
+          "en": "Translation Intern",
+          "de": "Übersetzungspraktikant",
+          "ar": "متدرب في الترجمة"
+        }
+      },
+      "website": "www.paper-airplanes.org",
+      "startDate": "2020-04-16",
+      "endDate": "2020-12-31",
+      "location": {
+        "lang": {
+          "en": "United States (Remote)",
+          "de": "Vereinigte Staaten (Fernarbeit)",
+          "ar": "الولايات المتحدة (عن بعد)"
+        }
+      },
+      "summary": {
+        "lang": {
+          "en": "Translated documents and provided training materials from English to Arabic",
+          "de": "Übersetzte Dokumente und Schulungsmaterialien von Englisch ins Arabische",
+          "ar": "ترجمة المستندات ومواد التدريب من الإنجليزية إلى العربية"
+        }
+      },
+      "highlights": [
+        {
+          "lang": {
+            "en": "Translated all documents and training materials from English to Arabic",
+            "de": "Übersetzte alle Dokumente und Schulungsmaterialien von Englisch ins Arabische",
+            "ar": "ترجمة جميع المستندات ومواد التدريب من اللغة الإنجليزية إلى العربية"
+          }
+        },
+        {
+          "lang": {
+            "en": "Mentored the other translation intern and proofread her work",
+            "de": "Betreute die andere Übersetzungspraktikantin und korrigierte ihre Arbeit",
+            "ar": "إرشاد متدربة الترجمة الأخرى وتدقيق عملها"
+          }
+        },
+        {
+          "lang": {
+            "en": "Developed the Translation Guidelines document for future interns at Paper Airplanes",
+            "de": "Entwickelte das Übersetzungsrichtlinien-Dokument für zukünftige Praktikanten bei Paper Airplanes",
+            "ar": "تطوير وثيقة إرشادات الترجمة للمتدربين المستقبليين في الطائرات الورقية"
+          }
+        }
+      ]
+    },
+    {
+      "company": {
+        "lang": {
+          "en": "Syrian Trust for Development",
+          "de": "Syrian Trust for Development",
+          "ar": "الأمانة السورية للتنمية"
+        }
+      },
+      "position": {
+        "lang": {
+          "en": "Trainer (Contract)",
+          "de": "Trainer (Befristet)",
+          "ar": "مدرب (عقد مؤقت)"
+        }
+      },
+      "website": "https://ich.unesco.org/en/accredited-ngos/accredited-ong-00761",
+      "startDate": "2019-10-01",
+      "endDate": "2019-12-31",
+      "location": {
+        "lang": {
+          "en": "Damascus, Syria",
+          "de": "Damaskus, Syrien",
+          "ar": "دمشق، سوريا"
+        }
+      },
+      "summary": {
+        "lang": {
+          "en": "Short-term consultant hired to establish a book club initiative at Bab Sharqi Lighthouse center",
+          "de": "Kurzzeitberater zur Einrichtung einer Buchclub-Initiative im Bab Sharqi Lighthouse Zentrum",
+          "ar": "استشاري لفترة قصيرة عُيّنت لتأسيس مبادرة نادي القراءة في مركز منارة باب شرقي"
+        }
+      },
+      "highlights": [
+        {
+          "lang": {
+            "en": "Designed and launched the book club initiative at \"Bab Sharqi Lighthouse - Syrian Trust for Development\"",
+            "de": "Gestaltete und startete die Buchclub-Initiative im \"Bab Sharqi Lighthouse - Syrian Trust for Development\"",
+            "ar": "صمم وأطلق مبادرة نادي الكتاب في \"منارة باب شرقي - الأمانة السورية للتنمية\""
+          }
+        },
+        {
+          "lang": {
+            "en": "Recruited and trained members for the permanent operation of the club",
+            "de": "Rekrutierte und schulte Mitglieder für den dauerhaften Betrieb des Clubs",
+            "ar": "استقطب ودرب أعضاء للتشغيل الدائم للنادي"
+          }
+        },
+        {
+          "lang": {
+            "en": "Facilitated the first 8 book discussion events in the book club",
+            "de": "Leitete die ersten 8 Buchdiskussionsveranstaltungen im Buchclub",
+            "ar": "أدار أول 8 فعاليات لمناقشة الكتب في نادي القراءة"
+          }
+        }
+      ]
+    },
+    {
+      "company": {
+        "lang": {
+          "en": "Syrian Computer Society",
+          "de": "Syrian Computer Society",
+          "ar": "الجمعية العلمية السورية للمعلوماتية"
+        }
+      },
+      "position": {
+        "lang": {
+          "en": "Teacher/Coach",
+          "de": "Lehrer/Trainer",
+          "ar": "مدرّب/مدرس"
+        }
+      },
+      "website": "",
+      "startDate": "2016",
+      "endDate": "2018",
+      "location": {
+        "lang": {
+          "en": "Damascus, Syria",
+          "de": "Damaskus, Syrien",
+          "ar": "دمشق، سوريا"
+        }
+      },
+      "summary": {
+        "lang": {
+          "en": "Taught robotics and coached competition teams using Lego EV3 kits",
+          "de": "Unterrichtete Robotik und trainierte Wettbewerbsteams mit Lego EV3 Sets",
+          "ar": "تدريس الروبوتات وتدريب فرق المسابقات باستخدام مجموعات Lego EV3"
+        }
+      },
+      "highlights": [
+        {
+          "lang": {
+            "en": "Instructed robotics essentials using Lego EV3 kits to children (9-16 years)",
+            "de": "Unterrichtete Grundlagen der Robotik mit Lego EV3 Sets an Kinder (9-16 Jahre)",
+            "ar": "درّس أساسيات الروبوتات باستخدام مجموعات Lego EV3 للأطفال (9-16 سنة)"
+          }
+        },
+        {
+          "lang": {
+            "en": "Coached teams to participate in the World Robot Olympiad",
+            "de": "Trainierte Teams für die Teilnahme an der World Robot Olympiad",
+            "ar": "درب الفرق للمشاركة في الأولمبياد العالمي للروبوت"
+          }
+        }
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": {
+        "lang": {
+          "en": "University of Duisburg-Essen",
+          "de": "Universität Duisburg-Essen",
+          "ar": "جامعة دويسبورغ-إيسن"
+        }
+      },
+      "area": {
+        "lang": {
+          "en": "M.Sc. Maschinenbau (Mechatronics)",
+          "de": "M.Sc. Maschinenbau (Mechatronik)",
+          "ar": "ماجستير في الهندسة الميكانيكية (الميكاترونيكس)"
+        }
+      },
+      "studyType": {
+        "lang": {
+          "en": "Full-time",
+          "de": "Vollzeit",
+          "ar": "دوام كامل"
+        }
+      },
+      "startDate": "2021",
+      "endDate": "present",
+      "gpa": "1.7 (current)",
+      "courses": []
+    },
+    {
+      "institution": {
+        "lang": {
+          "en": "University of the People",
+          "de": "University of the People",
+          "ar": "جامعة الشعب"
+        }
+      },
+      "area": {
+        "lang": {
+          "en": "Associate Degree in Computer Science",
+          "de": "Associate Degree in Informatik",
+          "ar": "درجة مشارك في علوم الحاسوب"
+        }
+      },
+      "studyType": {
+        "lang": {
+          "en": "Distance learning",
+          "de": "Fernstudium",
+          "ar": "تعلم عن بعد"
+        }
+      },
+      "startDate": "2020",
+      "endDate": "2023",
+      "gpa": "",
+      "courses": []
+    },
+    {
+      "institution": {
+        "lang": {
+          "en": "Syrian Virtual University",
+          "de": "Syrian Virtual University",
+          "ar": "الجامعة الافتراضية السورية"
+        }
+      },
+      "area": {
+        "lang": {
+          "en": "MBA (Master's of Business Administration)",
+          "de": "MBA (Master's of Business Administration)",
+          "ar": "ماجستير إدارة الأعمال"
+        }
+      },
+      "studyType": {
+        "lang": {
+          "en": "Distance learning",
+          "de": "Fernstudium",
+          "ar": "تعلم عن بعد"
+        }
+      },
+      "startDate": "2021-02-28",
+      "endDate": "present (thesis pending)",
+      "gpa": "",
+      "courses": []
+    },
+    {
+      "institution": {
+        "lang": {
+          "en": "Damascus University",
+          "de": "Universität Damaskus",
+          "ar": "جامعة دمشق"
+        }
+      },
+      "area": {
+        "lang": {
+          "en": "B.Sc. in General Mechanical Engineering (mechanical forces)",
+          "de": "B.Sc. in Allgemeinem Maschinenbau (mecchanishe Kräfte)",
+          "ar": "إجازة في هندسة الميكانيك العام (قوى ميكانيكية)"
+        }
+      },
+      "studyType": "",
+      "startDate": "2012",
+      "endDate": "2020",
+      "gpa": "73.29%",
+      "courses": []
+    }
+  ],
+  "skills": [
+    {
+      "group": {
+        "lang": {
+          "en": "Programming Languages & Scripting",
+          "de": "Programmiersprachen & Skripting",
+          "ar": "لغات البرمجة"
+        }
+      },
+      "items": [
+        { "name": "Python", "rating": 4 },
+        { "name": "C++", "rating": 4 },
+        { "name": "MATLAB", "rating": 3 },
+        { "name": "R", "rating": 4 }
+      ]
+    },
+    {
+      "group": {
+        "lang": {
+          "en": "Robotics & Embedded Systems",
+          "de": "Robotik & Eingebettete Systeme",
+          "ar": "الروبوتات والأنظمة المدمجة"
+        }
+      },
+      "items": [
+        { "name": "ROS2", "rating": 3 },
+        { "name": "LEGO Mindstorms EV3/NXT", "rating": 5 },
+        { "name": "Arduino", "rating": 4 }
+      ]
+    },
+    {
+      "group": {
+        "lang": {
+          "en": "Web Development",
+          "de": "Webentwicklung",
+          "ar": "تطوير الويب"
+        }
+      },
+      "items": [
+        { "name": "HTML", "rating": 4 },
+        { "name": "CSS", "rating": 3 },
+        { "name": "PHP", "rating": 2 }
+      ]
+    },
+    {
+      "group": {
+        "lang": {
+          "en": "Data & Statistical Analysis",
+          "de": "Daten- & Statistische Analyse",
+          "ar": "تحليل البيانات والإحصاء"
+        }
+      },
+      "items": [
+        { "name": "MySQL", "rating": 3 },
+        { "name": "SPSS", "rating": 3 }
+      ]
+    },
+    {
+      "group": {
+        "lang": {
+          "en": "Engineering & Design Tools",
+          "de": "Konstruktions- & Designwerkzeuge",
+          "ar": "أدوات الهندسة والتصميم"
+        }
+      },
+      "items": [
+        { "name": "CFD", "rating": 2 },
+        { "name": "SurfCAM", "rating": 2 },
+        { "name": "AutoCAD", "rating": 2 },
+        { "name": "SolidWorks", "rating": 3}
+      ]
+    },
+    {
+      "group": {
+        "lang": {
+          "en": "Development & Collaboration Tools",
+          "de": "Entwicklungs- & Kollaborationswerkzeuge",
+          "ar": "أدوات التطوير والتعاون"
+        }
+      },
+      "items": [
+        { "name": "Git", "rating": 4 },
+        { 
+          "name": {
+            "lang": {
+              "en": "Linux terminal",
+              "de": "Linux-Terminal",
+              "ar": "طرفية لينكس"
+            }
+          }, 
+          "rating": 4 
+        },
+        { "name": "Microsoft Teams", "rating": 5 },
+        { "name": "Notion", "rating": 3 },
+        { "name": "Slack", "rating": 5 }
+      ]
+    },
+    {
+      "group": {
+        "lang": {
+          "en": "Productivity Tools",
+          "de": "Produktivitätswerkzeuge",
+          "ar": "أدوات الإنتاجية"
+        }
+      },
+      "items": [
+        { "name": "Microsoft Word", "rating": 5 },
+        { "name": "Microsoft Excel", "rating": 4 },
+        { "name": "Microsoft PowerPoint", "rating": 4 }
+      ]
+    },
+    {
+      "group": {
+        "lang": {
+          "en": "Professional & Soft Skills",
+          "de": "Berufliche & Soft Skills",
+          "ar": "مهارات أخرى"
+        }
+      },
+      "items": [
+        { 
+          "name": {
+            "lang": {
+              "en": "Project management",
+              "de": "Projektmanagement",
+              "ar": "إدارة المشاريع"
+            }
+          }, 
+          "rating": 4 
+        },
+        { 
+          "name": {
+            "lang": {
+              "en": "Teamwork",
+              "de": "Teamarbeit",
+              "ar": "العمل الجماعي"
+            }
+          }, 
+          "rating": 5 
+        },
+        { 
+          "name": {
+            "lang": {
+              "en": "Problem Solving",
+              "de": "Problemlösung",
+              "ar": "حل المشكلات"
+            }
+          }, 
+          "rating": 5 
+        }
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": {
+        "lang": {
+          "en": "Arabic",
+          "de": "Arabisch",
+          "ar": "العربية"
+        }
+      },
+      "fluency": "C3"
+    },
+    {
+      "language": {
+        "lang": {
+          "en": "English",
+          "de": "Englisch",
+          "ar": "الإنجليزية"
+        }
+      },
+      "fluency": "C2"
+    },
+    {
+      "language": {
+        "lang": {
+          "en": "German",
+          "de": "Deutsch",
+          "ar": "الألمانية"
+        }
+      },
+      "fluency": "C1"
+    },
+    {
+      "language": {
+        "lang": {
+          "en": "French",
+          "de": "Französisch",
+          "ar": "الفرنسية"
+        }
+      },
+      "fluency": "A1"
+    }
+  ],
+  "interests": [
+    {
+      "name": {
+        "lang": {
+          "en": "World Literature",
+          "de": "Weltliteratur",
+          "ar": "الأدب العالمي"
+        }
+      }
+    },
+    {
+      "name": {
+        "lang": {
+          "en": "Astronomy",
+          "de": "Astronomie",
+          "ar": "علم الفلك"
+        }
+      }
+    },
+    {
+      "name": {
+        "lang": {
+          "en": "Visual Arts",
+          "de": "Bildende Kunst",
+          "ar": "الفنون البصرية"
+        }
+      }
+    }
+  ],
+  "references": [
+    {
+      "name": {
+        "lang": {
+          "en": "Eng. Costantine Daaboul",
+          "de": "Ing. Costantine Daaboul",
+          "ar": "م. قسطنطين دعبول"
+        }
+      },
+      "position": {
+        "lang": {
+          "en": "CEO/Owner",
+          "de": "CEO/Besitzer",
+          "ar": "المدير التنفيذي لمجموعة الهندسة التقنية، سوريا"
+        }
+      },
+      "email": "",
+      "affiliation": "Technical Engineering Group, Syria"
+    },
+    {
+      "name": {
+        "lang": {
+          "en": "PhD Eng. Muath Al-Khayat",
+          "de": "Dr.-Ing. Muath Al-Khayat",
+          "ar": "د. مهندس معاذ الخيّاط"
+        }
+      },
+      "position": {
+        "lang": {
+          "en": "Professor of Industrial Management and Mechanical Measurements, Damascus University",
+          "de": "Professor für Industriemanagement und Mechanische Messungen, Universität Damaskus",
+          "ar": "أستاذ الإدارة الصناعية والقياسات الميكانيكية، جامعة دمشق"
+        }
+      },
+      "email": "",
+      "affiliation": "Damascus University"
+    },
+    {
+      "name": {
+        "lang": {
+          "en": "PhD Eng. Bassam Badran",
+          "de": "Dr.-Ing. Bassam Badran",
+          "ar": "د. مهندس بسام بدران"
+        }
+      },
+      "position": {
+        "lang": {
+          "en": "Professor of Thermodynamics, 4th Year Project Supervisor (Betreuer)",
+          "de": "Professor für Thermodynamik, Betreuer der Abschlussarbeit (4. Jahr)",
+          "ar": "أستاذ الديناميكا الحرارية، مشرف مشروع التخرج (السنة الرابعة)"
+        }
+      },
+      "email": "",
+      "affiliation": "Damascus University"
+    },
+    {
+      "name": {
+        "lang": {
+          "en": "PhD Eng. Mouhib Al-Nukary",
+          "de": "Dr.-Ing. Mouhib Al-Nukary",
+          "ar": "د. مهندس مهيب النقري"
+        }
+      },
+      "position": {
+        "lang": {
+          "en": "CEO/Owner",
+          "de": "CEO/Besitzer",
+          "ar": "المدير التنفيذي"
+        }
+      },
+      "email": "",
+      "affiliation": "Syra Robot"
+    },
+    {
+      "name": {
+        "lang": {
+          "en": "Belal Hallak",
+          "de": "Belal Hallak",
+          "ar": "بلال حلاق"
+        }
+      },
+      "position": {
+        "lang": {
+          "en": "Business Developer",
+          "de": "Business Developer",
+          "ar": "مدير التطوير"
+        }
+      },
+      "email": "",
+      "affiliation": "Mentor Academic Services"
+    },
+    {
+      "name": {
+        "lang": {
+          "en": "Abdullah Alebrahim",
+          "de": "Abdullah Alebrahim",
+          "ar": "عبد الله الإبراهيم"
+        }
+      },
+      "position": {
+        "lang": {
+          "en": "Director of Bab Sharqi Lighthouse",
+          "de": "Leiter von Bab Sharqi Lighthouse",
+          "ar": "مدير منارة باب شرقي"
+        }
+      },
+      "email": "",
+      "affiliation": "Syrian Trust for Development"
+    },
+    {
+      "name": {
+        "lang": {
+          "en": "Alina-Sophie Breilich",
+          "de": "Alina-Sophie Breilich",
+          "ar": "ألينا-صوفي برايليش"
+        }
+      },
+      "position": {
+        "lang": {
+          "en": "Assistant General Manager at Sovka GmbH",
+          "de": "Stellvertretende Geschäftsführerin bei Sovka GmbH",
+          "ar": "مساعدة المدير العام في شركة سوفكا"
+        }
+      },
+      "email": "",
+      "affiliation": "Sovka GmbH"
+    }
+  ],
+  "references_note": {
+    "lang": {
+      "en": "Reference contact information can be provided upon request.",
+      "de": "Kontaktdaten von Referenzen können auf Anfrage bereitgestellt werden.",
+      "ar": "معلومات التواصل مع المراجع متاحة عند الطلب."
+    }
+  },
+  "publications": [
+    {
+      "name": {
+        "lang": {
+          "en": "",
+          "de": "",
+          "ar": ""
+        }
+      },
+      "publisher": {
+        "lang": {
+          "en": "",
+          "de": "",
+          "ar": ""
+        }
+      },
+      "releaseDate": "",
+      "website": "",
+      "summary": {
+        "lang": {
+          "en": "",
+          "de": "",
+          "ar": ""
+        }
+      }
+    }
+  ],
+  "volunteering": [
+    {
+      "organization": {
+        "lang": {
+          "en": "Hamak's Reading Club",
+          "de": "Hamak's Reading Club",
+          "ar": "نادي قراء الهمك"
+        }
+      },
+      "position": {
+        "lang": {
+          "en": "Head Coordinator",
+          "de": "Hauptkoordinator",
+          "ar": "منسق عام"
+        }
+      },
+      "website": "https://www.facebook.com/hamak.reading.club/",
+      "startDate": "2016",
+      "endDate": "2020",
+      "location": {
+        "lang": {
+          "en": "Damascus, Syria",
+          "de": "Damaskus, Syrien",
+          "ar": "دمشق، سوريا"
+        }
+      },
+      "summary": {
+        "lang": {
+          "en": "Led the initiative from the beginning, handling structure, strategy, recruitment, and organization.",
+          "de": "Leitete die Initiative von Anfang an und kümmerte mich um Struktur, Strategie, Rekrutierung und Organisation.",
+          "ar": "قدت المبادرة منذ البداية، وتعاملت مع الهيكل والاستراتيجية والتوظيف والتنظيم."
+        }
+      },
+      "highlights": []
+    },
+    {
+      "organization": {
+        "lang": {
+          "en": "Cham Reciprocal Library",
+          "de": "Cham Wechselseitige Bibliothek",
+          "ar": "مكتبة شام التبادلية"
+        }
+      },
+      "position": {
+        "lang": {
+          "en": "Head Coordinator",
+          "de": "Hauptkoordinator",
+          "ar": "منسق المبادرة"
+        }
+      },
+      "website": "",
+      "startDate": "2018",
+      "endDate": "2019",
+      "location": {
+        "lang": {
+          "en": "Damascus, Syria",
+          "de": "Damaskus, Syrien",
+          "ar": "دمشق، سوريا"
+        }
+      },
+      "summary": {
+        "lang": {
+          "en": "Managed a community book-sharing initiative with over 200 participants.",
+          "de": "Verwaltete eine gemeinschaftliche Buchaustauschinitative mit über 200 Teilnehmern.",
+          "ar": "إدارة مبادرة مجتمعية لتبادل الكتب مع أكثر من 200 مشارك."
+        }
+      },
+      "highlights": []
+    },
+    {
+      "organization": {
+        "lang": {
+          "en": "Cham Reading Club",
+          "de": "Cham Leseklub",
+          "ar": "نادي شام للقراءة"
+        }
+      },
+      "position": {
+        "lang": {
+          "en": "Member (Organizational Team)",
+          "de": "Mitglied (Organisationsteam)",
+          "ar": "عضو فريق تنظيمي"
+        }
+      },
+      "website": "",
+      "startDate": "2015",
+      "endDate": "2017",
+      "location": {
+        "lang": {
+          "en": "Damascus, Syria",
+          "de": "Damaskus, Syrien",
+          "ar": "دمشق، سوريا"
+        }
+      },
+      "summary": {
+        "lang": {
+          "en": "Organized monthly book discussions and cultural activities.",
+          "de": "Organisation monatlicher Buchdiskussionen und kultureller Aktivitäten.",
+          "ar": "تنظيم مناقشات شهرية للكتب وأنشطة ثقافية."
+        }
+      },
+      "highlights": []
+    },
+    {
+      "organization": {
+        "lang": {
+          "en": "Shaghlni",
+          "de": "Shaghlni",
+          "ar": "شغلني"
+        }
+      },
+      "position": {
+        "lang": {
+          "en": "Coordinator",
+          "de": "Koordinator",
+          "ar": "منسق"
+        }
+      },
+      "website": "https://www.facebook.com/Build.your.career.path/",
+      "startDate": "2017",
+      "endDate": "2019",
+      "location": {
+        "lang": {
+          "en": "Damascus, Syria",
+          "de": "Damaskus, Syrien",
+          "ar": "دمشق، سوريا"
+        }
+      },
+      "summary": {
+        "lang": {
+          "en": "Linked employers to job-seekers through career fairs and networking events.",
+          "de": "Vermittlung zwischen Arbeitgebern und Arbeitssuchenden durch Karrieremessen und Netzwerkveranstaltungen.",
+          "ar": "ربط أصحاب العمل بالباحثين عن عمل من خلال معارض التوظيف وفعاليات التواصل."
+        }
+      },
+      "highlights": []
+    },
+    {
+      "organization": {
+        "lang": {
+          "en": "Compass",
+          "de": "Compass",
+          "ar": "بوصلة"
+        }
+      },
+      "position": {
+        "lang": {
+          "en": "Lecturer",
+          "de": "Dozent",
+          "ar": "محاضر"
+        }
+      },
+      "website": "",
+      "startDate": "2017",
+      "endDate": "2019",
+      "location": {
+        "lang": {
+          "en": "Damascus, Syria",
+          "de": "Damaskus, Syrien",
+          "ar": "دمشق، سوريا"
+        }
+      },
+      "summary": {
+        "lang": {
+          "en": "Provided academic guidance and introduction to different possible majors for recent graduates.",
+          "de": "Akademische Beratung und Einführung in verschiedene mögliche Studienfächer für Schulabsolventen.",
+          "ar": "تقديم التوجيه الأكاديمي والتعريف بالتخصصات الممكنة المختلفة للخريجين الجدد."
+        }
+      },
+      "highlights": []
+    }
+  ]
+}

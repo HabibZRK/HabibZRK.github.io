@@ -1,0 +1,63 @@
+/* ==========================================================================
+   DARK THEME
+   ========================================================================== */
+
+/* Color codes used for the theme */
+$gray                       : #7a8288;
+$dark-gray                  : mix(#000, $gray, 40%);
+$darker-gray                : mix(#000, $gray, 60%);
+$light-gray                 : mix(#fff, $gray, 50%);
+
+/* New darker tech-inspired color scheme */
+$background                 : #020617; /* Night sky deep blue */
+$background-light           : #06102a; /* Slightly lighter night blue */
+$background-lighter         : #0a1633; /* Lighter navy for contrast */
+$text                       : #e0e6f0; /* Very light blue-gray for readability */
+$link                       : #4fc3f7; /* Soft blue accent for links */
+$secondary-accent           : #7b68ee; /* Slate blue for accents (kept for contrast) */
+$tertiary-accent            : #00d364; /* Tech green accent */
+$link-dark                  : mix(#000, $link, 25%);
+$link-light                 : mix(#fff, $link, 25%);
+
+/* Color codes used for the site */
+$danger-color               : #ff5252; /* Vibrant red */
+$info-color                 : #00b7ff; /* Matching link color */
+$notice-color               : #7b68ee; /* Matching secondary accent */
+$success-color              : #00d364; /* Matching tertiary accent */
+$warning-color              : #ffab00; /* Amber warning */
+
+/* Other basic settings for the template */
+$border-radius              : 4px;
+$box-shadow                 : 0 1px 1px rgba(0, 0, 0, 0.125);
+$global-transition          : all 0.2s ease-in-out;
+$masthead-height            : 70px;
+$navicon-width              : 28px;
+$navicon-height             : 4px;
+$sidebar-link-max-width     : 250px;
+$sidebar-screen-min-width   : 1024px;
+
+/* Dark theme for the site */
+html[data-theme="dark"] {
+    --global-base-color                 : #{$background};
+    --global-bg-color                   : #{$background};
+    --global-footer-bg-color            : #{darken($background, 3%)};
+    --global-border-color               : #{$background-light};
+    --global-dark-border-color          : #{$background-lighter};
+    --global-code-background-color      : #{darken($background, 3%)};
+    --global-code-text-color            : #{$tertiary-accent};
+    --global-fig-caption-color          : #{$light-gray};
+    --global-link-color                 : #{$link};
+    --global-link-color-hover           : #{$secondary-accent};
+    --global-link-color-visited         : #{mix($link, $secondary-accent, 70%)};
+    --global-masthead-link-color        : #{$text};
+    --global-masthead-link-color-hover  : #{$link};
+    --global-text-color                 : #{$text};
+    --global-text-color-light           : #{darken($text, 15%)};
+    --global-thead-color                : #{$background-lighter};
+    --global-accent-color               : #{$secondary-accent};
+    --global-button-background          : #{$background-light};
+    --global-button-background-hover    : #{$secondary-accent};
+    --global-button-text                : #{$text};
+    --global-button-text-hover          : #ffffff;
+    --global-sidebar-active             : #{$tertiary-accent};
+}

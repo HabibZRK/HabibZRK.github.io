@@ -1,0 +1,43 @@
+/* Certificate Styles */
+.certificate-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 2em;
+}
+
+.certificate-item {
+  border: 1px solid #f2f3f3;
+  border-radius: 4px;
+  padding: 1em;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.125);
+  transition: box-shadow 0.3s;
+}
+
+.certificate-item:hover {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.certificate-title {
+  margin-top: 0;
+  font-size: 1.25em;
+}
+
+.certificate-meta {
+  font-size: 0.8em;
+  color: #7a8288;
+  margin-bottom: 0.5em;
+}
+
+.certificate-description {
+  font-size: 0.9em;
+  margin-bottom: 1em;
+}
+
+.certificate-subject {
+  display: inline-block;
+  background-color: #f8f9fa;
+  padding: 0.2em 0.5em;
+  border-radius: 3px;
+  font-size: 0.8em;
+  margin-bottom: 0.5em;
+}
