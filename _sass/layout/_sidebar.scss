@@ -61,7 +61,7 @@
   img {
     width: 100%;
   }
-}
+// removed extra closing brace causing SCSS error
 
 .sidebar__right {
   margin-bottom: 1em;
@@ -189,6 +189,7 @@
   }
 }
 
+// Dropdown is hidden by default
 .author__urls {
   display: none;
   position: absolute;
@@ -202,6 +203,13 @@
   z-index: -1;
   box-shadow: 0 0 10px rgba(#000, 0.25);
   cursor: default;
+}
+
+// When open (display: block), ensure dropdown is on top
+.author__urls[style*="display: block"],
+.author__urls.open {
+  z-index: 110000 !important;
+}
 
   @include breakpoint($large) {
     display: block;
