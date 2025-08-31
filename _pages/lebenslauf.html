@@ -90,11 +90,17 @@ lang: de
         <p class="cv-summary">{{ job.summary.lang.de }}</p>
         
         {% if job.highlights and job.highlights.size > 0 %}
-        <ul class="cv-highlights">
-          {% for highlight in job.highlights limit:8 %}
-          <li>{{ highlight.lang.de }}</li>
-          {% endfor %}
-        </ul>
+        <div class="cv-highlights-section">
+          <button class="cv-show-highlights-btn" onclick="toggleHighlights(this)">
+            <span class="btn-text">Highlights anzeigen</span>
+            <span class="btn-arrow">▼</span>
+          </button>
+          <ul class="cv-highlights" style="display: none;">
+            {% for highlight in job.highlights limit:8 %}
+            <li>{{ highlight.lang.de }}</li>
+            {% endfor %}
+          </ul>
+        </div>
         {% endif %}
         
         {% if job.projectLinks and job.projectLinks.size > 0 %}
@@ -788,6 +794,41 @@ body {
   font-weight: bold;
 }
 
+/* Highlights toggle button */
+.cv-highlights-section {
+  margin-top: 0.75rem;
+}
+
+.cv-show-highlights-btn {
+  background: none;
+  border: 1px solid var(--cv-border-color);
+  color: var(--cv-primary-color);
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.2s ease;
+  margin-bottom: 0.5rem;
+}
+
+.cv-show-highlights-btn:hover {
+  background: var(--cv-bg-accent);
+  border-color: var(--cv-primary-color);
+}
+
+.cv-show-highlights-btn .btn-arrow {
+  font-size: 0.7rem;
+  transition: transform 0.2s ease;
+}
+
+.cv-show-highlights-btn.expanded .btn-arrow {
+  transform: rotate(180deg);
+}
+
 /* Skills Enhancement */
 
 /* --- More Compact Skills Section --- */
@@ -1286,6 +1327,42 @@ body {
 .cv-item:nth-child(4) { animation-delay: 0.4s; }
 .cv-item:nth-child(5) { animation-delay: 0.5s; }
 </style>
+
+<script>
+function toggleHighlights(button) {
+  const highlightsList = button.nextElementSibling;
+  const btnText = button.querySelector('.btn-text');
+  const btnArrow = button.querySelector('.btn-arrow');
+  
+  if (highlightsList.style.display === 'none') {
+    highlightsList.style.display = 'block';
+    btnText.textContent = 'Highlights verbergen';
+    button.classList.add('expanded');
+  } else {
+    highlightsList.style.display = 'none';
+    btnText.textContent = 'Highlights anzeigen';
+    button.classList.remove('expanded');
+  }
+}
+
+// Function for references toggle (existing functionality)
+function toggleReferences() {
+  const refsContainer = document.querySelector('.cv-references-container');
+  const toggleBtn = document.querySelector('.cv-toggle-btn');
+  const arrow = toggleBtn.querySelector('.cv-toggle-arrow');
+  const label = toggleBtn.querySelector('.cv-toggle-label');
+  
+  if (refsContainer.style.display === 'none' || !refsContainer.style.display) {
+    refsContainer.style.display = 'block';
+    label.textContent = 'Referenzen verbergen';
+    arrow.style.transform = 'rotate(90deg)';
+  } else {
+    refsContainer.style.display = 'none';
+    label.textContent = 'Referenzen anzeigen';
+    arrow.style.transform = 'rotate(0deg)';
+  }
+}
+</script>
 
 <!-- Add Font Awesome for icons -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
