@@ -1138,5 +1138,23 @@
       },
       "highlights": []
     }
+  ],
+  "badges": [
+    {
+      "title": "Erasmus+ Virtual Exchange: Cultural Encounters 2019: Dialogue",
+      "embed": "<iframe frameborder=\"0\" scrolling=\"no\" src=\"https://openbadgepassport.com/app/badge/info/193066/pic/embed\" width=\"200\" height=\"270\"></iframe>"
+    },
+    {
+      "title": "Erasmus+ Virtual Exchange: Cultural Encounters 2019: Assignment",
+      "embed": "<iframe frameborder=\"0\" scrolling=\"no\" src=\"https://openbadgepassport.com/app/badge/info/193060/pic/embed\" width=\"200\" height=\"270\"></iframe>"
+    },
+    {
+      "title": "Career Essentials in Generative AI",
+      "embed": "<div data-iframe-width=\"150\" data-iframe-height=\"270\" data-share-badge-id=\"99a0c141-be36-41d3-a873-fb42cba9f348\" data-share-badge-host=\"https://www.credly.com\"></div>"
+    },
+    {
+      "title": "Career Essentials in Data Analysis",
+      "embed": "<div data-iframe-width=\"150\" data-iframe-height=\"270\" data-share-badge-id=\"9e9bb033-8e95-44bd-ba05-4a9a2b13a9c1\" data-share-badge-host=\"https://www.credly.com\"></div>"
+    }
   ]
 }
