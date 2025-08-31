@@ -13,28 +13,73 @@ html {
   /* Set reasonable maximum width to prevent excessive horizontal stretching */
   max-width: 100vw;
   overflow-x: hidden;
+  /* Enforce minimum font size globally */
+  font-size: max(16px, 1rem);
+  /* Prevent text from scaling below readable size */
+  -webkit-text-size-adjust: none !important;
+  -ms-text-size-adjust: none !important;
+  text-size-adjust: none !important;
 }
 
 body {
-  /* Maximum width-to-height ratio constraint */
-  max-width: min(100vw, 200vh); /* Maximum width is 200% of viewport height */
+  /* More aggressive width-to-height ratio constraint */
+  max-width: min(100vw, 150vh); /* Maximum width is 150% of viewport height (3:2 ratio) */
+  min-width: 320px; /* Minimum width for mobile */
   margin: 0 auto; /* Center the content */
   
-  /* Alternative approach: Fixed maximum width */
-  /* max-width: 1920px; */ /* Uncomment for fixed max width instead */
+  /* Enforce minimum font sizes globally */
+  font-size: max(16px, 1rem) !important;
   
   /* Prevent horizontal overflow */
   overflow-x: hidden;
 }
 
-/* Container constraints */
+/* Force minimum font sizes on all text elements */
+* {
+  font-size: max(inherit, 14px) !important;
+}
+
+h1, .page__title {
+  font-size: max(2rem, 28px) !important;
+}
+
+h2 {
+  font-size: max(1.5rem, 22px) !important;
+}
+
+h3 {
+  font-size: max(1.25rem, 18px) !important;
+}
+
+p, li, span, a, div {
+  font-size: max(1rem, 16px) !important;
+}
+
+/* Container constraints for all layouts */
 .masthead, 
 #main, 
 .page, 
-.archive {
-  max-width: min(100%, 200vh);
+.archive,
+.sidebar {
+  max-width: min(100%, 150vh);
   margin-left: auto;
   margin-right: auto;
+}
+
+/* Specific constraints for archive layout */
+.archive {
+  min-width: 320px;
+  max-width: min(100%, 150vh);
+}
+
+/* Force minimum sizes on CV pages and all content */
+.cv-container,
+.book-grid,
+.certificate-grid,
+.book-item,
+.certificate-item {
+  min-width: 280px;
+  font-size: max(1rem, 16px) !important;
 }
 
 @import

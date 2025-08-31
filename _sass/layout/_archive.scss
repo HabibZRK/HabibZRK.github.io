@@ -5,17 +5,23 @@
 .archive {
   margin-bottom: 2em;
 
+  /* Zoom-out protection for archive layout */
+  min-width: 320px !important;
+  max-width: min(100vw, 150vh) !important;
+  font-size: max(1rem, 16px) !important;
+
   @include breakpoint($medium) {
     @include span(12 of 12);
   }
 
   @include breakpoint($large) {
-    @include span(10 of 12 last);
+    @include span(9 of 12 last);
     @include prefix(0.5 of 12);
   }
 
   a {
     text-decoration: underline;
+    font-size: max(1rem, 16px) !important;
 
     &:hover {
       text-decoration: underline;
@@ -30,7 +36,7 @@
 .archive__subtitle {
   margin: 1.414em 0 0;
   padding-bottom: 0.5em;
-  font-size: $type-size-5;
+  font-size: max($type-size-5, 18px) !important;
   color: var(--global-text-color-light);
   border-bottom: 1px solid var(--global-border-color);
 
@@ -42,6 +48,7 @@
 .archive__item-title {
   margin-bottom: 0.25em;
   font-family: $sans-serif-narrow;
+  font-size: max($type-size-5, 18px) !important;
 
   a + a {
     opacity: 0.5;
@@ -59,7 +66,7 @@
 
 .archive__item-excerpt {
   margin-top: 0;
-  font-size: $type-size-6;
+  font-size: max($type-size-6, 14px) !important;
 
   & + p {
     text-indent: 0;

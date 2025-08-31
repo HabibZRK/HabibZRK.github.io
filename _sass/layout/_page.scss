@@ -11,14 +11,19 @@ Website/* ======================================================================
   animation: intro 0.3s both;
   animation-delay: 0.35s;
 
+  /* Zoom-out protection for main content */
+  min-width: 320px !important;
+  max-width: min(100vw, 150vh) !important;
+  font-size: max(1rem, 16px) !important;
+
   @include breakpoint($x-large) {
-    max-width: $x-large;
+    max-width: min($x-large, 150vh);
   }
 }
 
 .page {
   @include breakpoint($large) {
-    @include span(10 of 12 last);
+    @include span(9 of 12 last);
     @include prefix(0.5 of 12);
     @include suffix(2 of 12);
   }
@@ -37,6 +42,7 @@ Website/* ======================================================================
 .page__title {
   margin-top: 0;
   line-height: 1;
+  font-size: max(2rem, 28px) !important;
 
   & + .page__meta {
     margin-top: -0.5em;
@@ -45,7 +51,7 @@ Website/* ======================================================================
 
 .page__lead {
   font-family: $global-font-family;
-  font-size: $type-size-4;
+  font-size: max($type-size-4, 20px) !important;
 }
 
 .page__content {

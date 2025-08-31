@@ -25,10 +25,21 @@
     overflow-y: auto;               // Add scrollbar if the sidebar is too long
     position: fixed;
     padding-top: $masthead-height;
+    
+    /* Add unified box styling only when sidebar is positioned on the side */
+    background: var(--global-bg-color);
+    border: 1px solid var(--global-border-color);
+    border-radius: $border-radius;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    padding-bottom: 1.5em;
+    box-shadow: $box-shadow;
+    margin-left: 1em;
+    margin-right: 1em;
   }
 
   @include breakpoint($large) {
-    @include span(2 of 12);
+    @include span(3 of 12);
     opacity: 1;
     -webkit-transition: opacity 0.2s ease-in-out;
             transition: opacity 0.2s ease-in-out;
@@ -39,7 +50,7 @@
   }
 
   @include breakpoint($x-large) {
-    max-width: $sidebar-link-max-width;
+    max-width: 350px; /* Increased from $sidebar-link-max-width (250px) to match bio text width */
     padding-right: 0;
   }
 
@@ -94,6 +105,8 @@
     display: block;
     width: auto;
     height: auto;
+    text-align: center; /* Center the avatar within the sidebar */
+    margin-bottom: 1em;
   }
 
   img {
@@ -103,6 +116,8 @@
     @include breakpoint($large) {
       padding: 0.3125rem;
       border: 1px solid var(--global-border-color);
+      margin: 0 auto; /* Center the image */
+      display: block;
     }
   }
 }
@@ -119,6 +134,8 @@
     width: 100%;
     padding-left: 0;
     padding-right: 0;
+    max-width: none; /* Ensure content uses full sidebar width */
+    text-align: center; /* Center all content within the sidebar box */
   }
 }
 
@@ -128,6 +145,7 @@
   @include breakpoint($large) {
     margin-top: 10px;
     margin-bottom: 10px;
+    text-align: center; /* Center the name in the sidebar box */
   }
 }
 .sidebar .author__name {
@@ -154,10 +172,14 @@
 .author__bio {
   margin: 0;
   text-align: center;
+  width: 100%; /* Ensure bio text uses full sidebar width */
+  max-width: none; /* Remove any width constraints */
 
   @include breakpoint($large) {
     margin-top: 10px;
     margin-bottom: 20px;
+    text-align: center; /* Keep centered for unified box appearance */
+    padding: 0 10px; /* Add some padding for better text appearance */
   }
 }
 
@@ -178,6 +200,7 @@
 
   @include breakpoint($large) {
     display: block;
+    text-align: center; /* Center the connect button and links */
   }
 
   button {

@@ -1,0 +1,26 @@
+{% comment %}
+  Page taxonomy (categories and tags) - currently not used on this site
+  This file exists to prevent Jekyll errors when single.html layout includes it
+{% endcomment %}
+
+{% if page.categories %}
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].categories_label | default: "Categories:" }} </strong>
+    <span itemprop="about">
+      {% for category_word in page.categories %}
+        <a href="{{ category_word | slugify | prepend: path_type | prepend: site.category_archive.path | prepend: site.url | prepend: site.baseurl }}" class="page__taxonomy-item" rel="tag">{{ category_word }}</a>{% unless forloop.last %}<span class="sep">, </span>{% endunless %}
+      {% endfor %}
+    </span>
+  </p>
+{% endif %}
+
+{% if page.tags %}
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].tags_label | default: "Tags:" }} </strong>
+    <span itemprop="keywords">
+      {% for tag_word in page.tags %}
+        <a href="{{ tag_word | slugify | prepend: path_type | prepend: site.tag_archive.path | prepend: site.url | prepend: site.baseurl }}" class="page__taxonomy-item" rel="tag">{{ tag_word }}</a>{% unless forloop.last %}<span class="sep">, </span>{% endunless %}
+      {% endfor %}
+    </span>
+  </p>
+{% endif %}
