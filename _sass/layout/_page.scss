@@ -248,36 +248,6 @@ Website/* ======================================================================
 
 
 /*
-   Page taxonomy
-   ========================================================================== */
-
-.page__taxonomy {
-  .sep {
-    display: none;
-  }
-
-  strong {
-    margin-right: 10px;
-  }
-}
-
-.page__taxonomy-item {
-  display: inline-block;
-  margin-right: 0.3125rem;
-  margin-bottom: 0.5rem;
-  padding: 0.3125rem 0.625rem;
-  text-decoration: none;
-  border: 1px solid var(--global-border-color);
-  border-radius: $border-radius;
-
-  &:hover {
-    text-decoration: none;
-    color: var(--global-link-color-hover);
-  }
-}
-
-
-/*
    Comments
    ========================================================================== */
 

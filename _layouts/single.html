@@ -80,7 +80,7 @@ layout: default
         {% if site.data.ui-text[site.locale].meta_label %}
           <h4 class="page__meta-title">{{ site.data.ui-text[site.locale].meta_label }}</h4>
         {% endif %}
-        {% include page__taxonomy.html %}
+        {% comment %}<!-- Taxonomy removed - not needed for portfolio site -->{% endcomment %}
       </footer>
 
       {% if page.share %}{% include social-share.html %}{% endif %}
