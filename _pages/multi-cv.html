@@ -156,9 +156,9 @@ document.addEventListener('DOMContentLoaded', function() {
         jobDiv.innerHTML = `
           <div class="cv-item-header">
             <h3>${position} | <span class="cv-company">${company}</span></h3>
-            <span class="cv-date">${dateRange}</span>
           </div>
           <div class="cv-item-subheader">
+            <span class="cv-date-outside">${dateRange}</span>
             <span class="cv-location"><i class="fas fa-map-marker-alt"></i> ${location}</span>
             ${job.website ? `<span class="cv-website"><i class="fas fa-globe"></i> <a href="${job.website}" target="_blank">${job.website.replace('https://', '')}</a></span>` : ''}
           </div>
@@ -245,9 +245,9 @@ document.addEventListener('DOMContentLoaded', function() {
         eduDiv.innerHTML = `
           <div class="cv-item-header">
             <h3>${area}</h3>
-            <span class="cv-date">${dateRange}</span>
           </div>
           <div class="cv-item-subheader">
+            <span class="cv-date-outside">${dateRange}</span>
             <span class="cv-institution">${institution}</span>
             ${edu.gpa ? `<span class="cv-gpa">GPA: ${edu.gpa}</span>` : ''}
           </div>
@@ -276,9 +276,9 @@ document.addEventListener('DOMContentLoaded', function() {
         volDiv.innerHTML = `
           <div class="cv-item-header">
             <h3>${position} | ${organization}</h3>
-            <span class="cv-date">${dateRange}</span>
           </div>
           <div class="cv-item-subheader">
+            <span class="cv-date-outside">${dateRange}</span>
             <span class="cv-location"><i class="fas fa-map-marker-alt"></i> ${location}</span>
             ${vol.website ? `<span class="cv-website"><i class="fas fa-globe"></i> <a href="${vol.website}" target="_blank">${vol.website.replace('https://', '')}</a></span>` : ''}
           </div>
@@ -423,7 +423,7 @@ document.addEventListener('DOMContentLoaded', function() {
       contentWrapper.appendChild(section);
     }
     
-    // References
+    // References (toggleable)
     if (data.references && data.references.length > 0) {
       const sectionLabels = {
         'en': 'References',
@@ -431,6 +431,15 @@ document.addEventListener('DOMContentLoaded', function() {
         'ar': 'المراجع'
       };
       const section = createSection(sectionLabels[lang], 'references');
+  // Toggle button with arrow
+  const toggleBtn = document.createElement('button');
+  toggleBtn.className = 'cv-toggle-btn';
+  toggleBtn.innerHTML = `<span class="cv-toggle-arrow" style="display:inline-block;transition:transform 0.2s;">&#9654;</span> <span class="cv-toggle-label">Show References</span>`;
+  toggleBtn.style.margin = '1rem 0 0.5rem 0';
+  section.appendChild(toggleBtn);
+      // References container
+      const refsContainer = document.createElement('div');
+      refsContainer.style.display = 'none';
       data.references.forEach(reference => {
         const refDiv = document.createElement('div');
         refDiv.className = 'cv-reference';
@@ -448,15 +457,29 @@ document.addEventListener('DOMContentLoaded', function() {
           ${reference.affiliation ? `<div class="cv-reference-affiliation">${reference.affiliation}</div>` : ''}
           ${reference.email ? `<div class="cv-reference-email">${reference.email}</div>` : ''}
         `;
-        section.appendChild(refDiv);
+        refsContainer.appendChild(refDiv);
       });
       // Add reference note if available
       if (data.references_note && data.references_note.lang && data.references_note.lang[lang]) {
         const noteDiv = document.createElement('div');
         noteDiv.className = 'cv-reference-note';
         noteDiv.innerHTML = `📧 <strong>${data.references_note.lang[lang]}</strong>`;
-        section.appendChild(noteDiv);
+        refsContainer.appendChild(noteDiv);
       }
+      section.appendChild(refsContainer);
+      toggleBtn.onclick = function() {
+        const arrow = toggleBtn.querySelector('.cv-toggle-arrow');
+        const label = toggleBtn.querySelector('.cv-toggle-label');
+        if (refsContainer.style.display === 'none') {
+          refsContainer.style.display = '';
+          arrow.style.transform = 'rotate(90deg)';
+          label.textContent = 'Hide References';
+        } else {
+          refsContainer.style.display = 'none';
+          arrow.style.transform = 'rotate(0deg)';
+          label.textContent = 'Show References';
+        }
+      };
       contentWrapper.appendChild(section);
     }
     

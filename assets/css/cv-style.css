@@ -1,3 +1,69 @@
+/* Toggle Button for References */
+.cv-toggle-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  background: var(--cv-bg-accent, #e6f0fa);
+  color: var(--cv-primary-color, #2563eb);
+  border: none;
+  border-radius: 8px;
+  font-size: 1.08rem;
+  font-weight: 600;
+  padding: 0.5em 1.2em;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(30,40,80,0.07);
+  transition: background 0.18s, color 0.18s, box-shadow 0.18s;
+  margin-bottom: 0.5em;
+}
+.cv-toggle-btn:hover, .cv-toggle-btn:focus {
+  background: var(--cv-primary-color, #2563eb);
+  color: #fff;
+  box-shadow: 0 4px 16px rgba(30,40,80,0.13);
+}
+.cv-toggle-arrow {
+  font-size: 1.2em;
+  transition: transform 0.2s;
+}
+  --cv-date-bg-light: #e0f2fe;
+  --cv-date-color-light: #0369a1;
+  --cv-date-bg-dark: #1e293b;
+  --cv-date-color-dark: #38bdf8;
+html[data-theme="dark"] {
+  --cv-date-bg: var(--cv-date-bg-dark);
+  --cv-date-color: var(--cv-date-color-dark);
+}
+
+:root {
+  --cv-date-bg: var(--cv-date-bg-light);
+  --cv-date-color: var(--cv-date-color-light);
+}
+/* Date outside entry box for work, education, volunteering */
+/* Date outside entry box for work, education, volunteering */
+.cv-date-outside {
+  color: var(--cv-date-color);
+  font-weight: 700;
+  font-size: 1.18rem;
+  font-style: italic;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 0.04em;
+  background: var(--cv-date-bg);
+  border-radius: 8px;
+  padding: 0.22em 1.1em;
+  margin-left: 1.1em;
+  margin-top: 0.2em;
+  display: inline-block;
+  vertical-align: middle;
+  box-shadow: 0 1px 6px rgba(14,165,233,0.07);
+  transition: background 0.2s, color 0.2s;
+}
+@media (max-width: 600px) {
+  .cv-date-outside {
+    display: block;
+    margin-left: 0;
+    margin-top: 0.5em;
+    text-align: left;
+  }
+}
 /* CV Template Styles */
 .cv-container {
   max-width: 1000px;
