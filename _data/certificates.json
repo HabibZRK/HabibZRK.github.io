@@ -31,51 +31,26 @@
     "subject": "Software",
     "star": 1
   },
+
   {
-    "title": "SOLIDWORKS Foundations: Sketching and Extrusion",
-    "date": "2025-08-24",
+    "title": "SolidWorks 3D CAD Career Path",
+    "date": "2025-08-30",
     "organization": "Dassault Systèmes",
     "organization_url": "https://www.coursera.org/learner/habib-zreik",
     "logo": "/images/organization/dassault.png",
-    "description": "Foundation course covering basic SOLIDWORKS sketching techniques and extrusion operations for 3D modeling.",
-    "url": "/files/certificates/Engineering/CAD/SOLIDWORKS/001_SOLIDWORKS Foundations_Sketching and Extrusion.pdf",
-    "external_url": "https://coursera.org/share/4b76b18833752cb24a052b941e6b089f",
+  "description": "Has successfully completed the online, non-credit Specialization SOLIDWORKS 3D CAD for Education.\n\nCourses: SOLIDWORKS Foundations: Sketching and Extrusion; SOLIDWORKS Advanced Sketching and Reference Geometry; SOLIDWORKS Revolution and Cut Features; SOLIDWORKS Feature Patterns and Sweeps; SOLIDWORKS Assemblies and Exam Level Part Modeling.\n\nIn this Specialization, learners developed and honed essential skills for today's dynamic workforce, including 3D modeling, sketching, feature application, pattern creation, and assembly design using SOLIDWORKS. Through hands-on projects, they gained practical experience in solving real-world CAD challenges, preparing them for industry applications.",
+    "url": "/files/certificates/Engineering/CAD/SolidWorks_3d_CAD_Career.pdf",
     "subject": "Engineering",
     "star": 1
   },
   {
-    "title": "SOLIDWORKS Advanced Sketching and Reference Geometry",
-    "date": "2025-08-24",
+    "title": "xDesign 3D CAD Career Path",
+    "date": "2025-08-30",
     "organization": "Dassault Systèmes",
     "organization_url": "https://www.coursera.org/learner/habib-zreik",
     "logo": "/images/organization/dassault.png",
-    "description": "Advanced course covering complex sketching techniques and reference geometry creation in SOLIDWORKS.",
-    "url": "/files/certificates/Engineering/CAD/SOLIDWORKS/002_SOLIDWORKS Advanced Sketching and Reference.pdf",
-    "external_url": "https://coursera.org/share/09bdc6b4923f80d0a74e02cc41f6f1bd",
-    "subject": "Engineering",
-    "star": 1
-  },
-  {
-    "title": "xDesign Foundations: Sketching and Extrusion",
-    "date": "2025-08-24", 
-    "organization": "Dassault Systèmes",
-    "organization_url": "https://www.coursera.org/learner/habib-zreik",
-    "logo": "/images/organization/dassault.png",
-    "description": "Foundation course covering basic xDesign sketching techniques and extrusion operations for cloud-based 3D modeling.",
-    "url": "/files/certificates/Engineering/CAD/xDesign/001_xDesign Foundations_Sketching and Extrusion.pdf",
-    "external_url": "https://coursera.org/share/65496daff0392a891b14aadd989a488b",
-    "subject": "Engineering",
-    "star": 1
-  },
-  {
-    "title": "xDesign Advanced Sketching and Reference Geometry",
-    "date": "2025-08-24", 
-    "organization": "Dassault Systèmes",
-    "organization_url": "https://www.coursera.org/learner/habib-zreik",
-    "logo": "/images/organization/dassault.png",
-    "description": "Advanced course covering complex sketching techniques and reference geometry creation in xDesign cloud platform.",
-    "url": "/files/certificates/Engineering/CAD/xDesign/002_xDesign Advanced Sketching and Reference.pdf",
-    "external_url": "https://coursera.org/share/ad57a225c19b1e54cdda5b1c477ca03b",
+  "description": "Has successfully completed the online, non-credit Specialization SOLIDWORKS xDesign for Education.\n\nCourses: xDesign Foundations: Sketching and Extrusion; xDesign Advanced Sketching and Reference Geometry; xDesign Revolution and Cut Features; xDesign Feature Patterns and Sweeps; xDesign Assemblies and Exam Level Part Modeling.\n\nIn this Specialization, learners developed and honed essential skills for today's dynamic workforce, including 3D modeling, sketching, feature application, pattern creation, and assembly design using SOLIDWORKS xDesign. Through hands-on projects, they gained practical experience in solving real-world CAD challenges, preparing them for industry applications.",
+    "url": "/files/certificates/Engineering/CAD/xDesign_3d_CAD_Career.pdf",
     "subject": "Engineering",
     "star": 1
   },
@@ -225,5 +200,15 @@
     "description": "Certificate for completing the Computer Science for Mechanical Engineering course, including computer architecture, simple data modeling, algorithms, and OOP.",
     "url": "/files/certificates/Computer Science/Computer Science for Mechanical Engineering.pdf",
     "subject": "Software"
+  },
+  {
+    "title": "Publication Days Workshop Attendance",
+    "date": "2025-08-29",
+    "organization": "Universität Duisburg-Essen",
+    "organization_url": "https://www.uni-due.de/",
+    "logo": "/images/organization/ude.jpg",
+    "description": "Attendance certificate for the Publication Days Workshop at Universität Duisburg-Essen. Topics included: Publishing in Open Access, choosing a publisher and avoiding predatory publishing, and understanding the peer review process.",
+    "url": "/files/certificates/Research/uni-due-publication-days-workshop.pdf",
+    "subject": "Miscellaneous"
   }
 ]
