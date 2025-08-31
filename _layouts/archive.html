@@ -12,13 +12,20 @@ layout: default
   {% endunless %}
 {% endif %}
 
-<div id="main" role="main">
-  {% include sidebar.html %}
 
-  <div class="archive">
-    {% unless page.header.overlay_color or page.header.overlay_image %}
-      <h1 class="page__title">{{ page.title }}</h1>
-    {% endunless %}
+{% if page.layout == "archive" and page.path contains "multi-cv.html" %}
+  <div id="main" role="main" style="max-width:100vw;padding:0;margin:0;">
     {{ content }}
   </div>
-</div>
+{% else %}
+  <div id="main" role="main">
+    {% include sidebar.html %}
+
+    <div class="archive">
+      {% unless page.header.overlay_color or page.header.overlay_image %}
+        <h1 class="page__title">{{ page.title }}</h1>
+      {% endunless %}
+      {{ content }}
+    </div>
+  </div>
+{% endif %}
