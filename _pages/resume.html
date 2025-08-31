@@ -1046,13 +1046,16 @@ body {
 /* Language Selector Enhancement */
 .title-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   margin-bottom: 2rem;
   padding: 0 2rem;
+  position: relative;
 }
 
 .controls-container {
+  position: absolute;
+  right: 2rem;
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -1225,13 +1228,16 @@ body {
   }
   .title-container {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 1rem;
     padding: 0 1rem;
+    position: static;
   }
   .controls-container {
+    position: static;
     align-self: stretch;
     justify-content: space-between;
+    right: auto;
   }
   .page-title {
     font-size: 2.25rem;
