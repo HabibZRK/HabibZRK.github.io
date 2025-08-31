@@ -19,33 +19,19 @@
   color: #2a7ae2;
 }
 
-.cv-contact-info {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  margin-bottom: 0.5rem;
-}
 
-.cv-contact-item {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
+/* Responsive horizontal grid for all main sections */
+.cv-work, .cv-education, .cv-volunteering {
+  display: block;
 }
-
-.cv-profiles {
-  display: flex;
-  gap: 1rem;
-  margin-top: 0.5rem;
+.cv-work .cv-item, .cv-education .cv-item, .cv-volunteering .cv-item {
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  box-sizing: border-box;
 }
-
-.cv-profile-item {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.cv-profile-item a {
-  color: #2a7ae2;
   text-decoration: none;
 }
 
@@ -59,23 +45,54 @@
 }
 
 .cv-section h2 {
-  border-bottom: 1px solid #f2f2f2;
-  padding-bottom: 0.5rem;
-  margin-bottom: 1rem;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  color: #2a7ae2;
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 2.5rem 0 1.5rem 0;
+  position: relative;
+  padding: 1.2rem 0;
+  background: linear-gradient(90deg, #1e40af 0%, #6366f1 100%);
+  box-shadow: 0 8px 32px -8px rgba(30,40,80,0.18);
+  z-index: 10;
+  width: 100%;
+  border-radius: 0;
+  text-align: center;
+  letter-spacing: 0.01em;
+  display: block;
+  overflow: visible;
 }
 
-.cv-section h2 i {
-  color: #666;
+.cv-section h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 5px;
+  background: rgba(255,255,255,0.35);
+  border-radius: 2px;
+}
 }
 
 /* Item Styles */
 .cv-item {
   margin-bottom: 1.5rem;
+  width: 98%;
+  min-width: 520px;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
 }
+    bottom: 0.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 5px;
+    background: rgba(255,255,255,0.35);
+    border-radius: 2px;
 
 .cv-item-header {
   display: flex;

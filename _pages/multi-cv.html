@@ -165,18 +165,33 @@ document.addEventListener('DOMContentLoaded', function() {
           <p class="cv-summary">${summary}</p>
         `;
         
-        // Add highlights
+        // Add highlights with 'View more' if too long
         if (job.highlights && job.highlights.length > 0) {
           const highlightsList = document.createElement('ul');
           highlightsList.className = 'cv-highlights';
-          
-          job.highlights.forEach(highlight => {
+          const maxVisible = 8;
+          let isExpanded = false;
+          // Add first 8 highlights
+          job.highlights.forEach((highlight, idx) => {
             const li = document.createElement('li');
             li.textContent = highlight.lang[lang];
+            if (idx >= maxVisible) li.style.display = 'none';
             highlightsList.appendChild(li);
           });
-          
           jobDiv.appendChild(highlightsList);
+          if (job.highlights.length > maxVisible) {
+            const viewMoreBtn = document.createElement('button');
+            viewMoreBtn.className = 'cv-view-more-btn';
+            viewMoreBtn.textContent = '+ View more';
+            viewMoreBtn.onclick = function() {
+              isExpanded = !isExpanded;
+              highlightsList.querySelectorAll('li').forEach((li, idx) => {
+                if (idx >= maxVisible) li.style.display = isExpanded ? '' : 'none';
+              });
+              viewMoreBtn.textContent = isExpanded ? '- View less' : '+ View more';
+            };
+            jobDiv.appendChild(viewMoreBtn);
+          }
         }
         
         // Add project links if any
@@ -213,32 +228,20 @@ document.addEventListener('DOMContentLoaded', function() {
       contentWrapper.appendChild(workSection);
     }
     
-    // Education and Volunteering in a two-column container
+    // Education as a full-width section
     if (data.education && data.education.length > 0) {
-      // Create a container for education and volunteering columns
-      const eduVolContainer = document.createElement('div');
-      eduVolContainer.className = 'cv-two-column-container';
-      
-      // Education Column
-      const eduColumn = document.createElement('div');
-      eduColumn.className = 'cv-column education-column';
-      
       const eduSectionLabels = {
         'en': 'Education',
         'de': 'Ausbildung',
         'ar': 'التعليم'
       };
-      
       const eduSection = createSection(eduSectionLabels[lang], 'education');
-      
       data.education.forEach(edu => {
         const eduDiv = document.createElement('div');
         eduDiv.className = 'cv-item';
-        
         const dateRange = formatDateRange(edu.startDate, edu.endDate, lang);
         const institution = edu.institution.lang[lang];
         const area = edu.area.lang[lang];
-        
         eduDiv.innerHTML = `
           <div class="cv-item-header">
             <h3>${area}</h3>
@@ -249,70 +252,68 @@ document.addEventListener('DOMContentLoaded', function() {
             ${edu.gpa ? `<span class="cv-gpa">GPA: ${edu.gpa}</span>` : ''}
           </div>
         `;
-        
         eduSection.appendChild(eduDiv);
       });
-      
-      eduColumn.appendChild(eduSection);
-      eduVolContainer.appendChild(eduColumn);
-      
-      // Volunteering Experience Column
-      if (data.volunteering && data.volunteering.length > 0) {
-        const volColumn = document.createElement('div');
-        volColumn.className = 'cv-column volunteering-column';
-        
-        const volSectionLabels = {
-          'en': 'Volunteering',
-          'de': 'Ehrenamtliche Tätigkeit',
-          'ar': 'العمل التطوعي'
-        };
-        
-        const volSection = createSection(volSectionLabels[lang], 'volunteering');
-        
-        data.volunteering.forEach(vol => {
-          const volDiv = document.createElement('div');
-          volDiv.className = 'cv-item';
-          
-          const dateRange = formatDateRange(vol.startDate, vol.endDate, lang);
-          const organization = vol.organization.lang[lang];
-          const position = vol.position.lang[lang];
-          const location = vol.location.lang[lang];
-          const summary = vol.summary.lang[lang];
-          
-          volDiv.innerHTML = `
-            <div class="cv-item-header">
-              <h3>${position} | ${organization}</h3>
-              <span class="cv-date">${dateRange}</span>
-            </div>
-            <div class="cv-item-subheader">
-              <span class="cv-location"><i class="fas fa-map-marker-alt"></i> ${location}</span>
-              ${vol.website ? `<span class="cv-website"><i class="fas fa-globe"></i> <a href="${vol.website}" target="_blank">${vol.website.replace('https://', '')}</a></span>` : ''}
-            </div>
-            <p class="cv-summary">${summary}</p>
-          `;
-          
-          // Add highlights if any
-          if (vol.highlights && vol.highlights.length > 0) {
-            const highlightsList = document.createElement('ul');
-            highlightsList.className = 'cv-highlights';
-            
-            vol.highlights.forEach(highlight => {
-              const li = document.createElement('li');
-              li.textContent = highlight.lang[lang];
-              highlightsList.appendChild(li);
-            });
-            
-            volDiv.appendChild(highlightsList);
+      contentWrapper.appendChild(eduSection);
+    }
+
+    // Volunteering as a full-width section below education
+    if (data.volunteering && data.volunteering.length > 0) {
+      const volSectionLabels = {
+        'en': 'Volunteering',
+        'de': 'Ehrenamtliche Tätigkeit',
+        'ar': 'العمل التطوعي'
+      };
+      const volSection = createSection(volSectionLabels[lang], 'volunteering');
+      data.volunteering.forEach(vol => {
+        const volDiv = document.createElement('div');
+        volDiv.className = 'cv-item';
+        const dateRange = formatDateRange(vol.startDate, vol.endDate, lang);
+        const organization = vol.organization.lang[lang];
+        const position = vol.position.lang[lang];
+        const location = vol.location.lang[lang];
+        const summary = vol.summary.lang[lang];
+        volDiv.innerHTML = `
+          <div class="cv-item-header">
+            <h3>${position} | ${organization}</h3>
+            <span class="cv-date">${dateRange}</span>
+          </div>
+          <div class="cv-item-subheader">
+            <span class="cv-location"><i class="fas fa-map-marker-alt"></i> ${location}</span>
+            ${vol.website ? `<span class="cv-website"><i class="fas fa-globe"></i> <a href="${vol.website}" target="_blank">${vol.website.replace('https://', '')}</a></span>` : ''}
+          </div>
+          <p class="cv-summary">${summary}</p>
+        `;
+        // Add highlights with 'View more' if too long
+        if (vol.highlights && vol.highlights.length > 0) {
+          const highlightsList = document.createElement('ul');
+          highlightsList.className = 'cv-highlights';
+          const maxVisible = 8;
+          let isExpanded = false;
+          vol.highlights.forEach((highlight, idx) => {
+            const li = document.createElement('li');
+            li.textContent = highlight.lang[lang];
+            if (idx >= maxVisible) li.style.display = 'none';
+            highlightsList.appendChild(li);
+          });
+          volDiv.appendChild(highlightsList);
+          if (vol.highlights.length > maxVisible) {
+            const viewMoreBtn = document.createElement('button');
+            viewMoreBtn.className = 'cv-view-more-btn';
+            viewMoreBtn.textContent = '+ View more';
+            viewMoreBtn.onclick = function() {
+              isExpanded = !isExpanded;
+              highlightsList.querySelectorAll('li').forEach((li, idx) => {
+                if (idx >= maxVisible) li.style.display = isExpanded ? '' : 'none';
+              });
+              viewMoreBtn.textContent = isExpanded ? '- View less' : '+ View more';
+            };
+            volDiv.appendChild(viewMoreBtn);
           }
-          
-          volSection.appendChild(volDiv);
-        });
-        
-        volColumn.appendChild(volSection);
-        eduVolContainer.appendChild(volColumn);
-      }
-      
-      contentWrapper.appendChild(eduVolContainer);
+        }
+        volSection.appendChild(volDiv);
+      });
+      contentWrapper.appendChild(volSection);
     }
     
     // Skills
@@ -824,6 +825,11 @@ body {
 .cv-section {
   margin-bottom: 3rem;
   position: relative;
+  /* Remove top padding/margin to ensure first entry is flush with title */
+}
+.cv-section > .cv-item:first-of-type {
+  margin-top: 0;
+}
 }
 
 .cv-section-title {
@@ -831,9 +837,11 @@ body {
   font-size: 1.75rem;
   font-weight: 600;
   color: var(--cv-name-color);
-  margin-bottom: 2rem;
+  margin-bottom: 0;
   position: relative;
   padding-bottom: 0.75rem;
+  box-shadow: 0 6px 18px -8px rgba(30,40,80,0.18);
+  z-index: 2;
 }
 
 .cv-section-title::after {
@@ -850,9 +858,42 @@ body {
 /* Two-column layout enhancement */
 .cv-two-column-container {
   display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 0.5rem 0.5rem;
   margin-bottom: 3rem;
+  align-items: start;
+}
+.cv-column {
+  position: relative;
+  min-width: 0;
+}
+
+/* Make work experience entries wrap into rows as space allows */
+.cv-work .cv-item {
+  width: 100%;
+  min-width: 320px;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+.cv-work {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 0.5rem 0.5rem;
+}
+
+/* Make education and volunteering entries grid-responsive as well */
+.cv-education .cv-item,
+.cv-volunteering .cv-item {
+  width: 100%;
+  min-width: 320px;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+.cv-education,
+.cv-volunteering {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 0.5rem 0.5rem;
 }
 
 .cv-column {
@@ -861,8 +902,9 @@ body {
 
 /* Item Enhancement */
 .cv-item {
-  margin-bottom: 2rem;
-  padding: 1.5rem;
+  margin-bottom: 0.7rem;
+  margin-top: 0;
+  padding: 1.1rem 1.2rem;
   background: var(--cv-bg-primary);
   border-radius: 16px;
   border: 1px solid var(--cv-border-light);
