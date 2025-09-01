@@ -186,9 +186,9 @@
       },
       "summary": {
         "lang": {
-          "en": "Translated from English to Arabic",
-          "de": "Übersetzte vom Englischen ins Arabische",
-          "ar": "ترجمة من الإنجليزية إلى العربية"
+          "en": "English ⇔ Arabic Translation",
+          "de": "Englisch ⇔ Arabisch Übersetzung",
+          "ar": "ترجمة إنجليزي ⇔ عربي"
         }
       },
       "highlights": [
@@ -500,9 +500,9 @@
           "ar": "دوام كامل"
         }
       },
-      "startDate": "2021",
+      "startDate": "2023",
       "endDate": "present",
-      "gpa": "1.7 (current)",
+      "gpa": "2,1 (current)",
       "courses": []
     },
     {
@@ -517,7 +517,7 @@
         "lang": {
           "en": "Associate Degree in Computer Science",
           "de": "Associate Degree in Informatik",
-          "ar": "درجة مشارك في علوم الحاسوب"
+          "ar": "شهادة تحضيرية في علوم الحاسوب"
         }
       },
       "studyType": {
@@ -549,8 +549,8 @@
       },
       "studyType": {
         "lang": {
-          "en": "Distance learning",
-          "de": "Fernstudium",
+          "en": "Distance learning - Proctored Exams",
+          "de": "Fernstudium - Beaufsichtigte Prüfungen",
           "ar": "تعلم عن بعد"
         }
       },
@@ -658,7 +658,7 @@
         "lang": {
           "en": "Development & Collaboration Tools",
           "de": "Entwicklungs- & Kollaborationswerkzeuge",
-          "ar": "أدوات التطوير والتعاون"
+          "ar": "أدوات تطوير البرمجيات"
         }
       },
       "items": [
@@ -668,7 +668,7 @@
             "lang": {
               "en": "Linux terminal",
               "de": "Linux-Terminal",
-              "ar": "طرفية لينكس"
+              "ar": "Linux Terminal"
             }
           }, 
           "rating": 4 
@@ -716,7 +716,7 @@
             "lang": {
               "en": "Teamwork",
               "de": "Teamarbeit",
-              "ar": "العمل الجماعي"
+              "ar": "العمل ضمن فريق"
             }
           }, 
           "rating": 5 
@@ -726,7 +726,7 @@
             "lang": {
               "en": "Problem Solving",
               "de": "Problemlösung",
-              "ar": "حل المشكلات"
+              "ar": "التفكير النقدي"
             }
           }, 
           "rating": 5 
