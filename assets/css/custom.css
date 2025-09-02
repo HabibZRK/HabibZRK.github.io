@@ -1,19 +1,38 @@
 /* Custom styles for academic profile */
 
-/* Z-index fixes for dropdown menu layering */
+/* Z-index fixes for dropdown menu layering - STRONGER OVERRIDE */
 .author__urls,
 .author__urls.open,
-.author__urls[style*="display: block"] {
-  z-index: 110000 !important;
-  position: relative;
+.author__urls[style*="display: block"],
+.author__urls-wrapper .author__urls {
+  z-index: 999999 !important;
+  position: fixed !important;
 }
 
-/* Ensure page titles stay below dropdown */
+/* Force page titles to stay below dropdown with much lower z-index */
 .page__title,
 .archive__title,
-h1, h2, h3 {
-  position: relative;
-  z-index: 10 !important;
+h1, h2, h3,
+.masthead__inner-wrap,
+.masthead {
+  position: relative !important;
+  z-index: 1 !important;
+}
+
+/* Hide the dropdown arrow next to author name */
+.author__urls-wrapper button:after,
+.author__urls-wrapper button::after,
+.author__urls-wrapper .btn--inverse::after,
+.author__urls-wrapper .hidden-links:after {
+  display: none !important;
+  content: none !important;
+}
+
+/* Remove arrow from any toggle buttons */
+.hidden-links-toggle::after,
+.hidden-links-toggle:after {
+  display: none !important;
+  content: none !important;
 }
 
 /* Center author avatar and name */
@@ -28,6 +47,38 @@ h1, h2, h3 {
 .author__name, 
 .author__pronouns {
   text-align: center !important;
+}
+
+/* Fix contact info not loading on desktop - force proper rendering */
+.author__urls,
+.author__urls-wrapper,
+.sidebar .author__content {
+  transform: translateZ(0) !important; /* Force hardware acceleration */
+  will-change: auto !important;
+  backface-visibility: hidden !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  display: block !important;
+}
+
+/* Ensure contact info is visible on desktop from start */
+@media screen and (min-width: 64em) {
+  .author__urls {
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    position: static !important;
+    transform: none !important;
+  }
+  
+  .author__urls-wrapper {
+    display: block !important;
+  }
+  
+  /* Force repaint on page load */
+  .sidebar {
+    transform: translateZ(0);
+  }
 }
 
 /* Make changes for large screens too */
