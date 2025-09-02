@@ -189,21 +189,9 @@
   }
 }
 
-// Contact list responsive behaviour
+// Contact list responsive behaviour (desktop: always visible, no Connect button)
 .author__urls-wrapper { position: relative; margin-top: 1em; }
-
-// Mobile: collapsed by default
-@media screen and (max-width: 924px) { // one less than $large compile value 925
-  .author__connect-btn { display: inline-block; margin-bottom: .5em; }
-  .author__urls { display: none; }
-  .author__urls.open { display: block; }
-}
-
-// Desktop: always visible, hide button
-@media screen and (min-width: 925px) {
-  .author__connect-btn { display: none; }
-  .author__urls { display: block !important; }
-}
+.author__connect-btn { display: none !important; } // default hidden (desktop & large screens)
 
 .author__urls {
   list-style: none;
@@ -212,18 +200,23 @@
   font-family: $sans-serif;
   background: transparent;
 }
-
 .author__urls li { margin: 0 0 .35em; line-height: 1.4; }
 .author__urls a { text-decoration: none; font-size: $type-size-6; }
 .author__urls a:hover { text-decoration: underline; }
 
-/* Mobile layout: place Connect button (wrapper) in same row as avatar + content */
-@media screen and (max-width: 924px) {
+// Mobile & tablet (<1024px): show button, collapse list until opened
+@media screen and (max-width: 1023px) {
   [itemscope][itemtype="http://schema.org/Person"] { display: table; width: 100%; }
   .author__avatar, .author__content, .author__urls-wrapper { display: table-cell; vertical-align: top; }
   .author__urls-wrapper { margin-top: 0; padding-left: 8px; }
-  .author__connect-btn { font-size: $type-size-7; padding: 0.25em 0.5em; }
-  /* When list opens, stack it full width below by forcing block layout */
+  .author__connect-btn { display: inline-block !important; font-size: $type-size-7; padding: 0.25em 0.5em; margin-bottom: .5em; }
+  .author__urls { display: none; }
   .author__urls.open { display: block; position: relative; margin-top: .5em; }
   .author__urls li { white-space: nowrap; }
+}
+
+// Large screens (>=1024px): force list visible
+@media screen and (min-width: 1024px) {
+  .author__urls { display: block !important; }
+  .author__connect-btn { display: none !important; }
 }
