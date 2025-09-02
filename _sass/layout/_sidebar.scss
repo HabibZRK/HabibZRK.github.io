@@ -10,9 +10,6 @@
    ========================================================================== */
 
 .sidebar {
-  -webkit-transform: translate3d(0, 0 , 0);
-          transform: translate3d(0, 0 , 0);
-
   @include clearfix();
   margin-bottom: 1em;
 
@@ -72,7 +69,8 @@
   img {
     width: 100%;
   }
-// removed extra closing brace causing SCSS error
+} // properly close .sidebar block (was previously left unclosed causing cascade issues)
+// cleaned up improper structure that could hide subsequent rules
 
 .sidebar__right {
   margin-bottom: 1em;
@@ -191,142 +189,41 @@
   }
 }
 
-.author__urls-wrapper {
-  position: relative;
-  display: table-cell;
-  vertical-align: middle;
-  font-family: $sans-serif;
-  z-index: 999999;
-  cursor: pointer;
+// Contact list responsive behaviour
+.author__urls-wrapper { position: relative; margin-top: 1em; }
 
-  li:last-child {
-    a {
-      margin-bottom: 0;
-    }
-  }
-
-  @include breakpoint($large) {
-    display: block;
-    text-align: left; /* Left align the contact info */
-  }
-
-  button {
-    margin-bottom: 0;
-
-    @include breakpoint($large) {
-      display: none;
-    }
-  }
+// Mobile: collapsed by default
+@media screen and (max-width: 924px) { // one less than $large compile value 925
+  .author__connect-btn { display: inline-block; margin-bottom: .5em; }
+  .author__urls { display: none; }
+  .author__urls.open { display: block; }
 }
 
-// Dropdown is hidden by default
+// Desktop: always visible, hide button
+@media screen and (min-width: 925px) {
+  .author__connect-btn { display: none; }
+  .author__urls { display: block !important; }
+}
+
 .author__urls {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  margin-top: 0.5rem;
-  padding: 0.625rem;
-  list-style-type: none;
-  border: 1px solid var(--global-border-color);
-  border-radius: $border-radius;
-  background: var(--global-bg-color);
-  z-index: 999999 !important;
-  box-shadow: 0 0 10px rgba(#000, 0.25);
-  cursor: default;
-  min-width: 100%;
-  width: max-content;
-  max-width: calc(100vw - 2rem);
-
-  // Speech bubble pointer (mobile only)
-  @media screen and (max-width: 1023px) {
-    &::before {
-      content: '';
-      position: absolute;
-      top: -8px;
-      left: 20px;
-      width: 0;
-      height: 0;
-      border-left: 8px solid transparent;
-      border-right: 8px solid transparent;
-      border-bottom: 8px solid var(--global-border-color);
-      z-index: 999999;
-      display: block !important;
-    }
-
-    &::after {
-      content: '';
-      position: absolute;
-      top: -7px;
-      left: 20px;
-      width: 0;
-      height: 0;
-      border-left: 8px solid transparent;
-      border-right: 8px solid transparent;
-      border-bottom: 8px solid var(--global-bg-color);
-      z-index: 1000000;
-      display: block !important;
-    }
-  }
-
-  @include breakpoint($large) {
-    position: relative;
-    left: auto;
-    top: auto;
-    margin-top: 0;
-    max-width: none;
-    
-    &::before,
-    &::after {
-      display: none;
-    }
-  }
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-family: $sans-serif;
+  background: transparent;
 }
 
-// When open (display: block), ensure dropdown is on top
-.author__urls[style*="display: block"],
-.author__urls.open {
-  z-index: 110000 !important;
-}
+.author__urls li { margin: 0 0 .35em; line-height: 1.4; }
+.author__urls a { text-decoration: none; font-size: $type-size-6; }
+.author__urls a:hover { text-decoration: underline; }
 
-  @include breakpoint($large) {
-    display: block;
-    position: relative;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    background: transparent;
-    box-shadow: none;
-    text-align: left; /* Ensure contact info is left aligned */
-  }
-
-  &:before {
-    display: none !important;
-  }
-
-  &:after {
-    display: none !important;
-  }
-
-  li {
-    white-space: nowrap;
-    overflow: visible;
-  }
-
-  a {
-    display: block;
-    margin-bottom: 5px;
-    padding-right: 5px;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    color: inherit;
-    font-size: $type-size-5;
-    text-decoration: none;
-    white-space: nowrap;
-    overflow: visible;
-
-    &:hover {
-      text-decoration: underline;
-    }
-  }
+/* Mobile layout: place Connect button (wrapper) in same row as avatar + content */
+@media screen and (max-width: 924px) {
+  [itemscope][itemtype="http://schema.org/Person"] { display: table; width: 100%; }
+  .author__avatar, .author__content, .author__urls-wrapper { display: table-cell; vertical-align: top; }
+  .author__urls-wrapper { margin-top: 0; padding-left: 8px; }
+  .author__connect-btn { font-size: $type-size-7; padding: 0.25em 0.5em; }
+  /* When list opens, stack it full width below by forcing block layout */
+  .author__urls.open { display: block; position: relative; margin-top: .5em; }
+  .author__urls li { white-space: nowrap; }
 }
