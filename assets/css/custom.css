@@ -35,6 +35,52 @@ h1, h2, h3,
   content: none !important;
 }
 
+/* Target ALL possible arrow selectors */
+.author__urls-wrapper button,
+.author__urls-wrapper .btn,
+.author__urls-wrapper .btn--inverse {
+  position: relative !important;
+}
+
+.author__urls-wrapper button:before,
+.author__urls-wrapper button::before,
+.author__urls-wrapper .btn:before,
+.author__urls-wrapper .btn::before,
+.author__urls-wrapper .btn--inverse:before,
+.author__urls-wrapper .btn--inverse::before,
+.hidden-links-toggle:before,
+.hidden-links-toggle::before {
+  display: none !important;
+  content: none !important;
+}
+
+/* Remove any caret or chevron icons */
+.author__urls-wrapper .fa-caret-down,
+.author__urls-wrapper .fa-chevron-down,
+.author__urls-wrapper .fa-angle-down,
+.author__urls-wrapper [class*="fa-"]:before {
+  display: none !important;
+}
+
+/* Hide text content that might be creating arrows */
+.author__urls-wrapper button .sr-only,
+.author__urls-wrapper button .hidden {
+  display: none !important;
+}
+
+/* Nuclear option - remove all pseudo-elements */
+.author__urls-wrapper * {
+  position: relative;
+}
+
+.author__urls-wrapper *:before,
+.author__urls-wrapper *::before,
+.author__urls-wrapper *:after,
+.author__urls-wrapper *::after {
+  display: none !important;
+  content: none !important;
+}
+
 /* Center author avatar and name */
 .author__avatar {
   text-align: center !important;
