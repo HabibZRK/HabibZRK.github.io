@@ -157,6 +157,9 @@ author_profile: true
           {% if certificate['dialogue-url'] and certificate['dialogue-url'] contains '/file/' %}
             <a href="{{ certificate['dialogue-url'] }}" class="btn btn--url" target="_blank">Dialogue</a>
           {% endif %}
+          {% if certificate.folder and certificate.folder != '' %}
+            <a href="{{ certificate.folder }}" class="btn btn--primary" target="_blank">All Courses</a>
+          {% endif %}
           {% if certificate.external_url and certificate.external_url != "" %}
             <a href="{{ certificate.external_url }}" class="btn btn--primary" target="_blank">
               <i class="fa fa-external-link" aria-hidden="true"></i> External Link
