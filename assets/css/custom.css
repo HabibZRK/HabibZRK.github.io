@@ -81,47 +81,48 @@ h1, h2, h3,
   content: none !important;
 }
 
-/* Left-align author avatar and name with margin */
-.author__avatar {
+/* Create unified sidebar frame/group */
+.sidebar .author__content {
+  background: rgba(255, 255, 255, 0.05) !important;
+  border: 1px solid rgba(128, 128, 128, 0.2) !important;
+  border-radius: 8px !important;
+  padding: 20px !important;
+  margin: 15px !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Consistent alignment for all sidebar content */
+.author__avatar,
+.author__name, 
+.author__pronouns,
+.author__bio,
+.author__urls {
   text-align: left !important;
-  margin-left: 15px !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
 }
 
 .author__avatar img {
   margin-left: 0 !important;
   margin-right: auto !important;
+  display: block !important;
 }
 
-.author__name, 
-.author__pronouns {
-  text-align: left !important;
-  margin-left: 15px !important;
-}
-
-/* Left align the entire sidebar content */
-.sidebar .author__content {
-  text-align: left !important;
-  margin-left: 15px !important;
-}
-
-.author__bio {
-  text-align: left !important;
-  margin-left: 15px !important;
-}
-
-/* Left-align the contact links */
+/* Group contact links with same alignment as bio */
 .author__urls {
-  text-align: left !important;
   display: flex !important;
   flex-direction: column !important;
   align-items: flex-start !important;
-  margin-left: 15px !important;
+  margin-top: 15px !important;
+  padding-top: 15px !important;
+  border-top: 1px solid rgba(128, 128, 128, 0.2) !important;
 }
 
 .author__urls li {
   text-align: left !important;
   width: 100% !important;
   display: block !important;
+  margin-bottom: 5px !important;
 }
 
 .author__urls a {
@@ -131,23 +132,33 @@ h1, h2, h3,
   align-items: center !important;
 }
 
-/* Left-align everything in sidebar on all screen sizes */
+/* Ensure bio has proper spacing */
+.author__bio {
+  margin-bottom: 10px !important;
+}
+
+/* Consistent styling on all screen sizes */
 @media screen and (min-width: 64em) {
-  .sidebar .author__content,
+  .sidebar .author__content {
+    background: rgba(255, 255, 255, 0.05) !important;
+    border: 1px solid rgba(128, 128, 128, 0.2) !important;
+    border-radius: 8px !important;
+    padding: 20px !important;
+    margin: 15px !important;
+  }
+  
+  .author__avatar,
   .author__bio,
   .author__urls {
     text-align: left !important;
-    margin-left: 15px !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
   }
   
   .author__urls {
     display: flex !important;
     flex-direction: column !important;
     align-items: flex-start !important;
-  }
-  
-  .sidebar {
-    padding-left: 15px !important;
   }
 }
 
