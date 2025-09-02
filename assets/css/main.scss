@@ -23,7 +23,7 @@ html {
 
 body {
   /* More aggressive width-to-height ratio constraint */
-  max-width: min(100vw, 150vh); /* Maximum width is 150% of viewport height (3:2 ratio) */
+  max-width: 100vw; /* Maximum width is viewport width */
   min-width: 320px; /* Minimum width for mobile */
   margin: 0 auto; /* Center the content */
   
