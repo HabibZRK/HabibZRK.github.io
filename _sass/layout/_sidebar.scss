@@ -224,7 +224,7 @@
   position: absolute;
   top: 100%;
   left: 0;
-  margin-top: 0.25rem;
+  margin-top: 0.5rem;
   padding: 0.625rem;
   list-style-type: none;
   border: 1px solid var(--global-border-color);
@@ -237,12 +237,48 @@
   width: max-content;
   max-width: calc(100vw - 2rem);
 
+  // Speech bubble pointer (mobile only)
+  @media screen and (max-width: 1023px) {
+    &::before {
+      content: '';
+      position: absolute;
+      top: -8px;
+      left: 20px;
+      width: 0;
+      height: 0;
+      border-left: 8px solid transparent;
+      border-right: 8px solid transparent;
+      border-bottom: 8px solid var(--global-border-color);
+      z-index: 999999;
+      display: block !important;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: -7px;
+      left: 20px;
+      width: 0;
+      height: 0;
+      border-left: 8px solid transparent;
+      border-right: 8px solid transparent;
+      border-bottom: 8px solid var(--global-bg-color);
+      z-index: 1000000;
+      display: block !important;
+    }
+  }
+
   @include breakpoint($large) {
     position: relative;
     left: auto;
     top: auto;
     margin-top: 0;
     max-width: none;
+    
+    &::before,
+    &::after {
+      display: none;
+    }
   }
 }
 
