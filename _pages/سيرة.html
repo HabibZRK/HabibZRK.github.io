@@ -265,7 +265,7 @@ function toggleReferences() {
   const arrow = document.querySelector('.cv-toggle-arrow');
   const label = document.querySelector('.cv-toggle-label');
   
-  if (container.style.display === 'none') {
+  if (container.style.display === '' || container.style.display === 'none') {
     container.style.display = '';
     arrow.style.transform = 'rotate(90deg)';
     label.textContent = 'إخفاء المراجع';
