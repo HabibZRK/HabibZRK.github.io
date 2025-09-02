@@ -148,10 +148,14 @@ author_profile: true
         </div>
         <p class="certificate-description">{{ certificate.description }}</p>
         <div class="certificate-buttons">
-          {% if certificate.url contains "http" %}
-            <a href="{{ certificate.url }}" class="btn btn--info" target="_blank">View Certificate</a>
-          {% elsif certificate.url %}
-            <a href="{{ certificate.url | prepend: base_path }}" class="btn btn--info">View Certificate</a>
+          {% if certificate.url and certificate.url contains '/file/' %}
+            <a href="{{ certificate.url }}" class="btn btn--info" target="_blank">View</a>
+          {% endif %}
+          {% if certificate['assignment-url'] and certificate['assignment-url'] contains '/file/' %}
+            <a href="{{ certificate['assignment-url'] }}" class="btn btn--info" target="_blank">Assignment</a>
+          {% endif %}
+          {% if certificate['dialogue-url'] and certificate['dialogue-url'] contains '/file/' %}
+            <a href="{{ certificate['dialogue-url'] }}" class="btn btn--url" target="_blank">Dialogue</a>
           {% endif %}
           {% if certificate.external_url and certificate.external_url != "" %}
             <a href="{{ certificate.external_url }}" class="btn btn--primary" target="_blank">
