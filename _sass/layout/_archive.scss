@@ -2,6 +2,13 @@
    ARCHIVE
    ========================================================================== */
 
+/* Z-index hierarchy for proper layering */
+$z-index-dropdown: 110000;
+$z-index-modal: 1000;
+$z-index-navigation: 100;
+$z-index-content: 10;
+$z-index-background: 1;
+
 .archive {
   margin-bottom: 2em;
 
@@ -39,6 +46,8 @@
   font-size: $type-size-5 !important;
   color: var(--global-text-color-light);
   border-bottom: 1px solid var(--global-border-color);
+  position: relative;
+  z-index: $z-index-content;
 
   + .list__item .archive__item-title {
     margin-top: 0.5em;
@@ -49,6 +58,8 @@
   margin-bottom: 0.25em;
   font-family: $sans-serif-narrow;
   font-size: $type-size-5 !important;
+  position: relative;
+  z-index: $z-index-content;
 
   a + a {
     opacity: 0.5;

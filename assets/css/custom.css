@@ -1,5 +1,21 @@
 /* Custom styles for academic profile */
 
+/* Z-index fixes for dropdown menu layering */
+.author__urls,
+.author__urls.open,
+.author__urls[style*="display: block"] {
+  z-index: 110000 !important;
+  position: relative;
+}
+
+/* Ensure page titles stay below dropdown */
+.page__title,
+.archive__title,
+h1, h2, h3 {
+  position: relative;
+  z-index: 10 !important;
+}
+
 /* Center author avatar and name */
 .author__avatar {
   text-align: center !important;

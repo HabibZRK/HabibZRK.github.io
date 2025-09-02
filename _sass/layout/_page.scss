@@ -1,6 +1,13 @@
-Website/* ==========================================================================
+/* ==========================================================================
    SINGLE PAGE/POST
    ========================================================================== */
+
+/* Z-index hierarchy for proper layering */
+$z-index-dropdown: 110000;
+$z-index-modal: 1000;
+$z-index-navigation: 100;
+$z-index-content: 10;
+$z-index-background: 1;
 
 #main {
   @include container;
@@ -43,6 +50,8 @@ Website/* ======================================================================
   margin-top: 0;
   line-height: 1;
   font-size: 2rem !important;
+  position: relative;
+  z-index: $z-index-content;
 
   & + .page__meta {
     margin-top: -0.5em;
