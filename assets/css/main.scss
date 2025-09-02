@@ -28,7 +28,7 @@ body {
   margin: 0 auto; /* Center the content */
   
   /* Enforce minimum font sizes globally */
-  font-size: max(16px, 1rem) !important;
+  font-size: 1rem !important;
   
   /* Prevent horizontal overflow */
   overflow-x: hidden;
@@ -36,23 +36,23 @@ body {
 
 /* Force minimum font sizes on all text elements */
 * {
-  font-size: max(1em, 14px) !important;
+  font-size: 1em !important;
 }
 
 h1, .page__title {
-  font-size: max(2rem, 28px) !important;
+  font-size: 2rem !important;
 }
 
 h2 {
-  font-size: max(1.5rem, 22px) !important;
+  font-size: 1.5rem !important;
 }
 
 h3 {
-  font-size: max(1.25rem, 18px) !important;
+  font-size: 1.25rem !important;
 }
 
 p, li, span, a, div {
-  font-size: max(1rem, 16px) !important;
+  font-size: 1rem !important;
 }
 
 /* Container constraints for all layouts */
@@ -79,7 +79,7 @@ p, li, span, a, div {
 .book-item,
 .certificate-item {
   min-width: 280px;
-  font-size: max(1rem, 16px) !important;
+  font-size: 1rem !important;
 }
 
 @import
