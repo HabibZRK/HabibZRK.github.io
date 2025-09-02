@@ -1,6 +1,5 @@
 ---
 permalink: /about/
-title: "About This Site"
 author_profile: false
 ---
 

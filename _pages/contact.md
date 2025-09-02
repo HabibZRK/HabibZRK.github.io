@@ -1,11 +1,8 @@
 ---
 layout: archive
-title: "Contact"
 permalink: /contact/
 author_profile: true
 ---
-
-## Professional Contact
 
 For engineering & research inquiries:  
 📧 [h.zreik@ieee.org](mailto:h.zreik@ieee.org)

@@ -257,6 +257,21 @@
             -ms-transform: scaleX(1);
                 transform: scaleX(1); /* reveal*/
       }
+
+      /* Active page styling - brighter gradient bar always visible */
+      &.current:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 4px;
+        background: linear-gradient(135deg, var(--global-link-color) 0%, var(--global-link-color-hover) 100%);
+        width: 100%;
+        -webkit-transform: scaleX(1);
+            -ms-transform: scaleX(1);
+                transform: scaleX(1); /* always visible for active page */
+        border-radius: 2px;
+      }
     }
   }
 

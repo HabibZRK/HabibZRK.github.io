@@ -1,6 +1,6 @@
 ---
+layout: archive
 permalink: /
-title: "Home"
 author_profile: true
 ---
 # Welcome to My Personal Website  

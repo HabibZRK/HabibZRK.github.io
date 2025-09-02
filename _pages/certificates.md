@@ -1,6 +1,5 @@
 ---
 layout: archive
-title: "Certificates & Recognitions"
 permalink: /certificates/
 author_profile: true
 ---

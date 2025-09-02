@@ -127,16 +127,11 @@ $xing-color                 : #006567;
     text-align: center;
 }
 
-.archive .page__title::after, .page__title::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 60px;
-    height: 3px;
-    background: linear-gradient(135deg, var(--global-link-color) 0%, var(--global-link-color-hover) 100%);
-    border-radius: 2px;
+/* Removed gradient bar from page titles - moved to navigation */
+
+/* Hide automatically generated page titles to prevent duplication */
+.page__title {
+    display: none !important;
 }
 
 /* Special styling for sitemap page */
