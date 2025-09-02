@@ -226,12 +226,15 @@
   {% for book in site.data.books %}
     <div class="book-item">
       <div class="book-cover">
-        <a href="{% if book.url and book.url != '' %}{{ book.url }}{% else %}{{ base_path }}/files/books/{{ book.filename }}{% endif %}" title="{% if book.url and book.url != '' %}Visit original source for{% else %}Read Arabic translation of{% endif %} {{ book.main_title }}{% if book.subtitle %}: {{ book.subtitle }}{% endif %}" target="_blank">
+        <a href="{% if book.url and book.url != '' %}{{ book.url }}{% elsif book.filename and book.filename != '' %}{{ base_path }}/files/books/{{ book.filename }}{% else %}#{% endif %}"
+           title="{% if book.url and book.url != '' %}Open / View{% elsif book.filename and book.filename != '' %}Download PDF{% else %}No PDF available{% endif %}: {{ book.main_title }}{% if book.subtitle %}: {{ book.subtitle }}{% endif %}"
+           target="_blank"
+           {% if book.filename and book.filename != '' and (book.url == nil or book.url == '') %}download{% endif %}>
           <img src="{{ base_path }}/images/books/{{ book.cover_file }}" alt="{{ book.main_title }}{% if book.subtitle %}: {{ book.subtitle }}{% endif %} by {{ book.author }}">
         </a>
         <div class="book-icons">
-          {% if book.goodreads_url and book.goodreads_url != "" %}
-          <a href="{{ book.goodreads_url }}" class="book-icon goodreads-icon" title="View ratings and reviews on Goodreads" target="_blank" data-tooltip="Find this book on Goodreads">
+          {% if book.goodreads_url and book.goodreads_url != '' %}
+          <a href="{{ book.goodreads_url }}" class="book-icon goodreads-icon" title="View on Goodreads" target="_blank">
             <i class="fab fa-goodreads" aria-hidden="true"></i>
           </a>
           {% endif %}
@@ -244,17 +247,18 @@
         {% if book.arabic_title %}<p class="book-arabic-title">{{ book.arabic_title }}</p>{% endif %}
         <p class="book-summary">{{ book.summary }}</p>
         <div class="book-links">
-          <a href="{{ base_path }}/files/books/{{ book.filename }}" title="Download translated PDF" class="btn btn--pdf" target="_blank">
+          {% if book.url and book.url != '' or (book.filename and book.filename != '') %}
+          <a href="{% if book.url and book.url != '' %}{{ book.url }}{% else %}{{ base_path }}/files/books/{{ book.filename }}{% endif %}"
+             title="{% if book.url and book.url != '' %}Open / View PDF{% else %}Download translated PDF{% endif %}"
+             class="btn btn--pdf"
+             target="_blank"
+             {% if book.filename and book.filename != '' and (book.url == nil or book.url == '') %}download{% endif %}>
             <i class="fa fa-download" aria-hidden="true"></i> PDF
           </a>
-          {% if book.goodreads_url and book.goodreads_url != "" %}
+          {% endif %}
+          {% if book.goodreads_url and book.goodreads_url != '' %}
           <a href="{{ book.goodreads_url }}" title="View on Goodreads" class="btn btn--goodreads" target="_blank">
             <i class="fab fa-goodreads" aria-hidden="true"></i> Goodreads
-          </a>
-          {% endif %}
-          {% if book.url and book.url != "" %}
-          <a href="{{ book.url }}" title="Visit original source" class="btn btn--url" target="_blank">
-            <i class="fa fa-paperclip" aria-hidden="true"></i> Original Source
           </a>
           {% endif %}
         </div>
