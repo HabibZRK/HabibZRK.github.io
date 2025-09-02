@@ -81,18 +81,74 @@ h1, h2, h3,
   content: none !important;
 }
 
-/* Center author avatar and name */
+/* Left-align author avatar and name with margin */
 .author__avatar {
-  text-align: center !important;
+  text-align: left !important;
+  margin-left: 15px !important;
 }
 
 .author__avatar img {
-  margin: 0 auto !important;
+  margin-left: 0 !important;
+  margin-right: auto !important;
 }
 
 .author__name, 
 .author__pronouns {
-  text-align: center !important;
+  text-align: left !important;
+  margin-left: 15px !important;
+}
+
+/* Left align the entire sidebar content */
+.sidebar .author__content {
+  text-align: left !important;
+  margin-left: 15px !important;
+}
+
+.author__bio {
+  text-align: left !important;
+  margin-left: 15px !important;
+}
+
+/* Left-align the contact links */
+.author__urls {
+  text-align: left !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  margin-left: 15px !important;
+}
+
+.author__urls li {
+  text-align: left !important;
+  width: 100% !important;
+  display: block !important;
+}
+
+.author__urls a {
+  text-align: left !important;
+  justify-content: flex-start !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+/* Left-align everything in sidebar on all screen sizes */
+@media screen and (min-width: 64em) {
+  .sidebar .author__content,
+  .author__bio,
+  .author__urls {
+    text-align: left !important;
+    margin-left: 15px !important;
+  }
+  
+  .author__urls {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+  
+  .sidebar {
+    padding-left: 15px !important;
+  }
 }
 
 /* Fix contact info not loading on desktop - force proper rendering */
