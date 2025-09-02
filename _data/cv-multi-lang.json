@@ -1121,6 +1121,60 @@
       "highlights": []
     }
   ],
+  "memberships": [
+    {
+      "organization": {
+        "lang": {
+          "en": "Institute of Electrical and Electronics Engineers (IEEE)",
+          "de": "Institute of Electrical and Electronics Engineers (IEEE)",
+          "ar": "Institute of Electrical and Electronics Engineers (IEEE)"
+        }
+      },
+      "website": "https://www.ieee.org",
+      "logo": "ieee.png",
+      "startDate": "2025",
+      "endDate": "Present"
+    },
+    {
+      "organization": {
+        "lang": {
+          "en": "Association of German Engineers (VDI e.V.)",
+          "de": "Verein Deutscher Ingenieure e.V. (VDI)",
+          "ar": "Association of German Engineers (VDI)"
+        }
+      },
+      "website": "https://www.vdi.de",
+      "logo": "vdi.png",
+      "startDate": "2025",
+      "endDate": "Present"
+    },
+    {
+      "organization": {
+        "lang": {
+          "en": "Association for Electrical, Electronic & Information Technologies (VDE e.V.)",
+          "de": "Verband der Elektrotechnik, Elektronik und Informationstechnik e.V. (VDE)",
+          "ar": "Association for Electrical, Electronic & Information Technologies (VDE)"
+        }
+      },
+      "website": "https://www.vde.com",
+      "logo": "vde.svg",
+      "startDate": "2025",
+      "endDate": "Present"
+    },
+    {
+      "organization": {
+        "lang": {
+          "en": "Syrian Engineers Association",
+          "de": "Verband Syrischer Ingenieure",
+          "ar": "نقابة المهندسين السوريين - فرع ريف دمشق"
+        }
+      },
+      "website": "https://www.osea.org.sy/",
+      "logo": "sy_eng_association.png",
+      "startDate": "2020",
+      "endDate": "Present"
+    }
+  ],
   "badges": [
     {
       "title": "Erasmus+ Virtual Exchange: Cultural Encounters 2019: Dialogue",

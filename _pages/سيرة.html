@@ -138,6 +138,32 @@ lang: ar
     </section>
     {% endif %}
 
+    <!-- Memberships -->
+    {% if site.data.cv-multi-lang.memberships and site.data.cv-multi-lang.memberships.size > 0 %}
+    <section class="cv-section cv-memberships">
+      <h2 class="cv-section-title">العضويات</h2>
+      
+      {% for membership in site.data.cv-multi-lang.memberships %}
+      <div class="cv-item">
+        <div class="cv-item-header">
+          <h3>
+            {% if membership.logo %}
+            <img src="/images/organization/{{ membership.logo }}" alt="{{ membership.organization.lang.ar }} logo" class="cv-membership-logo">
+            {% endif %}
+            {{ membership.organization.lang.ar }}
+          </h3>
+        </div>
+        <div class="cv-item-subheader">
+          <span class="cv-date-outside">{{ membership.startDate }} - {% if membership.endDate == "Present" %}حالي{% else %}{{ membership.endDate }}{% endif %}</span>
+          {% if membership.website %}
+            <span class="cv-website"><i class="fas fa-globe"></i> <a href="{{ membership.website }}" target="_blank">{{ membership.website | remove: 'https://' }}</a></span>
+          {% endif %}
+        </div>
+      </div>
+      {% endfor %}
+    </section>
+    {% endif %}
+
     <!-- Volunteering -->
     {% if site.data.cv-multi-lang.volunteering and site.data.cv-multi-lang.volunteering.size > 0 %}
     <section class="cv-section cv-volunteering">
@@ -1234,6 +1260,47 @@ body {
 
 .cv-project-links a:hover {
   text-decoration: underline;
+}
+
+/* Membership logo styling */
+.cv-membership-logo {
+  height: 1.5rem;
+  width: 1.5rem;
+  margin-right: 0.75rem;
+  vertical-align: middle;
+  object-fit: contain;
+  display: inline-block;
+}
+
+.cv-container.lang-ar .cv-membership-logo {
+  margin-right: 0;
+  margin-left: 0.75rem;
+}
+
+/* Memberships section specific styling */
+.cv-memberships {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem 0.5rem;
+}
+
+.cv-memberships .cv-section-title {
+  grid-column: 1 / -1;
+  margin-bottom: 1rem;
+}
+
+.cv-memberships .cv-item {
+  width: 100%;
+  min-width: 280px;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* Responsive adjustments for memberships */
+@media (max-width: 768px) {
+  .cv-memberships {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* Responsive Design */

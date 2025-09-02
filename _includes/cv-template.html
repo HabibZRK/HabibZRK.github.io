@@ -158,6 +158,35 @@
   </div>
   {% endif %}
   
+  {% if cv.memberships.size > 0 %}
+  <!-- Memberships -->
+  <div class="cv-section">
+    <h2>Memberships</h2>
+    <ul class="cv-list">
+      {% for membership in cv.memberships %}
+      <li class="cv-item">
+        <div class="cv-item-header">
+          <div class="cv-item-title">
+            {% if membership.logo %}
+            <img src="/images/organization/{{ membership.logo }}" alt="{{ membership.organization }} logo" class="cv-membership-logo">
+            {% endif %}
+            {{ membership.organization }}
+          </div>
+          <div class="cv-item-date">{{ membership.startDate }}{% if membership.endDate %} - {{ membership.endDate }}{% endif %}</div>
+        </div>
+        <div class="cv-item-content">
+          {% if membership.website %}
+          <div class="cv-item-detail">
+            <a href="{{ membership.website }}" target="_blank">{{ membership.website }}</a>
+          </div>
+          {% endif %}
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
+  
   {% if cv.presentations.size > 0 %}
   <!-- Presentations/Talks -->
   <div class="cv-section">
