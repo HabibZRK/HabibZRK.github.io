@@ -31,8 +31,10 @@
     padding-right: 1.5em;
     padding-bottom: 1.5em;
     box-shadow: $box-shadow;
-    margin-left: 1em;
-    margin-right: 1em;
+  margin-left: 0; /* flush to left */
+  margin-right: 1em; /* keep space on right before content */
+  left: 0;
+  width: 350px; /* lock width for reliable content offset */
   }
 
   @include breakpoint($large) {
@@ -86,7 +88,10 @@
   @include breakpoint($x-large) {
     width: $right-sidebar-width;
   }
+
 }
+
+/* Removed body padding-left offset; content now offset via sibling selector rules in _page.scss */
 
 /*
    Author profile and links

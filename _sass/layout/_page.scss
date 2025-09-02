@@ -6,8 +6,8 @@ Website/* ======================================================================
   @include container;
   @include clearfix;
   margin-top: 2em;
-  padding-left: 1em;
-  padding-right: 1em;
+  padding-left: 0.75rem; /* tighter to sidebar */
+  padding-right: 0.75rem;
   animation: intro 0.3s both;
   animation-delay: 0.35s;
 
@@ -18,6 +18,12 @@ Website/* ======================================================================
 
   @include breakpoint($x-large) {
     max-width: $x-large;
+  }
+
+  /* When fixed sidebar exists (>= sidebar breakpoint), shift main just beyond its width with minimal gap */
+  @media screen and (min-width: $sidebar-screen-min-width) {
+    margin-left: calc(350px + 4px); /* 350 sidebar + 4px gap */
+    padding-left: 0.5rem; /* small inner padding */
   }
 }
 
@@ -113,6 +119,7 @@ Website/* ======================================================================
   }
 }
 
+
 .page__hero {
   position: relative;
   margin-bottom: 2em;
@@ -141,6 +148,10 @@ Website/* ======================================================================
 
       @include breakpoint($x-large) {
         max-width: $x-large;
+      }
+
+      @media screen and (min-width: $sidebar-screen-min-width) {
+        padding-left: 0.75rem; /* slightly reduced to align closer to sidebar */
       }
     }
 
