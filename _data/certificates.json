@@ -7,8 +7,9 @@
     "logo": "/images/organization/wro.png",
     "location": "Damascus, Syria",
     "description": "Course on teaching robotics using the EV3 platform, covering programming, teaching, and problem-solving skills.",
-    "url": "https://drive.google.com/file/d/1_nqwTyarwklDe5sZQ0ED8a99q13KviJG/view?usp=drive_link",
-    "subject": "Robotics"
+  "url": "https://drive.google.com/file/d/1_nqwTyarwklDe5sZQ0ED8a99q13KviJG/preview",
+  "subject": "Robotics",
+  "extension": "jpg"
   },
   {
     "title": "Certificate of Recognition",
@@ -17,8 +18,9 @@
     "logo": "",
     "location": "Damascus, Syria",
     "description": "Certificate of recognition for outstanding performance in the field of education. Awarded for participating in Compass 2017, which included a series of seminars to introduce fresh high school graduates to the world of academia.",
-    "url": "https://drive.google.com/file/d/1rTg3N4uFqg5dl1ecQal_OBY-tdssLTCl/view?usp=drive_link",
-    "subject": "Engineering"
+  "url": "https://drive.google.com/file/d/1rTg3N4uFqg5dl1ecQal_OBY-tdssLTCl/preview",
+  "subject": "Engineering",
+  "extension": "pdf"
   },
   {
     "title": "GitHub Foundations Learning Path",
@@ -27,9 +29,10 @@
     "organization_url": "https://www.datacamp.com/",
     "logo": "/images/organization/datacamp.jpg",
     "description": "Certificate for completing the GitHub Foundations Learning Path, covering essential GitHub skills for collaboration and version control.",
-    "url": "https://drive.google.com/file/d/1S2avLZi5mz3Ex0_7etCT4JCwohpAXBFd/view?usp=drive_link",
+  "url": "https://drive.google.com/file/d/1S2avLZi5mz3Ex0_7etCT4JCwohpAXBFd/preview",
     "subject": "Software",
-    "star": 1
+  "star": 1,
+  "extension": "pdf"
   },
 
   {
@@ -40,8 +43,9 @@
     "logo": "/images/organization/dassault.png",
   "description": "Completed a five-course online specialization in SOLIDWORKS 3D CAD, covering advanced 3D modeling, sketching, feature creation, patterns, and assembly design. Gained hands-on experience solving real-world CAD challenges and developed practical skills for industry applications.",
     "url": "https://drive.google.com/drive/folders/1PpE883Rn5qv3A7LLtQhwg91XZCTXC4Wj?usp=drive_link",
-    "subject": "Engineering",
-    "star": 1
+  "subject": "Engineering",
+  "star": 1,
+  "extension": "pdf"
   },
   {
     "title": "xDesign 3D CAD Career Path",
@@ -51,8 +55,9 @@
     "logo": "/images/organization/dassault.png",
   "description": "Completed a five-course online specialization in SOLIDWORKS xDesign, covering advanced 3D modeling, sketching, feature creation, patterns, and assembly design. Gained hands-on experience solving real-world CAD challenges and developed practical skills for industry applications.",
     "url": "https://drive.google.com/drive/folders/1DDa1sSrZEo0k2PZOLXixV2M-Bz7Uuyzo?usp=drive_link",
-    "subject": "Engineering",
-    "star": 1
+  "subject": "Engineering",
+  "star": 1,
+  "extension": "pdf"
   },
   {
     "title": "Deutsche Sprachprüfung für den Hochschulzugang",
@@ -63,9 +68,10 @@
     "logo": "/images/organization/ude.jpg",
     "location": "Duisburg, Germany",
     "description": "DSH-3: Advanced German language proficiency certificate (CEFR C2), demonstrating near-native fluency required for academic study at German universities.",
-    "url": "https://drive.google.com/file/d/15rSlNH5vbWD6Qi3b4Le9uz6Fun3CU3TN/view?usp=drive_link",
-    "subject": "Language",
-    "star": 1
+  "url": "https://drive.google.com/file/d/15rSlNH5vbWD6Qi3b4Le9uz6Fun3CU3TN/preview",
+  "subject": "Language",
+  "star": 1,
+  "extension": "jpg"
   },
   {
     "title": "Duolingo English Test",
@@ -75,8 +81,9 @@
     "organization_url": "https://englishtest.duolingo.com/",
     "logo": "/images/organization/DuolingoEngTest.png",
     "description": "Equivalent to IELTS band 7.5–8.5, demonstrating advanced English proficiency suitable for academic and professional environments.",
-    "url": "https://drive.google.com/file/d/1Oa-hTb5Jpgy_ZTY24TAnySAt8YWp0d1T/view?usp=drive_link",
-    "subject": "Language"
+  "url": "https://drive.google.com/file/d/1Oa-hTb5Jpgy_ZTY24TAnySAt8YWp0d1T/preview",
+  "subject": "Language",
+  "extension": "pdf"
   },
   {
     "title": "Diamond-level Translator",
@@ -87,8 +94,9 @@
     "logo": "",
     "location": "New York, NY",
     "description": "A certificate awarded for translating over 100,000 words of content into Arabic.",
-    "url": "https://drive.google.com/file/d/1VQ38ejcPLFHvrobgq7Pa9Aa0K3HBL_07/view?usp=drive_link",
-    "subject": "Translation"
+  "url": "https://drive.google.com/file/d/1VQ38ejcPLFHvrobgq7Pa9Aa0K3HBL_07/preview",
+  "subject": "Translation",
+  "extension": "pdf"
   },
   {
     "title": "WRO Syria 2016 (Coach)",
@@ -99,8 +107,9 @@
     "logo": "/images/organization/wro.png",
     "location": "Damascus, Syria",
     "description": "Certificate of participation in the World Robot Olympiad 2016 National Syrian Qualifiers as a coach of a team of 3 students in the elementary category, where we achieved 4th place (of 18).",
-    "url": "https://drive.google.com/file/d/1sfbixuGw5B3trBj4TlXhYcL9DBTju0nv/view?usp=drive_link",
-    "subject": "Robotics"
+  "url": "https://drive.google.com/file/d/1sfbixuGw5B3trBj4TlXhYcL9DBTju0nv/preview",
+  "subject": "Robotics",
+  "extension": "jpg"
   },
   {
     "title": "WRO Syria 2017 (Coach)",
@@ -110,8 +119,9 @@
     "logo": "/images/organization/wro.png",
     "location": "Damascus, Syria",
     "description": "Certificate of participation in the World Robot Olympiad 2017 National Syrian Qualifiers as a coach of 2 teams in the elementary and junior categories respectively.",
-    "url": "https://drive.google.com/file/d/12Br7T2rqXCLarAQt2V5FSsP7eUTStyGJ/view?usp=drive_link",
-    "subject": "Robotics"
+  "url": "https://drive.google.com/file/d/12Br7T2rqXCLarAQt2V5FSsP7eUTStyGJ/preview",
+  "subject": "Robotics",
+  "extension": "jpg"
   },
   {
     "title": "ARC Syria 2019 (Referee)",
@@ -121,8 +131,9 @@
     "logo": "",
     "location": "Damascus, Syria",
     "description": "Certificate of participation in the 5th Annual Robotics Competition as a head referee of the junior category.",
-    "url": "https://drive.google.com/file/d/1hwsI1MTiW2f67IqLAC9CvvbHFJruT5VA/view?usp=drive_link",
-    "subject": "Robotics"
+  "url": "https://drive.google.com/file/d/1hwsI1MTiW2f67IqLAC9CvvbHFJruT5VA/preview",
+  "subject": "Robotics",
+  "extension": "jpg"
   },
   {
     "title": "Planung & Entwicklung mechatronischer Produkte",
@@ -133,8 +144,9 @@
     "logo": "",
     "location": "Duisburg, Germany",
     "description": "Certificate of participation in the course: planning and development of mechatronic products. Project: autonomous boat.",
-    "url": "https://drive.google.com/file/d/1OVk35XKhbYsr_BP_ymPp66Ivl06m1BWo/view?usp=drive_link",
-    "subject": "Engineering"
+  "url": "https://drive.google.com/file/d/1OVk35XKhbYsr_BP_ymPp66Ivl06m1BWo/preview",
+  "subject": "Engineering",
+  "extension": "pdf"
   },
 
   {
@@ -145,8 +157,10 @@
     "organization_url": "https://europa.eu/youth/erasmusvirtual_en",
     "logo": "",
     "description": "Completed assignments in a course (5 ECTS) consisting of synchronous dialogues, expert lectures, and community video projects. Developed skills in intercultural communication, leadership, openness to cultural otherness, cooperation, critical understanding, and self-efficacy.",
-    "url": "https://drive.google.com/drive/folders/1F3wfXyaqLfZ23akp6ky1lla5tMQBZ2CK?usp=drive_link",
-    "subject": "Miscellaneous"
+  "assignment-url": "https://drive.google.com/file/d/1MQuQWlW5Mh62o99nWxEpRLkWDx5DOqvS/preview",
+  "dialogue-url": "https://drive.google.com/file/d/1Jq7-7ADaZVhQXBAojs06SfOpOx8rfbcY/preview",
+  "subject": "Miscellaneous",
+  "extension": "pdf"
   },
   {
     "title": "Introduction to Technical Writing",
@@ -155,9 +169,10 @@
     "organization_url": "https://www.coursera.org/learner/habib-zreik",
     "logo": "/images/organization/coursera-logo-squared.png",
     "description": "Certificate for completing the Introduction to Technical Writing course, covering principles of clear, concise, and effective technical communication.",
-    "url": "https://drive.google.com/file/d/1RlhjRJbrrFxNQQOQqh6MnEYr4KUZOiM2/view?usp=drive_link",
+  "url": "https://drive.google.com/file/d/1RlhjRJbrrFxNQQOQqh6MnEYr4KUZOiM2/preview",
     "external_url": "https://coursera.org/share/44d227fbae20101da676beb356b47a61",
-    "subject": "Miscellaneous"
+  "subject": "Miscellaneous",
+  "extension": "pdf"
   },
   {
     "title": "Certificate of Appreciation",
@@ -167,8 +182,9 @@
     "organization_url": "https://www.paper-airplanes.org/",
     "logo": "/images/organization/paper-airplanes.png",
     "description": "Certificate of appreciation for completing a translation internship with Paper Airplanes, a non-profit organization that connects refugees and volunteers through online language learning.",
-    "url": "https://drive.google.com/file/d/1SFJpSguLBOIKG4_2_CuiPXY-8eGLV-Lv/view?usp=drive_link",
-    "subject": "Translation"
+  "url": "https://drive.google.com/file/d/1SFJpSguLBOIKG4_2_CuiPXY-8eGLV-Lv/preview",
+  "subject": "Translation",
+  "extension": "pdf"
   },
   {
     "title": "Certificate of Recognition",
@@ -177,8 +193,9 @@
     "logo": "",
     "location": "Damascus, Syria",
     "description": "Certificate of recognition for outstanding performance in the field of education. Awarded for participating in Compass 2018 , which included a series of seminars to introduce fresh high school graduates to the world of academia.",
-    "url": "https://drive.google.com/file/d/1NquHuqc6nmw1nof8kcAAEN3-SpSLHeNa/view?usp=drive_link",
-    "subject": "Engineering"
+  "url": "https://drive.google.com/file/d/1NquHuqc6nmw1nof8kcAAEN3-SpSLHeNa/preview",
+  "subject": "Engineering",
+  "extension": "pdf"
   },
   {
     "title": "AC & Ventilation Diploma",
@@ -187,8 +204,9 @@
     "organization": "International Center for Sciences",
     "location": "Damascus, Syria",
     "description": "Diploma in Air Conditioning & Ventilation, covering the ASHRAE Standards, heat load calculations, and duct design.",
-    "url": "https://drive.google.com/file/d/1dSk4Bdan9NYM2-5BsH2IY2pCFFVrnnwb/view?usp=drive_link",
-    "subject": "Engineering"
+  "url": "https://drive.google.com/file/d/1dSk4Bdan9NYM2-5BsH2IY2pCFFVrnnwb/preview",
+  "subject": "Engineering",
+  "extension": "pdf"
   },
   {
     "title": "Computer Science for Mechanical Engineering",
@@ -198,8 +216,9 @@
     "logo": "/images/organization/kiron.svg",
     "location": "Berlin, Germany",
     "description": "Certificate for completing the Computer Science for Mechanical Engineering course, including computer architecture, simple data modeling, algorithms, and OOP.",
-    "url": "https://drive.google.com/file/d/1ePaHasyFlsJBXw7uIZK3_99U-2BE6mpN/view?usp=drive_link",
-    "subject": "Software"
+  "url": "https://drive.google.com/file/d/1ePaHasyFlsJBXw7uIZK3_99U-2BE6mpN/preview",
+  "subject": "Software",
+  "extension": "pdf"
   },
   {
     "title": "Publication Days Workshop Attendance",
@@ -208,7 +227,8 @@
     "organization_url": "https://www.uni-due.de/",
     "logo": "/images/organization/ude.jpg",
     "description": "Attendance certificate for the Publication Days Workshop at Universität Duisburg-Essen. Topics included: Publishing in Open Access, choosing a publisher and avoiding predatory publishing, and understanding the peer review process.",
-    "url": "https://drive.google.com/file/d/1pYO5q2Fk8wWhsB37Z_aKydB3cIwgoLFR/view?usp=drive_link",
-    "subject": "Miscellaneous"
+  "url": "https://drive.google.com/file/d/1pYO5q2Fk8wWhsB37Z_aKydB3cIwgoLFR/preview",
+  "subject": "Miscellaneous",
+  "extension": "pdf"
   }
 ]
