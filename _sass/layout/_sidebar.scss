@@ -188,7 +188,7 @@
   display: table-cell;
   vertical-align: middle;
   font-family: $sans-serif;
-  z-index: 10;
+  z-index: 999999;
   position: relative;
   cursor: pointer;
 
@@ -215,17 +215,27 @@
 // Dropdown is hidden by default
 .author__urls {
   display: none;
-  position: absolute;
-  left: 0;
-  margin-top: 0.9375rem;
+  position: fixed;
+  left: 1rem;
+  top: 4rem;
+  margin-top: 0;
   padding: 0.625rem;
   list-style-type: none;
   border: 1px solid var(--global-border-color);
   border-radius: $border-radius;
   background: var(--global-bg-color);
-  z-index: -1;
+  z-index: 999999 !important;
   box-shadow: 0 0 10px rgba(#000, 0.25);
   cursor: default;
+  max-width: calc(100vw - 2rem);
+
+  @include breakpoint($large) {
+    position: relative;
+    left: auto;
+    top: auto;
+    margin-top: 0;
+    max-width: none;
+  }
 }
 
 // When open (display: block), ensure dropdown is on top
