@@ -160,6 +160,13 @@
   }
 }
 
+/* Hide location and employer from mobile dropdown */
+@media screen and (max-width: 1023px) {
+  .author__urls .author__desktop {
+    display: none !important;
+  }
+}
+
 .author__pronouns {
   margin: 0;
 
