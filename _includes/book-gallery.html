@@ -226,12 +226,7 @@
   {% for book in site.data.books %}
     <div class="book-item">
       <div class="book-cover">
-        <a href="{% if book.url and book.url != '' %}{{ book.url }}{% elsif book.filename and book.filename != '' %}{{ base_path }}/files/books/{{ book.filename }}{% else %}#{% endif %}"
-           title="{% if book.url and book.url != '' %}Open / View{% elsif book.filename and book.filename != '' %}Download PDF{% else %}No PDF available{% endif %}: {{ book.main_title }}{% if book.subtitle %}: {{ book.subtitle }}{% endif %}"
-           target="_blank"
-           {% if book.filename and book.filename != '' and (book.url == nil or book.url == '') %}download{% endif %}>
-          <img src="{{ base_path }}/images/books/{{ book.cover_file }}" alt="{{ book.main_title }}{% if book.subtitle %}: {{ book.subtitle }}{% endif %} by {{ book.author }}">
-        </a>
+        <img src="{{ base_path }}/images/books/{{ book.cover_file }}" alt="{{ book.main_title }}{% if book.subtitle %}: {{ book.subtitle }}{% endif %} by {{ book.author }}">
         <div class="book-icons">
           {% if book.goodreads_url and book.goodreads_url != '' %}
           <a href="{{ book.goodreads_url }}" class="book-icon goodreads-icon" title="View on Goodreads" target="_blank">
@@ -249,10 +244,9 @@
         <div class="book-links">
           {% if book.url and book.url != '' or (book.filename and book.filename != '') %}
           <a href="{% if book.url and book.url != '' %}{{ book.url }}{% else %}{{ base_path }}/files/books/{{ book.filename }}{% endif %}"
-             title="{% if book.url and book.url != '' %}Open / View PDF{% else %}Download translated PDF{% endif %}"
+             title="Open / View"
              class="btn btn--pdf"
-             target="_blank"
-             {% if book.filename and book.filename != '' and (book.url == nil or book.url == '') %}download{% endif %}>
+             target="_blank">
             <i class="fa fa-download" aria-hidden="true"></i> PDF
           </a>
           {% endif %}
