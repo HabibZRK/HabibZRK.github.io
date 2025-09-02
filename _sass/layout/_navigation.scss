@@ -253,6 +253,7 @@
       }
 
       &:hover:before {
+        background: var(--nav-hover-gradient); /* Use gradient for hover */
         -webkit-transform: scaleX(1);
             -ms-transform: scaleX(1);
                 transform: scaleX(1); /* reveal*/
@@ -265,7 +266,7 @@
         left: 0;
         bottom: 0;
         height: 4px;
-        background: linear-gradient(135deg, var(--global-link-color) 0%, var(--global-link-color-hover) 100%);
+        background: var(--nav-active-gradient); /* Use active gradient */
         width: 100%;
         -webkit-transform: scaleX(1);
             -ms-transform: scaleX(1);
@@ -283,13 +284,14 @@
     padding: 0.3125rem;
     border: 1px solid var(--global-border-color);
     border-radius: $border-radius;
-    background: #fff;
-    box-shadow: 0 0 10px rgba(#000, 0.25);
+    background: var(--global-bg-color); /* Use theme background */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
 
     a {
       margin: 0;
       padding: 0.625rem 1.25rem;
       font-size: $type-size-5;
+      color: var(--global-masthead-link-color); /* Use theme text color */
 
       &:hover {
         color: var(--global-masthead-link-color-hover);
@@ -318,7 +320,7 @@
       width: 0;
       border-style: solid;
       border-width: 0 10px 10px;
-      border-color: #fff transparent;
+      border-color: var(--global-bg-color) transparent; /* Use theme background */
       display: block;
       z-index: 1;
     }
@@ -400,15 +402,15 @@
   color: var(--global-text-color-light);
   text-transform: uppercase;
   letter-spacing: 1px;
-  background-color: #fff;
+  background-color: var(--global-bg-color); /* Use theme background */
   border: 1px solid var(--global-border-color);
   border-radius: $border-radius;
   box-shadow: $box-shadow;
 
   .nav__title {
-    color: #fff;
+    color: var(--global-button-text); /* Use button text color */
     font-size: $type-size-6;
-    background: var(--global-base-color);
+    background: var(--global-button-background); /* Use button background */
     border-top-left-radius: $border-radius;
     border-top-right-radius: $border-radius;
   }
@@ -432,7 +434,7 @@
     text-decoration-line: none !important;
 
     &:hover {
-      color: #000;
+      color: var(--global-text-color); /* Use main text color on hover */
       background: var(--global-link-color-hover);
     }
   }

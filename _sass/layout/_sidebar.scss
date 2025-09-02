@@ -115,9 +115,10 @@
 
     @include breakpoint($large) {
       padding: 0.3125rem;
-      border: 1px solid var(--global-border-color);
+      border: 3px solid var(--global-link-color-hover); /* Use teal for photo border */
       margin: 0 auto; /* Center the image */
       display: block;
+      box-shadow: 0 0 0 1px var(--global-link-color-hover); /* Extra teal glow */
     }
   }
 }

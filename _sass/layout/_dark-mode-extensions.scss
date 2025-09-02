@@ -15,38 +15,38 @@ html.dark {
   .notice--warning,
   .notice--success,
   .notice--danger {
-    background-color: var(--global-code-background-color, #2d2d2d) !important;
-    color: var(--global-text-color, #e0e0e0) !important;
-    border-left: 0.25em solid var(--global-link-color, #00b7ff) !important;
+    background-color: var(--global-code-background-color) !important;
+    color: var(--global-text-color) !important;
+    border-left: 0.25em solid var(--global-link-color) !important;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25) !important;
     
     h4 {
-      color: var(--global-text-color, #e0e0e0) !important;
+      color: var(--global-text-color) !important;
     }
     
     a {
-      color: var(--global-link-color, #00b7ff) !important;
+      color: var(--global-link-color) !important;
       
       &:hover {
-        color: var(--global-link-color-hover, lighten(#00b7ff, 10%)) !important;
+        color: var(--global-link-color-hover) !important;
       }
     }
   }
   
-  /* Specific styling for different notice types */
+  /* Specific styling for different notice types using new color scheme */
   .notice--info {
-    border-left-color: var(--global-link-color, #00b7ff) !important;
+    border-left-color: var(--global-link-color) !important; // Teal
   }
   
   .notice--warning {
-    border-left-color: #ffab00 !important;
+    border-left-color: #ed6f68 !important; // Coral red
   }
   
   .notice--success {
-    border-left-color: #00d364 !important;
+    border-left-color: #27af8b !important; // Teal
   }
   
   .notice--danger {
-    border-left-color: #ff5252 !important;
+    border-left-color: #9e2b25 !important; // Dark red
   }
 }

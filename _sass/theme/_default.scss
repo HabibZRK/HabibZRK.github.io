@@ -3,18 +3,25 @@
    ========================================================================== */
 
 /* Color codes used for the theme */
-$gray                       : #e7dbc8; // Pastel beige-gray for base
-$dark-gray                  : mix(#000, $gray, 30%); // Softer contrast
-$darker-gray                : mix(#000, $gray, 50%);
-$light-gray                 : #f6f3ec; // Very light pastel beige
+$gray                       : #f7f7f7; // Light gray sections
+$dark-gray                  : #111111; // Almost black text
+$darker-gray                : mix(#000, $gray, 60%);
+$light-gray                 : #ffffff; // White background
 $lighter-gray               : mix(#fff, $gray, 95%);
 
-/* Color codes used for the site */
-$danger-color               : #ee5f5b;
-$info-color                 : #2f7f93;
+/* Base Colors from logo */
+$primary-color              : #235789; // Deep blue
+$secondary-color            : #27af8b; // Teal
+$accent-color               : #214f4b; // Dark teal
+$success-color              : #27af8b; // Teal (duplicate)
+$warning-color              : #ed6f68; // Coral red
+$highlight-color            : #fffb46; // Bright yellow
+$danger-color               : #9e2b25; // Dark red
+$light-coral                : #ff9a8b; // Light coral for gradients
+
+/* Legacy color codes for compatibility */
+$info-color                 : $primary-color;
 $notice-color               : #7a8288;
-$success-color              : #62c462;
-$warning-color              : #f89406;
 
 /* Other basic settings for the template */
 $border-radius              : 4px;
@@ -28,20 +35,30 @@ $sidebar-screen-min-width   : 1024px;
 
 /* Default light theme for the site */
 :root {
-    --global-base-color                 : #f8f6f1; // Pastel light beige
-    --global-bg-color                   : #f8f6f1; // Pastel light beige
-    --global-footer-bg-color            : #ede7dd; // Pastel beige
-    --global-border-color               : #e7dbc8; // Pastel beige-gray
-    --global-dark-border-color          : #d6cfc2; // Muted border
-    --global-code-background-color      : #f3efe3; // Softer code bg
-    --global-code-text-color            : #a89c8c; // Pastel brown for code
-    --global-fig-caption-color          : mix(#fff,  #{$dark-gray}, 25%);
-    --global-link-color                 : #b6a3d8; // Pastel lavender link
-    --global-link-color-hover           : #a3b6d8; // Pastel blue hover
-    --global-link-color-visited         : #d8b6a3; // Pastel peach visited
-    --global-masthead-link-color        : #{$dark-gray};
-    --global-masthead-link-color-hover  : mix(#000, #{$gray}, 20%);    
-    --global-text-color                 : #7d6f5a; // Pastel brown for text
-    --global-text-color-light           : #b6a98c; // Muted beige-gray
-    --global-thead-color                : #f6f3ec; // Very light pastel beige
+    --global-base-color                 : #{$light-gray}; // White background
+    --global-bg-color                   : #{$light-gray}; // White background
+    --global-footer-bg-color            : #{$gray}; // Light gray sections
+    --global-border-color               : #{$gray}; // Light gray border
+    --global-dark-border-color          : #e0e0e0; // Slightly darker border
+    --global-code-background-color      : #{$gray}; // Light gray code bg
+    --global-code-text-color            : #{$accent-color}; // Dark teal for code
+    --global-fig-caption-color          : #{$dark-gray};
+    --global-link-color                 : #{$primary-color}; // Deep blue links
+    --global-link-color-hover           : #{$secondary-color}; // Teal hover
+    --global-link-color-visited         : #{mix($primary-color, $accent-color, 70%)}; // Mixed blue-teal
+    --global-masthead-link-color        : #{$primary-color}; // Deep blue for navigation
+    --global-masthead-link-color-hover  : #{$secondary-color}; // Teal hover for navigation
+    --global-text-color                 : #{$primary-color}; // Deep blue text
+    --global-text-color-light           : #{mix($primary-color, $gray, 50%)}; // Light blue-gray for secondary text
+    --global-thead-color                : #{$gray}; // Light gray for table headers
+    
+    /* Navigation gradient variables */
+    --nav-hover-gradient                : linear-gradient(90deg, #{lighten($light-coral, 10%)} 0%, #{lighten($warning-color, 15%)} 100%); // Brighter light coral to brighter coral red
+    --nav-active-gradient               : linear-gradient(90deg, #{$light-coral} 0%, #{$warning-color} 100%); // Light coral to coral red
+    
+    /* Button colors */
+    --global-button-background          : #{$primary-color}; // Deep blue
+    --global-button-text                : #{$light-gray}; // White text
+    --global-button-background-hover    : #{$secondary-color}; // Teal hover
+    --global-button-text-hover          : #{$light-gray}; // White text on hover
 }

@@ -8,23 +8,34 @@ $dark-gray                  : mix(#000, $gray, 40%);
 $darker-gray                : mix(#000, $gray, 60%);
 $light-gray                 : mix(#fff, $gray, 50%);
 
-/* New darker tech-inspired color scheme */
-$background                 : #020617; /* Night sky deep blue */
-$background-light           : #06102a; /* Slightly lighter night blue */
-$background-lighter         : #0a1633; /* Lighter navy for contrast */
-$text                       : #e0e6f0; /* Very light blue-gray for readability */
-$link                       : #4fc3f7; /* Soft blue accent for links */
-$secondary-accent           : #7b68ee; /* Slate blue for accents (kept for contrast) */
-$tertiary-accent            : #00d364; /* Tech green accent */
-$link-dark                  : mix(#000, $link, 25%);
-$link-light                 : mix(#fff, $link, 25%);
+/* Base Colors from logo */
+$primary-color              : #235789; // Deep blue
+$secondary-color            : #27af8b; // Teal
+$accent-color               : #214f4b; // Dark teal
+$success-color              : #27af8b; // Teal (duplicate)
+$warning-color              : #ed6f68; // Coral red
+$highlight-color            : #fffb46; // Bright yellow
+$danger-red                 : #9e2b25; // Dark red
+$light-coral                : #ff9a8b; // Light coral for gradients
+
+/* Dark mode backgrounds */
+$background                 : #0d0d0d; /* Near-black background */
+$background-light           : #1a1a1a; /* Slightly lighter */
+$background-lighter         : #2a2a2a; /* Lighter for contrast */
+$text                       : #f1f1f1; /* Light gray text */
+
+/* Legacy compatibility */
+$link                       : $secondary-color;
+$tertiary-accent            : $success-color;
+$link-dark                  : mix(#000, $secondary-color, 25%);
+$link-light                 : mix(#fff, $secondary-color, 25%);
 
 /* Color codes used for the site */
-$danger-color               : #ff5252; /* Vibrant red */
-$info-color                 : #00b7ff; /* Matching link color */
-$notice-color               : #7b68ee; /* Matching secondary accent */
-$success-color              : #00d364; /* Matching tertiary accent */
-$warning-color              : #ffab00; /* Amber warning */
+$danger-color               : $danger-red;
+$info-color                 : $secondary-color;
+$notice-color               : $secondary-color;
+$success-color              : $success-color;
+$warning-color              : $warning-color;
 
 /* Other basic settings for the template */
 $border-radius              : 4px;
@@ -38,26 +49,32 @@ $sidebar-screen-min-width   : 1024px;
 
 /* Dark theme for the site */
 html[data-theme="dark"] {
-    --global-base-color                 : #{$background};
-    --global-bg-color                   : #{$background};
-    --global-footer-bg-color            : #{darken($background, 3%)};
-    --global-border-color               : #{$background-light};
-    --global-dark-border-color          : #{$background-lighter};
-    --global-code-background-color      : #{darken($background, 3%)};
-    --global-code-text-color            : #{$tertiary-accent};
+    --global-base-color                 : #{$accent-color}; // Dark teal
+    --global-bg-color                   : #{$background}; // Near-black
+    --global-footer-bg-color            : #{$background-light}; // Slightly lighter
+    --global-border-color               : #{$background-light}; // Border color
+    --global-dark-border-color          : #{$background-lighter}; // Darker border
+    --global-code-background-color      : #{$background-light}; // Code background
+    --global-code-text-color            : #{$secondary-color}; // Teal for code
     --global-fig-caption-color          : #{$light-gray};
-    --global-link-color                 : #{$link};
-    --global-link-color-hover           : #{$secondary-accent};
-    --global-link-color-visited         : #{mix($link, $secondary-accent, 70%)};
-    --global-masthead-link-color        : #{$text};
-    --global-masthead-link-color-hover  : #{$link};
-    --global-text-color                 : #{$text};
-    --global-text-color-light           : #{darken($text, 15%)};
-    --global-thead-color                : #{$background-lighter};
-    --global-accent-color               : #{$secondary-accent};
-    --global-button-background          : #{$background-light};
-    --global-button-background-hover    : #{$secondary-accent};
-    --global-button-text                : #{$text};
-    --global-button-text-hover          : #ffffff;
-    --global-sidebar-active             : #{$tertiary-accent};
+    --global-link-color                 : #{$secondary-color}; // Teal links
+    --global-link-color-hover           : #{$highlight-color}; // Yellow hover glow
+    --global-link-color-visited         : #{mix($secondary-color, $primary-color, 70%)}; // Mixed teal-blue
+    --global-masthead-link-color        : #{$secondary-color}; // Teal navigation
+    --global-masthead-link-color-hover  : #{$highlight-color}; // Yellow hover
+    --global-text-color                 : #{lighten($primary-color, 40%)}; // Lightened blue text (readable on dark background)
+    --global-text-color-light           : #{lighten($primary-color, 30%)}; // Slightly darker blue for secondary text
+    --global-thead-color                : #{$background-lighter}; // Table headers
+    --global-accent-color               : #{$secondary-color}; // Teal accent
+    
+    /* Navigation gradient variables */
+    --nav-hover-gradient                : linear-gradient(90deg, #{lighten($light-coral, 10%)} 0%, #{lighten($warning-color, 15%)} 100%); // Brighter light coral to brighter coral red
+    --nav-active-gradient               : linear-gradient(90deg, #{$light-coral} 0%, #{$warning-color} 100%); // Light coral to coral red
+    
+    /* Button colors */
+    --global-button-background          : #{$secondary-color}; // Teal
+    --global-button-background-hover    : #{$highlight-color}; // Yellow hover
+    --global-button-text                : #{$background}; // Dark text on teal
+    --global-button-text-hover          : #{$background}; // Dark text on yellow
+    --global-sidebar-active             : #{$secondary-color}; // Teal for active sidebar
 }
