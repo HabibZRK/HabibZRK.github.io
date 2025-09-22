@@ -19,6 +19,9 @@
 </script>
 
 <!-- For all browsers -->
+{% if page.url == '/contact/' or page.url == '/contact.html' %}
+  <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
+{% endif %}
 <link rel="stylesheet" href="{{ base_path }}/assets/css/main.css">
 <link rel="stylesheet" href="{{ base_path }}/assets/css/custom.css">
 
