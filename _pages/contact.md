@@ -59,7 +59,7 @@ Interested in working with me? I'd love to hear from you! Just pick a service fr
 
 <!-- This form will post to the URL specified in your _config.yml file. Make sure you have set 'pageclip_form_url' in that file. -->
 
-<form action="{{ site.pageclip_form_url }}" class="pageclip-form" method="post" enctype="multipart/form-data">
+<form action="{{ site.pageclip_form_url }}" class="pageclip-form" method="post">
   <!-- Common Fields -->
   <label for="name">Your Name</label>
   <input type="text" id="name" name="name" required>
@@ -93,8 +93,7 @@ Interested in working with me? I'd love to hear from you! Just pick a service fr
     <h4>Resume Details</h4>
     <label for="currentRole">Your Current Role/Industry</label>
     <input type="text" id="currentRole" name="currentRole" placeholder="e.g., Software Engineer">
-    <label for="resumeFile">Upload Your Current Resume (PDF, DOCX)</label>
-    <input type="file" id="resumeFile" name="resumeFile">
+    
   </div>
 
   <!-- Academic Proposal Fields -->
