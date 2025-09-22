@@ -1,3 +1,7 @@
 <script src="{{ base_path }}/assets/js/main.min.js"></script>
 
+{% if page.url == '/contact/' or page.url == '/contact.html' %}
+  <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
+{% endif %}
+
 {% include analytics.html %}
