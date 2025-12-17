@@ -8,8 +8,8 @@ main:
   - title: "Home"
     url: /
     
-  - title: "Translations"
-    url: /books/
+  - title: "Publications"
+    url: /publications/
     
   - title: "Certificates"
     url: /certificates/
