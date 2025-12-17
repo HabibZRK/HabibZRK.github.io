@@ -5,27 +5,25 @@ author_profile: true
 ---
 # Welcome to My Personal Website  
 
-I’m **Habib Zreik** — a mechanical and mechatronics engineer who loves building, coding, and figuring out how complex systems fit together. What really excites me is seeing the bigger picture, connecting ideas across fields, and collaborating with people from all kinds of backgrounds to create solutions that are both practical and innovative. Beyond engineering, I’ve always been drawn to community, culture, and volunteering — the human side of knowledge that keeps ideas alive and shared.  
+I’m **Habib Zreik** — a mechanical engineer specializing in mechatronics. I'm into building, coding, and figuring out how complex systems fit together. Beyond engineering, I’ve always been drawn to community, culture, and volunteering.   
 
-## A Lifelong Learner  
+## Education
 
-My educational journey reflects a curiosity that spans multiple disciplines:  
 
 - ⏳ **M.Sc. in Mechanical Engineering (specialization in Mechatronics)** — [University of Duisburg-Essen](https://www.uni-due.de/), 2023 – present (*thesis in progress*)  
 - 🎓 **Associate Degree in Computer Science** — [University of the People](https://www.uopeople.edu/), 2023  
-- ⏳ **MBA in Business Administration** — [Syrian Virtual University](https://www.svuonline.org/en), 2021 – present (*thesis pending*)  
-- 🎓 **B.Sc. in Mechanical Engineering** — [Damascus University](https://www.damascusuniversity.edu.sy/index.php?lang=2), 2020  
+- ⏳ **MBA in Business Administration** — [Syrian Virtual University](https://www.svuonline.org/en), 2021 – present (*thesis pending*)
+- 🎓 **B.Sc. in Mechanical Engineering** — [Damascus University](https://www.damascusuniversity.edu.sy/index.php?lang=2), 2020
+ 
 
-This mix of studies has shaped how I approach engineering: balancing technical precision with big-picture thinking and always asking, “what’s next?”  
+## Recent Work
+Lately, at [**DST e.V.**](https://www.dst-org.de/), I have been working on the [**CoboTank**](https://cobotank.de/) project, which focuses on partially automating the liquid transshipment process from inland ports to tanker vessels. As part of this effort, I contributed to the development of the fully automated **RoboTank** system and co-authored a research paper presented at the [**IEEE International Conference on Mechatronic and Embedded Systems and Applications (MESA) 2025**](https://ieee-mesa.org/2025/) in Macau, China. **The paper**](https://ieeexplore.ieee.org/document/11278877)The paper is available via IEEE Xplore. Alongside work, I am continuing my master’s studies in Mechatronics at the [**University of Duisburg-Essen**](https://www.uni-due.de/).
 
-## Current Focus  
-
-My work and studies are currently divided between two main pursuits. At [**DST e.V.**](https://www.dst-org.de/), I’m programming, researching, and documenting robotics projects such as [*CoboTank*](https://cobotank.de/), focusing on control systems, human–machine interfaces, and practical deployment. Alongside this, I continue preparing for my master’s in Mechatronics at [University of Duisburg-Essen](https://www.uni-due.de/), advancing my academic research and technical expertise in parallel with DST projects.  
 
 ## What Drives My Work  
 
 **🔧 Research & Robotics**  
-I spend my days at DST contributing to maritime robotics and automation projects, developing software, and ensuring robotic systems are both reliable and intuitive.  
+I spent my days at DST contributing to maritime robotics and automation projects, developing software, and ensuring robotic systems are both reliable and intuitive.  
 
 **📚 Sharing Knowledge**  
 Since 2019, I’ve been part of **Bayt Al-Hikma 2.0** (Ideas Beyond Borders), translating and adapting technical and cultural content into Arabic. From mechanical engineering and sustainability to methodology and the history of ideas, I help make knowledge accessible to millions across the Middle East.  
@@ -52,4 +50,4 @@ Photography and the arts are another personal passion. While I am far from being
 
 ---
 
-*Feel free to explore my site: projects, translations, publications, and my multilingual CV are all here — snapshots of a journey fueled by curiosity, engineering, and social engagement.*
+*Feel free to explore my site: projects, translations, publication(s), and my multilingual CV are all here — snapshots of a journey fueled by curiosity, engineering, and social engagement.*

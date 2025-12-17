@@ -35,7 +35,7 @@
       "company": "DST Development Center for Ship Technology and Transport Systems",
       "position": "Research Assistant (Wissenschaftliche Hilfskraft)",
       "website": "https://www.dst-org.de",
-      "startDate": "2024-11-01",
+      "startDate": "2024-11-20",
       "endDate": "Present",
       "location": "Duisburg, Germany",
       "summary": "Supported research and development projects in ship technology and transport systems",
@@ -274,6 +274,12 @@
   ],
   "references": [
     {
+      "name": "Cyril Alias",
+      "position": "Head of Department of logistics and transport",
+      "email": "",
+      "affiliation": "DST Development Center for Ship Technology and Transport Systems"
+    } ,
+    {
       "name": "Abdullah Alebrahim",
       "position": "Director of Bab Sharqi Lighthouse",
       "email": "",
@@ -318,11 +324,13 @@
   ],
   "publications": [
     {
-      "name": "",
-      "publisher": "",
-      "releaseDate": "",
-      "website": "",
-      "summary": ""
+      "name": "Developing a fully automated robot to conduct the loading process of inland tank vessels",
+      "publisher": "IEEE",
+      "releaseDate": "2025",
+      "website": "https://doi.org/10.1109/MESA68091.2025.11278877",
+      "summary": "M. Budde, T. Kerkmann, C. Alias, H. Zreik, R. Henn. 2025 21st IEEE International Conference on Mechatronic and Embedded Systems and Applications (MESA), Macau, China, 2025, pp. 12-17.",
+      "venue": "MESA 2025, Macau, China",
+      "affiliation": "DST e.V."
     }
   ],
   "presentations": [

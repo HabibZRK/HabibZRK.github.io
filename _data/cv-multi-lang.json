@@ -64,8 +64,8 @@
         }
       },
       "website": "https://www.dst-org.de",
-      "startDate": "2024-11-01",
-      "endDate": "Present",
+      "startDate": "2024-11-20",
+      "endDate": "2025-12-31",
       "location": {
         "lang": {
           "en": "Duisburg, Germany",
@@ -809,6 +809,24 @@
     {
       "name": {
         "lang": {
+          "en": "Cyril Alias",
+          "de": "Cyril Alias",
+          "ar": "سيريل ألياس"
+        }
+      }, 
+      "position": {
+        "lang": {
+          "en": "Head of Department: Logistics and Transport",
+          "de": "Leiter des Fachbereichs: Logistik und Verkehr",
+          "ar": "رئيس قسم اللوجستيات والنقل"
+        }
+      },
+      "email": "",
+      "affiliation": "DST Development Center for Ship Technology and Transport Systems, Germany"
+    },
+    {
+      "name": {
+        "lang": {
           "en": "Eng. Costantine Daaboul",
           "de": "Ing. Costantine Daaboul",
           "ar": "م. قسطنطين دعبول"
@@ -926,25 +944,39 @@
     {
       "name": {
         "lang": {
-          "en": "",
-          "de": "",
-          "ar": ""
+          "en": "Developing a fully automated robot to conduct the loading process of inland tank vessels",
+          "de": "Entwicklung eines vollautomatischen Roboters zur Durchführung des Beladevorgangs von Binnentankschiffen",
+          "ar": "تطوير روبوت آلي بالكامل لإجراء عملية التحميل لسفن الصهاريج hgkivdm"
         }
       },
       "publisher": {
         "lang": {
-          "en": "",
-          "de": "",
-          "ar": ""
+          "en": "IEEE",
+          "de": "IEEE",
+          "ar": "IEEE"
         }
       },
-      "releaseDate": "",
-      "website": "",
+      "releaseDate": "2025",
+      "website": "https://doi.org/10.1109/MESA68091.2025.11278877",
       "summary": {
         "lang": {
-          "en": "",
-          "de": "",
-          "ar": ""
+          "en": "M. Budde, T. Kerkmann, C. Alias, H. Zreik, R. Henn. 2025 21st IEEE International Conference on Mechatronic and Embedded Systems and Applications (MESA), Macau, China, 2025, pp. 12-17.",
+          "de": "M. Budde, T. Kerkmann, C. Alias, H. Zreik, R. Henn. 2025 21st IEEE International Conference on Mechatronic and Embedded Systems and Applications (MESA), Macau, China, 2025, S. 12-17.",
+          "ar": "م. بودي، ت. كيركمان، س. ألياس، ح. زريق، ر. هين. المؤتمر الدولي الحادي والعشرون لـ IEEE حول الأنظمة الميكاترونية والمدمجة وتطبيقاتها (MESA)، ماكاو، الصين، 2025، ص. 12-17."
+        }
+      },
+      "venue": {
+        "lang": {
+          "en": "MESA 2025, Macau, China",
+          "de": "MESA 2025, Macau, China",
+          "ar": "MESA 2025، ماكاو، الصين"
+        }
+      },
+      "affiliation": {
+        "lang": {
+          "en": "DST e.V.",
+          "de": "DST e.V.",
+          "ar": "DST e.V."
         }
       }
     }
