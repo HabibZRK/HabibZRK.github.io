@@ -5,7 +5,6 @@ lang: ar
 ---
 
 <div class="title-container">
-  <h1 id="page-title-text" class="page-title">السيرة الذاتية</h1>
   <div class="controls-container">
     <div class="language-selector">
       <a href="/resume/" class="lang-btn">en</a>
@@ -1292,43 +1291,25 @@ body {
   border-radius: 8px;
   background: transparent;
   cursor: pointer;
-  transition: var(--transition);
+  transition: all 0.3s ease;
   font-weight: 500;
   color: var(--global-text-color);
-  position: relative;
-  overflow: hidden;
   text-decoration: none;
-}
-
-.lang-btn::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: var(--cv-gradient-primary);
-  transition: var(--transition);
-  z-index: -1;
+  display: inline-block;
 }
 
 .lang-btn:hover {
   color: white;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   transform: translateY(-1px);
-}
-
-.lang-btn:hover::before {
-  left: 0;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
 }
 
 .lang-btn.active {
-  background: var(--cv-gradient-primary);
-  color: white;
-  box-shadow: 0 4px 12px rgba(30, 64, 175, 0.3);
-}
-
-.lang-btn.active::before {
-  left: 0;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white !important;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+  font-weight: 600;
 }
 
 .cv-toggle-btn {
