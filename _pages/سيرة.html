@@ -138,6 +138,35 @@ lang: ar
     </section>
     {% endif %}
 
+    <!-- Publications -->
+    {% if site.data.cv-multi-lang.publications and site.data.cv-multi-lang.publications.size > 0 %}
+    <section class="cv-section cv-publications">
+      <h2 class="cv-section-title">المنشورات</h2>
+      
+      {% for pub in site.data.cv-multi-lang.publications %}
+      {% if pub.name.lang.ar and pub.name.lang.ar != "" %}
+      <div class="cv-item cv-publication-item">
+        <div class="cv-item-header">
+          <h3>{{ pub.name.lang.ar }}</h3>
+        </div>
+        <div class="cv-publication-meta">
+          <span class="cv-pub-venue"><i class="fas fa-map-marker-alt"></i> {{ pub.venue.lang.ar }}</span>
+          <span class="cv-pub-publisher"><i class="fas fa-building"></i> {{ pub.publisher.lang.ar }}</span>
+          <span class="cv-pub-affiliation"><i class="fas fa-university"></i> {{ pub.affiliation.lang.ar }}</span>
+          <span class="cv-pub-date"><i class="far fa-calendar"></i> {{ pub.releaseDate }}</span>
+        </div>
+        <p class="cv-pub-citation">{{ pub.summary.lang.ar }}</p>
+        {% if pub.website %}
+        <div class="cv-pub-link">
+          <a href="{{ pub.website }}" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i> عرض المنشور</a>
+        </div>
+        {% endif %}
+      </div>
+      {% endif %}
+      {% endfor %}
+    </section>
+    {% endif %}
+
     <!-- Memberships -->
     {% if site.data.cv-multi-lang.memberships and site.data.cv-multi-lang.memberships.size > 0 %}
     <section class="cv-section cv-memberships">
@@ -1055,6 +1084,81 @@ body {
   font-weight: 500;
   color: var(--cv-content-color);
   position: relative;
+}
+
+/* Publications Enhancement */
+.cv-publication-item {
+  border-left: 3px solid var(--primary-color, #0366d6);
+  padding-left: 1.25rem;
+}
+
+.cv-publication-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 0.75rem 0;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.cv-publication-meta span {
+  background-color: rgba(3, 102, 214, 0.06);
+  border: 1px solid rgba(3, 102, 214, 0.15);
+  border-radius: 12px;
+  padding: 0.3rem 0.7rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.cv-publication-meta i {
+  font-size: 0.75rem;
+  opacity: 0.7;
+}
+
+.cv-pub-citation {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #555;
+  margin: 0.5rem 0 0.75rem 0;
+  line-height: 1.5;
+}
+
+.cv-pub-link {
+  margin-top: 0.75rem;
+}
+
+.cv-pub-link a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 0.9rem;
+  background-color: #0366d6;
+  color: white;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.cv-pub-link a:hover {
+  background-color: #0256c4;
+  transform: translateY(-2px);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+}
+
+.cv-pub-link i {
+  font-size: 0.8rem;
+}
+
+/* RTL adjustments for Arabic publications */
+.cv-container.lang-ar .cv-publication-item {
+  border-left: none;
+  border-right: 3px solid var(--primary-color, #0366d6);
+  padding-left: 0;
+  padding-right: 1.25rem;
+}
   overflow: hidden;
 }
 
