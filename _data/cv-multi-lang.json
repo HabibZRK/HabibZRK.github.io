@@ -318,6 +318,103 @@
     {
       "company": {
         "lang": {
+          "en": "Technical Engineering Group (TEG)",
+          "de": "Technical Engineering Group (TEG)",
+          "ar": "مجموعة الهندسة التقنية (TEG)"
+        }
+      },
+      "position": {
+        "lang": {
+          "en": "Technical Sales Engineer",
+          "de": "Technischer Vertriebsingenieur",
+          "ar": "مهندس مبيعات"
+        }
+      },
+      "website": "",
+      "startDate": "2021-09-01",
+      "endDate": "2022-08-31",
+      "location": {
+        "lang": {
+          "en": "Damascus, Syria",
+          "de": "Damaskus, Syrien",
+          "ar": "دمشق، سوريا"
+        }
+      },
+      "summary": {
+        "lang": {
+          "en": "Managed schedules and resources, ensured client demands were met, reviewed power system analyses, and supported project teams to deliver.",
+          "de": "Verwaltete Zeitpläne und Ressourcen, stellte die Erfüllung der Kundenanforderungen sicher, prüfte Analysen von Energiesystemen und unterstützte Projektteams bei der Lieferung.",
+          "ar": "إدارة الجداول والموارد، ضمان تلبية مطالب العملاء، مراجعة تحليلات أنظمة الطاقة، ودعم فرق المشروع لتحقيق الأهداف."
+        }
+      },
+      "highlights": [
+        {
+          "lang": {
+            "en": "Kept track of schedules and resources",
+            "de": "Verfolgte Zeitpläne und Ressourcen",
+            "ar": "متابعة الجداول والموارد"
+          }
+        },
+        {
+          "lang": {
+            "en": "Ensured client demands were met",
+            "de": "Sicherstellte die Erfüllung der Kundenanforderungen",
+            "ar": "ضمان تلبية مطالب العملاء"
+          }
+        },
+        {
+          "lang": {
+            "en": "Checked power system analyses",
+            "de": "Prüfte Analysen von Energiesystemen",
+            "ar": "مراجعة تحليلات أنظمة الطاقة"
+          }
+        },
+        {
+          "lang": {
+            "en": "Supported project teams to meet objectives",
+            "de": "Unterstützte Projektteams beim Erreichen der Ziele",
+            "ar": "دعم فرق العمل لتحقيق النتائج"
+          }
+        }
+      ]
+    },
+    {
+      "company": {
+        "lang": {
+          "en": "Mountasser Abu Jaib Solar Solutions",
+          "de": "Mountasser Abu Jaib Solar Solutions",
+          "ar": "منتصر أبو جيب لحلول الطاقة الشمسية"
+        }
+      },
+      "position": {
+        "lang": {
+          "en": "Solar Power Engineering Intern",
+          "de": "Praktikant für Solartechnik",
+          "ar": "متدرب في هندسة الطاقة الشمسية"
+        }
+      },
+      "website": "",
+      "startDate": "2021-07-31",
+      "endDate": "2021-08-30",
+      "location": {
+        "lang": {
+          "en": "Damascus, Syria",
+          "de": "Damaskus, Syrien",
+          "ar": "دمشق، سوريا"
+        }
+      },
+      "summary": {
+        "lang": {
+          "en": "Internship in solar power engineering and renewable energy systems",
+          "de": "Praktikum in Solartechnik und erneuerbaren Energiesystemen",
+          "ar": "تدريب في هندسة الطاقة الشمسية وأنظمة الطاقة المتجددة"
+        }
+      },
+      "highlights": []
+    },
+    {
+      "company": {
+        "lang": {
           "en": "Paper Airplanes",
           "de": "Paper Airplanes",
           "ar": "الطائرات الورقية"
