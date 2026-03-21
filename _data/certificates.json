@@ -61,6 +61,32 @@
     "extension": "pdf"
   },
   {
+    "title": "Machine Learning Techniques (Learning Path)",
+    "date": "2025-06-08",
+    "organization": "MathWorks",
+    "organization_url": "https://matlabacademy.mathworks.com/",
+    "logo": "/files/badges/machine-learning-essentials-in-matlab.png",
+    "description": "Completed the Machine Learning Techniques learning path in MATLAB. Courses include: Classification Methods with Machine Learning, Regression Methods with Machine Learning, Cluster Analysis with Machine Learning, and Dimensionality Reduction Techniques.",
+    "url": "https://drive.google.com/file/d/1JP15ISHth6Uls1AaFio0d_W65aDM_rCa/view?usp=drive_link",
+    "folder": "https://drive.google.com/drive/folders/1b8JBNtYf0W--iMW5l_VNInv_6XDDopwj",
+    "subject": "Engineering",
+    "star": 1,
+    "extension": "pdf"
+  },
+  {
+    "title": "Deep Learning Techniques in MATLAB for Image Applications (Learning Path)",
+    "date": "2025-06-08",
+    "organization": "MathWorks",
+    "organization_url": "https://matlabacademy.mathworks.com/",
+    "logo": "/files/badges/deep-learning-in-matlab-for-images.png",
+    "description": "Completed the Deep Learning Techniques in MATLAB for Image Applications learning path. Courses include: Explore Convolutional Neural Networks, Tune Deep Learning Training Options, Regression with Deep Learning, and Object Detection with Deep Learning.",
+    "url": "https://drive.google.com/file/d/1i9IYIQnrTEqt4TXtlqXz57tUzzdWCtp_/view?usp=drive_link",
+    "folder": "https://drive.google.com/drive/folders/1qrmIG0bdOvTHEIOBM45QivDMaBJJpQnS?usp=drive_link",
+    "subject": "Engineering",
+    "star": 1,
+    "extension": "pdf"
+  },
+  {
     "title": "Deutsche Sprachprüfung für den Hochschulzugang",
     "grade": "DSH-3 - CEFR C2",
     "date": "2023-09-23",
