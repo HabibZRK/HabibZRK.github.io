@@ -4,12 +4,10 @@
 
 <nav class="language-switcher" aria-label="Language selection">
   {% if current_lang == "en" %}
-    <span aria-current="page" aria-label="English">EN</span>
-    <span class="language-divider" aria-hidden="true">|</span>
-    <a href="{{ german_url }}" hreflang="de" lang="de" aria-label="Deutsch">DE</a>
+    <span class="lang-btn active" aria-current="page" aria-label="English">en</span>
+    <a class="lang-btn" href="{{ german_url }}" hreflang="de" lang="de" aria-label="Deutsch">de</a>
   {% else %}
-    <a href="{{ english_url }}" hreflang="en" lang="en" aria-label="English">EN</a>
-    <span class="language-divider" aria-hidden="true">|</span>
-    <span aria-current="page" aria-label="Deutsch">DE</span>
+    <a class="lang-btn" href="{{ english_url }}" hreflang="en" lang="en" aria-label="English">en</a>
+    <span class="lang-btn active" aria-current="page" aria-label="Deutsch">de</span>
   {% endif %}
 </nav>

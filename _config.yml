@@ -160,6 +160,7 @@ include:
   - _pages
   - files
 exclude:
+  - "_pages/سيرة.html"
   - "*.sublime-project"
   - "*.sublime-workspace"
   - .asset-cache
