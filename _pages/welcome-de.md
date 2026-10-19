@@ -6,8 +6,6 @@ lang: de
 translation_en: /en/
 ---
 
-# Willkommen auf meiner persönlichen Website
-
 Ich bin **Habib Zreik**, Mechatronikingenieur mit Schwerpunkt auf Robotik, eingebetteten Systemen und Systems Engineering. Ich entwickle und programmiere komplexe technische Systeme und strukturiere technische Entwicklungsprozesse. Neben meiner technischen Arbeit interessiere ich mich besonders für Gemeinschaft, Kultur, Literatur und die Vermittlung von Wissen.
 
 ---

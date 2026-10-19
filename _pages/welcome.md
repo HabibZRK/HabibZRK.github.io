@@ -7,8 +7,6 @@ translation_en: /en/
 translation_de: /
 ---
 
-# Welcome to My Personal Website
-
 I’m **Habib Zreik** — a Mechatronics Engineer specializing in Robotics, Embedded Systems, and Systems Engineering. I build, program, and manage complex engineering workflows. Beyond technical engineering, I have a deep passion for community, culture, literature, and knowledge translation.
 
 ---
