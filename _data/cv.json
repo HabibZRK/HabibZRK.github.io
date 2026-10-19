@@ -62,9 +62,8 @@
       "summary": "Translated chapters from books and other long-form works from English into Arabic as part of a collaborative translation team",
       "highlights": [
         "Translated and edited chapters from multiple books from English into Arabic in collaboration with a distributed team",
-        "Contributed to the Arabic publication of the Smuggled Wisdom article and other educational and cultural works",
         "Used Trados and Microsoft Word for translation, editing, and document formatting",
-        "Publications: selected translated works at https://zreik.me/publications/#collaborative-translation-projects and Smuggled Wisdom at https://ideasbeyondborders.org/smuggled-wisdom"
+        "Publications: selected translated works at https://zreik.me/publications/#collaborative-translation-projects"
       ]
     },
     {
@@ -348,24 +347,6 @@
       "summary": "M. Budde, T. Kerkmann, C. Alias, H. Zreik, R. Henn. 2025 21st IEEE International Conference on Mechatronic and Embedded Systems and Applications (MESA), Macau, China, 2025, pp. 12-17.",
       "venue": "MESA 2025, Macau, China",
       "affiliation": "DST e.V."
-    },
-    {
-      "name": "Smuggled Wisdom",
-      "publisher": "Ideas Beyond Borders",
-      "releaseDate": "2025",
-      "website": "https://ideasbeyondborders.org/smuggled-wisdom/",
-      "summary": "Article published as part of the Bayt Al-Hikma 2.0 translation project.",
-      "venue": "Ideas Beyond Borders",
-      "affiliation": "Ideas Beyond Borders"
-    },
-    {
-      "name": "The Friendly Neighborhood Doctor",
-      "publisher": "Storyhouse",
-      "releaseDate": "2022",
-      "website": "https://www.storyhouse.org/habibz.html",
-      "summary": "Article published in 2022.",
-      "venue": "Storyhouse",
-      "affiliation": "Storyhouse"
     }
   ],
   "presentations": [

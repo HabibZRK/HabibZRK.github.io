@@ -159,16 +159,9 @@
         },
         {
           "lang": {
-            "en": "Contributed to the Arabic publication of the Smuggled Wisdom article and other educational and cultural works.",
-            "de": "Mitwirkung an der arabischen Veröffentlichung des Artikels Smuggled Wisdom und weiterer Bildungs- und Kulturbeiträge.",
-            "ar": "المساهمة في نشر مقال Smuggled Wisdom باللغة العربية وأعمال تعليمية وثقافية أخرى."
-          }
-        },
-        {
-          "lang": {
-            "en": "Publications: <a href=\"https://zreik.me/publications/#collaborative-translation-projects\">selected translated works</a> and <a href=\"https://ideasbeyondborders.org/smuggled-wisdom/\">Smuggled Wisdom</a>.",
-            "de": "Veröffentlichungen: <a href=\"https://zreik.me/publications/#collaborative-translation-projects\">ausgewählte Übersetzungen</a> und <a href=\"https://ideasbeyondborders.org/smuggled-wisdom/\">Smuggled Wisdom</a>.",
-            "ar": "المنشورات: <a href=\"https://zreik.me/publications/#collaborative-translation-projects\">أعمال مترجمة مختارة</a> و<a href=\"https://ideasbeyondborders.org/smuggled-wisdom/\">Smuggled Wisdom</a>."
+            "en": "Publications: <a href=\"https://zreik.me/publications/#collaborative-translation-projects\">selected translated works</a>.",
+            "de": "Veröffentlichungen: <a href=\"https://zreik.me/publications/#collaborative-translation-projects\">ausgewählte Übersetzungen</a>.",
+            "ar": "المنشورات: <a href=\"https://zreik.me/publications/#collaborative-translation-projects\">أعمال مترجمة مختارة</a>."
           }
         }
       ]
@@ -1090,84 +1083,6 @@
         }
       }
     },
-    {
-      "name": {
-        "lang": {
-          "en": "Smuggled Wisdom",
-          "de": "Smuggled Wisdom",
-          "ar": "Smuggled Wisdom"
-        }
-      },
-      "publisher": {
-        "lang": {
-          "en": "Ideas Beyond Borders",
-          "de": "Ideas Beyond Borders",
-          "ar": "Ideas Beyond Borders"
-        }
-      },
-      "releaseDate": "2025",
-      "website": "https://ideasbeyondborders.org/smuggled-wisdom/",
-      "summary": {
-        "lang": {
-          "en": "Article published as part of the Bayt Al-Hikma 2.0 translation project.",
-          "de": "Artikel, veröffentlicht im Rahmen des Übersetzungsprojekts Bayt Al-Hikma 2.0.",
-          "ar": "مقالة منشورة ضمن مشروع الترجمة Bayt Al-Hikma 2.0."
-        }
-      },
-      "venue": {
-        "lang": {
-          "en": "Ideas Beyond Borders",
-          "de": "Ideas Beyond Borders",
-          "ar": "Ideas Beyond Borders"
-        }
-      },
-      "affiliation": {
-        "lang": {
-          "en": "Ideas Beyond Borders",
-          "de": "Ideas Beyond Borders",
-          "ar": "Ideas Beyond Borders"
-        }
-      }
-    },
-    {
-      "name": {
-        "lang": {
-          "en": "The Friendly Neighborhood Doctor",
-          "de": "The Friendly Neighborhood Doctor",
-          "ar": "The Friendly Neighborhood Doctor"
-        }
-      },
-      "publisher": {
-        "lang": {
-          "en": "Storyhouse",
-          "de": "Storyhouse",
-          "ar": "Storyhouse"
-        }
-      },
-      "releaseDate": "2022",
-      "website": "https://www.storyhouse.org/habibz.html",
-      "summary": {
-        "lang": {
-          "en": "Article published in 2022.",
-          "de": "Artikel, veröffentlicht im Jahr 2022.",
-          "ar": "مقالة منشورة عام 2022."
-        }
-      },
-      "venue": {
-        "lang": {
-          "en": "Storyhouse",
-          "de": "Storyhouse",
-          "ar": "Storyhouse"
-        }
-      },
-      "affiliation": {
-        "lang": {
-          "en": "Storyhouse",
-          "de": "Storyhouse",
-          "ar": "Storyhouse"
-        }
-      }
-    }
   ],
   "volunteering": [
     {
@@ -1403,14 +1318,6 @@
     {
       "title": "Erasmus+ Virtual Exchange: Cultural Encounters 2019: Assignment",
       "embed": "<iframe frameborder=\"0\" scrolling=\"no\" src=\"https://openbadgepassport.com/app/badge/info/193060/pic/embed\" width=\"200\" height=\"270\"></iframe>"
-    },
-    {
-      "title": "Career Essentials in Generative AI",
-      "embed": "<div data-iframe-width=\"150\" data-iframe-height=\"270\" data-share-badge-id=\"99a0c141-be36-41d3-a873-fb42cba9f348\" data-share-badge-host=\"https://www.credly.com\"></div>"
-    },
-    {
-      "title": "Career Essentials in Data Analysis",
-      "embed": "<div data-iframe-width=\"150\" data-iframe-height=\"270\" data-share-badge-id=\"9e9bb033-8e95-44bd-ba05-4a9a2b13a9c1\" data-share-badge-host=\"https://www.credly.com\"></div>"
     }
   ]
 }
