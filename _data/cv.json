@@ -4,7 +4,7 @@
     "email": "h.zreik@ieee.org",
     "phone": "",
   "website": "https://zreik.me",
-    "summary": "M.Sc. Candidate (Mechanical Engineering)",
+    "summary": "M.Sc. Mechanical Engineering (Mechatronics)",
     "location": {
       "address": "",
       "postalCode": "",
@@ -36,13 +36,13 @@
       "position": "Research Assistant (Wissenschaftliche Hilfskraft)",
       "website": "https://www.dst-org.de",
       "startDate": "2024-11-20",
-      "endDate": "Present",
+      "endDate": "2025-12-31",
       "location": "Duisburg, Germany",
-      "summary": "Supported research and development projects in ship technology and transport systems",
+      "summary": "Developed robotic automation systems for inland liquid bulk handling and ship-technology research",
       "highlights": [
-        "Developed comprehensive Git workflow documentation and guidelines for standardizing version control practices across the organization",
-        "Engineered control software for the Cobotank project, implementing remote operation functionality and precision end-effector positioning algorithms for the SCARA robotic arm",
-        "Optimized human-machine interface for remote operation capabilities, enhancing operator control precision in fine positioning tasks"
+        "Developed CoboTank control software in C++ and Python with ROS2; managed repositories using Git and version-control workflows",
+        "Applied the V-Model, VDI 2221, and VDI/VDE 2206 to structure project development and technical documentation for cyber-physical systems",
+        "Designed and built the full-scale RoboFlansch demonstrator for the master's thesis, developing RoboTank as a fully automated successor to CoboTank"
       ],
       "projectLinks": [
         {
@@ -52,16 +52,19 @@
       ]
     },
     {
-      "company": "Ideas Beyond Borders || Bayt Al-Hikma 2.0",
+      "company": "Ideas Beyond Borders",
+      "project": "Bayt Al-Hikma 2.0",
       "position": "Translator",
       "website": "",
       "startDate": "2019-11-01",
-      "endDate": "present",
+      "endDate": "2023-04-30",
       "location": "New York, United States (Remote)",
-      "summary": "Translating Wikipedia articles from English to Arabic",
+      "summary": "Translated chapters from books and other long-form works from English into Arabic as part of a collaborative translation team",
       "highlights": [
-        "Translate Wikipedia articles from English to Arabic",
-        "Subject areas: Mechanical Engineering, History of Science, Sustainability (Energy - Environmental - Economic - Social), Scientific Method, Culture"
+        "Translated and edited chapters from multiple books from English into Arabic in collaboration with a distributed team",
+        "Contributed to the Arabic publication of the Smuggled Wisdom article and other educational and cultural works",
+        "Used Trados and Microsoft Word for translation, editing, and document formatting",
+        "Publications: selected translated works at https://zreik.me/publications/#collaborative-translation-projects and Smuggled Wisdom at https://ideasbeyondborders.org/smuggled-wisdom"
       ]
     },
     {
@@ -74,7 +77,7 @@
       "summary": "Translated from English to Arabic",
       "highlights": [
         "Translated 'How to Write Like Chekhov' for Hayat Publishing in Jeddah, Saudi Arabia",
-        "Translated various articles (including academic research) and documents for different clients"
+        "Translated various articles (including academic research) and documents for different clients using Trados and Microsoft Word"
       ],
       "publications": [
         {
@@ -95,7 +98,7 @@
       "summary": "Worked in service and cashier positions at a Vapiano franchise restaurant",
       "highlights": [
         "Rotated between various service positions and cash register operations",
-        "Provided customer service in a fast-paced restaurant environment"
+        "Provided customer service in a fast-paced restaurant environment using point-of-sale and cash-handling procedures"
       ]
     },
     {
@@ -108,7 +111,7 @@
       "summary": "Provided academic services and consultation for students at universities in multiple countries",
       "highlights": [
         "Responsible for recruiting employees to work in STEM, English and Business departments",
-        "Generated guideline documents for various academic services"
+        "Generated guideline documents for academic services using Microsoft Word and Excel"
       ]
     },
     {
@@ -120,9 +123,23 @@
       "location": "United States (Remote)",
       "summary": "Translated documents and provided training materials from English to Arabic",
       "highlights": [
-        "Translated all documents and training from English to Arabic",
-        "Trained the other translation intern and proofread her work",
-        "Created the Translations Guidelines document for future interns at Paper Airplanes"
+        "Translated documents and training materials from English to Arabic",
+        "Mentored a fellow translation intern and proofread translated materials",
+        "Developed translation guidelines for future interns using Trados and Microsoft Word"
+      ]
+    },
+    {
+      "company": "Mountasser Abu Jaib Solar Solutions",
+      "position": "Solar Power Engineering Intern",
+      "website": "",
+      "startDate": "2021-07-31",
+      "endDate": "2021-08-30",
+      "location": "Damascus, Syria",
+      "summary": "Supported photovoltaic system planning, grid connection, and mounting-frame preparation",
+      "highlights": [
+        "Performed photovoltaic system calculations and planned solar-panel layouts",
+        "Prepared electrical connections to the power grid and supported electrical installation work",
+        "Prepared mounting frames through measuring, sawing, and drilling, using Microsoft Excel for calculations and technical planning"
       ]
     },
     {
@@ -136,7 +153,7 @@
       "highlights": [
         "Planned and established the book club initiative at \"Bab Sharqi Lighthouse - Syrian Trust for Development\"",
         "Recruited and trained members for the permanent operation of the club",
-        "Conducted the first 8 book discussion events in the book club"
+        "Conducted the first 8 book discussion events using event planning, team coordination, facilitation, and community engagement"
       ]
     },
     {
@@ -149,7 +166,7 @@
       "summary": "Taught robotics and coached competition teams using Lego EV3 kits",
       "highlights": [
         "Taught robotics essentials using Lego EV3 kits to children (9-16 yrs)",
-        "Trained teams to participate in the World Robot Olympiad"
+        "Trained teams to participate in the World Robot Olympiad through robotics instruction, competition preparation, and problem-solving"
       ]
     }
   ],
@@ -168,8 +185,8 @@
       "area": "M.Sc. Maschinenbau (Mechatronics)",
       "studyType": "Full-time",
       "startDate": "2021",
-      "endDate": "present",
-      "gpa": "1.7 (current)",
+      "endDate": "September 2026",
+      "gpa": "Good",
       "courses": []
     }
   ],
@@ -331,6 +348,24 @@
       "summary": "M. Budde, T. Kerkmann, C. Alias, H. Zreik, R. Henn. 2025 21st IEEE International Conference on Mechatronic and Embedded Systems and Applications (MESA), Macau, China, 2025, pp. 12-17.",
       "venue": "MESA 2025, Macau, China",
       "affiliation": "DST e.V."
+    },
+    {
+      "name": "Smuggled Wisdom",
+      "publisher": "Ideas Beyond Borders",
+      "releaseDate": "2025",
+      "website": "https://ideasbeyondborders.org/smuggled-wisdom/",
+      "summary": "Article published as part of the Bayt Al-Hikma 2.0 translation project.",
+      "venue": "Ideas Beyond Borders",
+      "affiliation": "Ideas Beyond Borders"
+    },
+    {
+      "name": "The Friendly Neighborhood Doctor",
+      "publisher": "Storyhouse",
+      "releaseDate": "2022",
+      "website": "https://www.storyhouse.org/habibz.html",
+      "summary": "Article published in 2022.",
+      "venue": "Storyhouse",
+      "affiliation": "Storyhouse"
     }
   ],
   "presentations": [

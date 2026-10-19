@@ -10,24 +10,29 @@ I’m **Habib Zreik** — a robotics enthusiast specializing in mechatronics. I'
 ## Education
 
 
-- ⏳ **M.Sc. in Mechanical Engineering (specialization in Mechatronics)** — [University of Duisburg-Essen](https://www.uni-due.de/), 2023 – present (*thesis in progress*)  
+- 🎓 **M.Sc. in Mechanical Engineering (specialization in Mechatronics)** — [University of Duisburg-Essen](https://www.uni-due.de/), 2026
 - 🎓 **Associate Degree in Computer Science** — [University of the People](https://www.uopeople.edu/), 2023  
 - ⏳ **MBA in Business Administration** — [Syrian Virtual University](https://www.svuonline.org/en), 2021 – present (*thesis pending*)
 - 🎓 **B.Sc. in Mechanical Engineering** — [Damascus University](https://www.damascusuniversity.edu.sy/index.php?lang=2), 2020
  
 
-## Recent Work
-Lately, at [**DST e.V.**](https://www.dst-org.de/), I have been working on the [**CoboTank**](https://cobotank.de/) project, which focuses on partially automating the liquid transshipment process from inland ports to tanker vessels. As part of this effort, I contributed to the development of the fully automated **RoboTank** system and co-authored a research paper presented at the [**IEEE International Conference on Mechatronic and Embedded Systems and Applications (MESA) 2025**](https://ieee-mesa.org/2025/) in Macau, China. [**The paper**](https://ieeexplore.ieee.org/document/11278877) is available via IEEE Xplore. Alongside work, I am continuing my master’s studies in Mechatronics at the [**University of Duisburg-Essen**](https://www.uni-due.de/).
+## Selected Projects
+
+### CoboTank and RoboTank+
+
+My master's thesis, *Development of an Automated Connection Process in Inland Liquid Bulk Handling*, focused on developing **RoboTank+** as a fully automated successor to [**CoboTank**](https://cobotank.de/), moving beyond its collaborative-robot approach. The **RoboFlansch** demonstrator of this work was presented at the [**HaFoLa**](https://www.dst-org.de/hafola/)<sup id="hafola-ref"><a href="#hafola-note">1</a></sup> at DST. I also participated as a co-author in Budde et al.'s (2025) paper, *Developing a Fully Automated Robot to Conduct the Loading Process of Inland Tank Vessels*.
+
+The related paper by Budde, Alias, Kerkmann, and Henn (2025), *Comparing Two Strategies to Convert the Manual Loading Preparation of Inland Tank Vessels to Collaborative Robot Operation*, was presented at the PIANC Smart Rivers 2025 conference in Memphis, USA ([paper](https://www.researchgate.net/publication/403852622_Comparing_Two_Strategies_to_Convert_the_Manual_Loading_Preparation_of_Inland_Tank_Vessels_to_Collaborative_Robot_Operation)).
+
+<p id="hafola-note"><sup>1</sup> HaFoLa is an acronym for <i>Hafen Forschung Lab</i> and denotes a research and testing center for innovative port and cargo-handling technologies, focusing on port logistics and shoreside inland-shipping operations. <a href="#hafola-ref">↩</a></p>
 
 
 ## What Drives My Work  
 
 **🔧 Research & Robotics**  
-I spent my days at DST contributing to maritime robotics and automation projects, developing software, and ensuring robotic systems are both reliable and intuitive.  
+I have contributed to maritime robotics and automation projects, developing software and helping ensure robotic systems are reliable and intuitive.
 
 **📚 Sharing Knowledge**  
-Since 2019, I’ve been part of **Bayt Al-Hikma 2.0** (Ideas Beyond Borders), translating and adapting technical and cultural content into Arabic. From mechanical engineering and sustainability to methodology and the history of ideas, I help make knowledge accessible to millions across the Middle East.  
-
 **✍️ Writing & Documentation**  
 Clear communication is key to everything I do. Whether I’m creating Git workflows for engineering teams, writing guides for robotics projects, or contributing to research publications, I aim to make complex ideas understandable and useful.  
 

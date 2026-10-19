@@ -32,18 +32,17 @@
 <!-- About Me Section with Custom Styling -->
 <div>
   <blockquote>
-    I'm a Graduate Academic Assistant (developper) at <a href="https://www.dst-org.de/">DST – Development Centre for Ship Technology and Transport Systems e.V.</a> 🚢, Duisburg, NRW, currently pursuing my M.Sc. in mechatronics at the University of Duisburg-Essen.
+    I graduated with an M.Sc. Maschinenbau (Mechatronics) from the University of Duisburg-Essen in September 2026.
   </blockquote>
 </div>
 
-<!-- Current Projects with Icons -->
-<h3>🔭 I'm busy with</h3>
+<!-- Completed Projects with Icons -->
+<h3>📚 Selected projects</h3>
 <ul>
-  <li>🤖 <a href="https://www.cobotank.de/"><b>Cobotank</b></a>, a <i>collaborative</i> robotic system that automates and simplifies inland tanker loading.</li>
-  <li>🎓 Finishing my studies in <a href="https://www.uni-due.de/mechatronik/">Mechatronics</a> at <a href="https://www.uni-due.de/">Uni Duisburg-Essen</a>.</li>
-  <li>🌍 Translating for <a href="https://ideasbeyondborders.org/">Ideas Beyond Borders</a>' <a href="https://baytalhikma2.org/"><b>Bayt Al-Hikma 2.0</b></a> project</li>
+  <li>🤖 <a href="https://www.cobotank.de/"><b>CoboTank</b></a> and <b>RoboTank+</b>: my master's thesis, <i>Development of an Automated Connection Process in Inland Liquid Bulk Handling</i>, focused on developing RoboTank+ as a fully automated successor to CoboTank's collaborative-robot approach. The resulting <b>RoboFlansch</b> demonstrator is presented at the <a href="https://www.dst-org.de/hafola/"><b>HaFoLa</b></a><sup id="hafola-ref"><a href="#hafola-note">1</a></sup> at DST. I also co-authored Budde et al.'s (2025) paper, <a href="https://doi.org/10.1109/MESA68091.2025.11278877"><i>Developing a Fully Automated Robot to Conduct the Loading Process of Inland Tank Vessels</i></a>.</li>
   <li>🎮 <a href="https://www.youtube.com/watch?v=JuYeHPFR3f0">Catchin'em <i>all!</i></a></li>
 </ul>
+<p id="hafola-note"><sup>1</sup> HaFoLa is an acronym for <i>Hafen Forschung Lab</i> and denotes a research and testing center for innovative port and cargo-handling technologies, focusing on port logistics and shoreside inland-shipping operations. <a href="#hafola-ref">↩</a></p>
 
 <!-- Fields of Interest with Custom Badges -->
 <h3>🔍 Fields of interest</h3>
@@ -83,8 +82,8 @@
 <div>
   <ul>
     <li>
-      <b>M.Sc. Mechatronics</b> - <a href="https://www.uni-due.de/en/">University of Duisburg-Essen</a>, Duisburg, Germany
-      <br><i>Current</i>
+      <b>M.Sc. Maschinenbau (Mechatronics)</b> - <a href="https://www.uni-due.de/en/">University of Duisburg-Essen</a>, Duisburg, Germany
+      <br><i>September 2026</i>
     </li>
     <li>
       <b>Associate Degree in Computer Science</b> - <a href="https://www.uopeople.edu/">University of the People</a>, Pasadena, USA
@@ -101,7 +100,7 @@
 <!-- Publications Section with Collapsible Subsections -->
 <h3>📚 Publications</h3>
 
-<h4>📝 Translations</h4>
+<h4>📝 Translation Work</h4>
 <h5>As part of a team</h5>
 <ul>
   <li><a href="https://baytalhikma2.org/books/14">Palestine 1936: The Great Revolt and the Roots of the Middle East Conflict</a></li>
@@ -162,4 +161,3 @@
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=footer" width="100%" />
 </div>
-

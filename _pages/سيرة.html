@@ -86,6 +86,9 @@ lang: ar
             <span class="cv-website"><i class="fas fa-globe"></i> <a href="{{ job.website }}" target="_blank">{{ job.website | remove: 'https://' }}</a></span>
           {% endif %}
         </div>
+        {% if job.project %}
+          <p class="cv-project"><strong>المشروع:</strong> {{ job.project.lang.ar }}</p>
+        {% endif %}
         <p class="cv-summary">{{ job.summary.lang.ar }}</p>
         
         {% if job.highlights and job.highlights.size > 0 %}
@@ -101,7 +104,6 @@ lang: ar
           </ul>
         </div>
         {% endif %}
-        
         {% if job.projectLinks and job.projectLinks.size > 0 %}
         <div class="cv-project-links">
           <strong>المشاريع:</strong>
@@ -129,7 +131,7 @@ lang: ar
           <span class="cv-date-outside">{{ edu.startDate }} - {% if edu.endDate == "present" %}حالي{% else %}{{ edu.endDate }}{% endif %}</span>
           <span class="cv-institution">{{ edu.institution.lang.ar }}</span>
           {% if edu.gpa %}
-            <span class="cv-gpa">المعدل: {{ edu.gpa }}</span>
+            <span class="cv-gpa">المعدل: {% if edu.gpa.lang %}{{ edu.gpa.lang.ar }}{% else %}{{ edu.gpa }}{% endif %}</span>
           {% endif %}
         </div>
       </div>
@@ -163,6 +165,21 @@ lang: ar
       </div>
       {% endif %}
       {% endfor %}
+    </section>
+    {% endif %}
+
+    <!-- Badges -->
+    {% if site.data.cv-multi-lang.badges and site.data.cv-multi-lang.badges.size > 0 %}
+    <section class="cv-section cv-badges">
+      <h2 class="cv-section-title">الشارات</h2>
+      <div class="cv-badges-grid">
+        {% for badge in site.data.cv-multi-lang.badges %}
+        <div class="cv-item cv-badge-item">
+          <h3>{{ badge.title }}</h3>
+          <div class="cv-badge-embed">{{ badge.embed }}</div>
+        </div>
+        {% endfor %}
+      </div>
     </section>
     {% endif %}
 
@@ -1560,6 +1577,25 @@ body {
 .cv-item:nth-child(3) { animation-delay: 0.3s; }
 .cv-item:nth-child(4) { animation-delay: 0.4s; }
 .cv-item:nth-child(5) { animation-delay: 0.5s; }
+  .cv-badges-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+  }
+
+  .cv-badge-item {
+    overflow: hidden;
+  }
+
+  .cv-badge-item h3 {
+    margin-bottom: 0.75rem;
+  }
+
+  .cv-badge-embed {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+  }
 </style>
 
 <script>

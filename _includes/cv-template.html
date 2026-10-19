@@ -94,6 +94,9 @@
         </div>
         <div class="cv-item-content">
           <div class="cv-item-subtitle">{{ work.company }}</div>
+          {% if work.project %}
+          <div class="cv-item-detail"><strong>Project:</strong> {{ work.project }}</div>
+          {% endif %}
           {% if work.summary %}
           <div class="cv-item-detail">{{ work.summary }}</div>
           {% endif %}

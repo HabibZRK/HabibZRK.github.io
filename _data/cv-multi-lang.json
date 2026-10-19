@@ -12,8 +12,8 @@
   "website": "https://zreik.me",
     "summary": {
       "lang": {
-        "en": "M.Sc. Candidate (Mechanical Engineering)",
-        "de": "M.Sc. Maschinenbau Kandidat",
+        "en": "M.Sc. Mechanical Engineering (Mechatronics)",
+        "de": "M.Sc. Maschinenbau (Mechatronik)",
         "ar": " مترجم ومهندس"
       }
     },
@@ -75,31 +75,31 @@
       },
       "summary": {
         "lang": {
-          "en": "Supported research and development projects in ship technology and transport systems",
-          "de": "Unterstützung von Forschungs- und Entwicklungsprojekten in der Schiffstechnik und Transportsystemen",
-          "ar": "دعم مشاريع البحث والتطوير في تقنيات السفن وأنظمة النقل"
+          "en": "Developed robotic automation systems for inland liquid bulk handling and ship-technology research.",
+          "de": "Entwicklung robotischer Automatisierungssysteme für den Binnenschiffs-Flüssiggutumschlag und die Schifffahrtsforschung.",
+          "ar": "تطوير أنظمة أتمتة روبوتية لمناولة البضائع السائلة السائبة في النقل النهري والبحث في تقنيات السفن."
         }
       },
       "highlights": [
         {
           "lang": {
-            "en": "Programming for the CoboTank project in C++ and Python using ROS2, and managing its repositories",
-            "de": "Programmierung für das CoboTank-Projekt in C++ und Python mit ROS2 und Verwaltung seiner Repositories",
-            "ar": "برمجة مشروع CoboTank بلغة C++ و Python باستخدام ROS2، وإدارة مستودعاته"
+            "en": "Developed CoboTank control software in C++ and Python with ROS2; managed repositories using Git and version-control workflows.",
+            "de": "Entwicklung der CoboTank-Steuersoftware in C++ und Python mit ROS2; Verwaltung der Repositories mit Git und Versionskontrollprozessen.",
+            "ar": "تطوير برمجيات التحكم في CoboTank باستخدام C++ وPython وROS2؛ وإدارة المستودعات عبر Git ومنهجيات التحكم بالإصدارات."
           }
         },
         {
           "lang": {
-            "en": "Creation of an internal guide for using Git in mechatronic projects",
-            "de": "Erstellung eines internen Leitfadens für die Verwendung von Git in mechatronischen Projekten",
-            "ar": "إنشاء دليل داخلي لاستخدام Git في المشاريع الميكاترونية"
+            "en": "Applied the V-Model, VDI 2221, and VDI/VDE 2206 to structure project development and technical documentation for cyber-physical systems.",
+            "de": "Anwendung des V-Modells, der VDI 2221 und der VDI/VDE 2206 zur Strukturierung der Projektentwicklung und technischen Dokumentation für cyber-physische Systeme.",
+            "ar": "تطبيق نموذج V والمعيارين VDI 2221 وVDI/VDE 2206 لتنظيم تطوير المشاريع والتوثيق التقني للأنظمة السيبرانية الفيزيائية."
           }
         },
         {
           "lang": {
-            "en": "Contribution to a scientific publication: writing the state of the art, participating and exchanging feedback in discussions and meetings",
-            "de": "Beitrag zu einer wissenschaftlichen Publikation: Verfassen des Stands der Technik, Teilnahme und Austausch von Feedback in Diskussionen und Meetings",
-            "ar": "المساهمة في منشور علمي: كتابة أحدث التطورات التقنية، والمشاركة وتبادل الملاحظات في النقاشات والاجتماعات"
+            "en": "Designed and built the full-scale RoboFlansch demonstrator for the master's thesis, developing RoboTank as a fully automated successor to CoboTank.",
+            "de": "Konstruktion und Aufbau des maßstabsgetreuen Demonstrators RoboFlansch für die Masterarbeit zur Entwicklung von RoboTank als vollautomatisiertem Nachfolger von CoboTank.",
+            "ar": "تصميم وبناء النموذج الكامل RoboFlansch لأطروحة الماجستير، وتطوير RoboTank كخلف آلي بالكامل لـ CoboTank."
           }
         }
       ],
@@ -113,9 +113,16 @@
     {
       "company": {
         "lang": {
-          "en": "Ideas Beyond Borders || Bayt Al-Hikma 2.0",
-          "de": "Ideas Beyond Borders || Bayt Al-Hikma 2.0",
-          "ar": "أفكار بلا حدود || بيت الحكمة 2.0"
+          "en": "Ideas Beyond Borders",
+          "de": "Ideas Beyond Borders",
+          "ar": "Ideas Beyond Borders"
+        }
+      },
+      "project": {
+        "lang": {
+          "en": "Bayt Al-Hikma 2.0",
+          "de": "Bayt Al-Hikma 2.0",
+          "ar": "Bayt Al-Hikma 2.0"
         }
       },
       "position": {
@@ -127,7 +134,7 @@
       },
       "website": "",
       "startDate": "2019-11-01",
-      "endDate": "2019-04-30",
+      "endDate": "2023-04-30",
       "location": {
         "lang": {
           "en": "New York, United States (Remote)",
@@ -137,24 +144,31 @@
       },
       "summary": {
         "lang": {
-          "en": "Translating Wikipedia articles from English to Arabic",
-          "de": "Übersetzung von Wikipedia-Artikeln vom Englischen ins Arabische",
-          "ar": "ترجمة مقالات ويكيبيديا من الإنجليزية إلى العربية"
+          "en": "Translated chapters from books and other long-form works from English into Arabic as part of a collaborative translation team.",
+          "de": "Übersetzung von Buchkapiteln und weiteren umfangreichen Werken aus dem Englischen ins Arabische als Teil eines kollaborativen Übersetzungsteams.",
+          "ar": "ترجمة فصول من الكتب وأعمال طويلة أخرى من الإنجليزية إلى العربية ضمن فريق ترجمة تعاوني."
         }
       },
       "highlights": [
         {
           "lang": {
-            "en": "Translated Wikipedia articles from English to Arabic",
-            "de": "Übersetzte Wikipedia-Artikel vom Englischen ins Arabische",
-            "ar": "ترجمة مقالات ويكيبيديا من الإنجليزية إلى العربية"
+            "en": "Translated and edited chapters from multiple books from English into Arabic in collaboration with a distributed team.",
+            "de": "Übersetzung und Bearbeitung von Kapiteln aus mehreren Büchern aus dem Englischen ins Arabische in Zusammenarbeit mit einem verteilten Team.",
+            "ar": "ترجمة وتحرير فصول من عدة كتب من الإنجليزية إلى العربية بالتعاون مع فريق موزع."
           }
         },
         {
           "lang": {
-            "en": "Specialized in Mechanical Engineering, History of Science, Sustainability (Energy - Environmental - Economic - Social), Scientific Method, and Culture topics",
-            "de": "Spezialisiert auf Maschinenbau, Wissenschaftsgeschichte, Nachhaltigkeit (Energie - Umwelt - Wirtschaft - Sozial), Wissenschaftliche Methodik und Kultur",
-            "ar": "تخصص في الهندسة الميكانيكية، تاريخ العلوم، الاستدامة (الطاقة - البيئة - الاقتصاد - الاجتماعية)، المنهج العلمي، والثقافة"
+            "en": "Contributed to the Arabic publication of the Smuggled Wisdom article and other educational and cultural works.",
+            "de": "Mitwirkung an der arabischen Veröffentlichung des Artikels Smuggled Wisdom und weiterer Bildungs- und Kulturbeiträge.",
+            "ar": "المساهمة في نشر مقال Smuggled Wisdom باللغة العربية وأعمال تعليمية وثقافية أخرى."
+          }
+        },
+        {
+          "lang": {
+            "en": "Publications: <a href=\"https://zreik.me/publications/#collaborative-translation-projects\">selected translated works</a> and <a href=\"https://ideasbeyondborders.org/smuggled-wisdom/\">Smuggled Wisdom</a>.",
+            "de": "Veröffentlichungen: <a href=\"https://zreik.me/publications/#collaborative-translation-projects\">ausgewählte Übersetzungen</a> und <a href=\"https://ideasbeyondborders.org/smuggled-wisdom/\">Smuggled Wisdom</a>.",
+            "ar": "المنشورات: <a href=\"https://zreik.me/publications/#collaborative-translation-projects\">أعمال مترجمة مختارة</a> و<a href=\"https://ideasbeyondborders.org/smuggled-wisdom/\">Smuggled Wisdom</a>."
           }
         }
       ]
@@ -205,8 +219,14 @@
             "de": "Abschluss von Übersetzungsprojekten für verschiedene Artikel (einschließlich akademischer Forschung) und Dokumente für verschiedene Kunden",
             "ar": "إنجاز مشاريع ترجمة لمقالات متنوعة (منها أبحاث أكاديمية) ومحتويات لعملاء مختلفين"
           }
+        },
+        {
+          "lang": {
+            "en": "Used Trados and Microsoft Word to manage translation, editing, and document formatting.",
+            "de": "Verwendung von Trados und Microsoft Word für Übersetzung, Redaktion und Dokumentformatierung.",
+            "ar": "استخدام Trados وMicrosoft Word لإدارة الترجمة والتحرير وتنسيق المستندات."
+          }
         }
-        
       ],
       "publications": [
         {
@@ -246,7 +266,7 @@
         "lang": {
           "en": "Worked in service and cashier positions at a Vapiano franchise restaurant",
           "de": "Tätig im Service und an der Kasse in einem Vapiano-Franchise-Restaurant",
-          "ar": "عملت في مواقع الخدمة والصندوق في مطعم فابيانو"
+          "ar": "العمل في خدمة العملاء وتشغيل نقاط البيع وإدارة النقد وتنسيق الورديات."
         }
       },
       "highlights": [
@@ -254,10 +274,16 @@
           "lang": {
             "en": "Performed diverse service positions and cash register operations through rotation system",
             "de": "Ausübung verschiedener Servicepositionen und Kassenoperationen durch Rotationssystem",
-            "ar": ""
+            "ar": "تنفيذ مهام خدمة متنوعة وتشغيل أنظمة نقاط البيع وإدارة عمليات الصندوق من خلال نظام التناوب"
+          }
+        },
+        {
+          "lang": {
+            "en": "Handled customer service, point-of-sale operations, cash handling, and shift coordination.",
+            "de": "Kundenservice, Kassensysteme, Bargeldverwaltung und Schichtkoordination.",
+            "ar": "خدمة العملاء وتشغيل نقاط البيع وإدارة النقد وتنسيق الورديات."
           }
         }
-        
       ]
     },
     {
@@ -306,68 +332,12 @@
             "de": "Entwickelte umfassende Richtliniendokumente für verschiedene akademische Dienstleistungen",
             "ar": "طور وثائق إرشادية شاملة للخدمات الأكاديمية المختلفة"
           }
-        }
-      ]
-    },
-    {
-      "company": {
-        "lang": {
-          "en": "Technical Engineering Group (TEG)",
-          "de": "Technical Engineering Group (TEG)",
-          "ar": "مجموعة الهندسة التقنية (TEG)"
-        }
-      },
-      "position": {
-        "lang": {
-          "en": "Technical Sales Engineer",
-          "de": "Technischer Vertriebsingenieur",
-          "ar": "مهندس مبيعات"
-        }
-      },
-      "website": "",
-      "startDate": "2021-09-01",
-      "endDate": "2022-08-31",
-      "location": {
-        "lang": {
-          "en": "Damascus, Syria",
-          "de": "Damaskus, Syrien",
-          "ar": "دمشق، سوريا"
-        }
-      },
-      "summary": {
-        "lang": {
-          "en": "Managed schedules and resources, ensured client demands were met, reviewed power system analyses, and supported project teams to deliver.",
-          "de": "Verwaltete Zeitpläne und Ressourcen, stellte die Erfüllung der Kundenanforderungen sicher, prüfte Analysen von Energiesystemen und unterstützte Projektteams bei der Lieferung.",
-          "ar": "إدارة الجداول والموارد، ضمان تلبية مطالب العملاء، مراجعة تحليلات أنظمة الطاقة، ودعم فرق المشروع لتحقيق الأهداف."
-        }
-      },
-      "highlights": [
-        {
-          "lang": {
-            "en": "Kept track of schedules and resources",
-            "de": "Verfolgte Zeitpläne und Ressourcen",
-            "ar": "متابعة الجداول والموارد"
-          }
         },
         {
           "lang": {
-            "en": "Ensured client demands were met",
-            "de": "Sicherstellte die Erfüllung der Kundenanforderungen",
-            "ar": "ضمان تلبية مطالب العملاء"
-          }
-        },
-        {
-          "lang": {
-            "en": "Checked power system analyses",
-            "de": "Prüfte Analysen von Energiesystemen",
-            "ar": "مراجعة تحليلات أنظمة الطاقة"
-          }
-        },
-        {
-          "lang": {
-            "en": "Supported project teams to meet objectives",
-            "de": "Unterstützte Projektteams beim Erreichen der Ziele",
-            "ar": "دعم فرق العمل لتحقيق النتائج"
+            "en": "Managed recruitment, academic coordination, stakeholder communication, and service documentation using Microsoft Word and Excel.",
+            "de": "Verantwortung für Personalgewinnung, akademische Koordination, Stakeholder-Kommunikation und Servicedokumentation mit Microsoft Word und Excel.",
+            "ar": "إدارة التوظيف والتنسيق الأكاديمي والتواصل مع أصحاب المصلحة وتوثيق الخدمات باستخدام Microsoft Word وExcel."
           }
         }
       ]
@@ -399,12 +369,34 @@
       },
       "summary": {
         "lang": {
-          "en": "Internship in solar power engineering and renewable energy systems",
-          "de": "Praktikum in Solartechnik und erneuerbaren Energiesystemen",
-          "ar": "تدريب في هندسة الطاقة الشمسية وأنظمة الطاقة المتجددة"
+          "en": "Supported the design and installation planning of grid-connected solar power systems.",
+          "de": "Unterstützung bei der Auslegung und Installationsplanung netzgekoppelter Photovoltaikanlagen.",
+          "ar": "المساهمة في تصميم وتخطيط تركيب أنظمة الطاقة الشمسية المتصلة بالشبكة."
         }
       },
-      "highlights": []
+      "highlights": [
+        {
+          "lang": {
+            "en": "Performed system calculations and planned photovoltaic panel layouts.",
+            "de": "Durchführung von Systemberechnungen und Planung der Anordnung von Photovoltaikmodulen.",
+            "ar": "إجراء حسابات الأنظمة وتخطيط توزيع الألواح الكهروضوئية."
+          }
+        },
+        {
+          "lang": {
+            "en": "Prepared electrical connections to the power grid and fabricated mounting frames through sawing and drilling.",
+            "de": "Vorbereitung der elektrischen Netzanbindung sowie Fertigung von Montagegestellen durch Sägen und Bohren.",
+            "ar": "تجهيز التوصيلات الكهربائية بالشبكة وتصنيع هياكل التثبيت باستخدام النشر والثقب."
+          }
+        },
+        {
+          "lang": {
+            "en": "Used Microsoft Excel for system calculations and technical planning.",
+            "de": "Verwendung von Microsoft Excel für Systemberechnungen und technische Planung.",
+            "ar": "استخدام Microsoft Excel لحسابات الأنظمة والتخطيط التقني."
+          }
+        }
+      ]
     },
     {
       "company": {
@@ -458,6 +450,13 @@
             "en": "Developed the Translation Guidelines document for future interns at Paper Airplanes",
             "de": "Entwickelte das Übersetzungsrichtlinien-Dokument für zukünftige Praktikanten bei Paper Airplanes",
             "ar": "تطوير وثيقة إرشادات الترجمة للمتدربين المستقبليين في الطائرات الورقية"
+          }
+        },
+        {
+          "lang": {
+            "en": "Used Trados and Microsoft Word for translation, proofreading, and document production.",
+            "de": "Verwendung von Trados und Microsoft Word für Übersetzung, Korrekturlesen und Dokumenterstellung.",
+            "ar": "استخدام Trados وMicrosoft Word للترجمة والتدقيق وإنتاج المستندات."
           }
         }
       ]
@@ -515,6 +514,13 @@
             "de": "Leitete die ersten 8 Buchdiskussionsveranstaltungen im Buchclub",
             "ar": "أدار أول 8 فعاليات لمناقشة الكتب في نادي القراءة"
           }
+        },
+        {
+          "lang": {
+            "en": "Applied event planning, team coordination, facilitation, and community engagement.",
+            "de": "Anwendung von Veranstaltungsplanung, Teamkoordination, Moderation und gesellschaftlichem Engagement.",
+            "ar": "تطبيق تخطيط الفعاليات وتنسيق الفرق وإدارة النقاشات والمشاركة المجتمعية."
+          }
         }
       ]
     },
@@ -564,6 +570,13 @@
             "de": "Trainierte Teams für die Teilnahme an der World Robot Olympiad",
             "ar": "درب الفرق للمشاركة في الأولمبياد العالمي للروبوت"
           }
+        },
+        {
+          "lang": {
+            "en": "Applied robotics instruction, team coaching, competition preparation, and problem-solving using LEGO Mindstorms EV3.",
+            "de": "Vermittlung von Robotik, Teamcoaching, Wettbewerbsvorbereitung und Problemlösung mit LEGO Mindstorms EV3.",
+            "ar": "تطبيق تعليم الروبوتات وتدريب الفرق والتحضير للمسابقات وحل المشكلات باستخدام LEGO Mindstorms EV3."
+          }
         }
       ]
     }
@@ -592,8 +605,14 @@
         }
       },
       "startDate": "2023",
-      "endDate": "present",
-      "gpa": "2,1 (current)",
+      "endDate": "September 2026",
+      "gpa": {
+        "lang": {
+          "en": "Good",
+          "de": "Gut",
+          "ar": "جيد"
+        }
+      },
       "courses": []
     },
     {
@@ -1068,6 +1087,84 @@
           "en": "DST e.V.",
           "de": "DST e.V.",
           "ar": "DST e.V."
+        }
+      }
+    },
+    {
+      "name": {
+        "lang": {
+          "en": "Smuggled Wisdom",
+          "de": "Smuggled Wisdom",
+          "ar": "Smuggled Wisdom"
+        }
+      },
+      "publisher": {
+        "lang": {
+          "en": "Ideas Beyond Borders",
+          "de": "Ideas Beyond Borders",
+          "ar": "Ideas Beyond Borders"
+        }
+      },
+      "releaseDate": "2025",
+      "website": "https://ideasbeyondborders.org/smuggled-wisdom/",
+      "summary": {
+        "lang": {
+          "en": "Article published as part of the Bayt Al-Hikma 2.0 translation project.",
+          "de": "Artikel, veröffentlicht im Rahmen des Übersetzungsprojekts Bayt Al-Hikma 2.0.",
+          "ar": "مقالة منشورة ضمن مشروع الترجمة Bayt Al-Hikma 2.0."
+        }
+      },
+      "venue": {
+        "lang": {
+          "en": "Ideas Beyond Borders",
+          "de": "Ideas Beyond Borders",
+          "ar": "Ideas Beyond Borders"
+        }
+      },
+      "affiliation": {
+        "lang": {
+          "en": "Ideas Beyond Borders",
+          "de": "Ideas Beyond Borders",
+          "ar": "Ideas Beyond Borders"
+        }
+      }
+    },
+    {
+      "name": {
+        "lang": {
+          "en": "The Friendly Neighborhood Doctor",
+          "de": "The Friendly Neighborhood Doctor",
+          "ar": "The Friendly Neighborhood Doctor"
+        }
+      },
+      "publisher": {
+        "lang": {
+          "en": "Storyhouse",
+          "de": "Storyhouse",
+          "ar": "Storyhouse"
+        }
+      },
+      "releaseDate": "2022",
+      "website": "https://www.storyhouse.org/habibz.html",
+      "summary": {
+        "lang": {
+          "en": "Article published in 2022.",
+          "de": "Artikel, veröffentlicht im Jahr 2022.",
+          "ar": "مقالة منشورة عام 2022."
+        }
+      },
+      "venue": {
+        "lang": {
+          "en": "Storyhouse",
+          "de": "Storyhouse",
+          "ar": "Storyhouse"
+        }
+      },
+      "affiliation": {
+        "lang": {
+          "en": "Storyhouse",
+          "de": "Storyhouse",
+          "ar": "Storyhouse"
         }
       }
     }
