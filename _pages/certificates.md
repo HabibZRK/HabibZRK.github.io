@@ -2,6 +2,8 @@
 layout: archive
 permalink: /certificates/
 author_profile: true
+lang: en
+translation_de: /de/zertifikate/
 ---
 
 {% include base_path %}

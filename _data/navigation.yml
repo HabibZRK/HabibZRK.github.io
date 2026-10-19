@@ -24,9 +24,9 @@ de:
     - title: "Startseite"
       url: /
     - title: "Veröffentlichungen"
-      url: /publications/
+      url: /de/veroeffentlichungen/
     - title: "Zertifikate"
-      url: /certificates/
+      url: /de/zertifikate/
     - title: "Lebenslauf"
       url: /lebenslauf/
     - title: "Kontakt"

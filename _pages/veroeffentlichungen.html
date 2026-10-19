@@ -1,0 +1,86 @@
+---
+layout: archive
+permalink: /de/veroeffentlichungen/
+author_profile: true
+lang: de
+translation_en: /publications/
+---
+
+{% include base_path %}
+
+<style>
+  .paper-grid, .book-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 2.5rem; }
+  .paper-card, .book-item { display: flex; flex-direction: column; border: 1px solid #e0e0e0; border-radius: 8px; padding: 1.25rem; box-shadow: 0 4px 8px rgba(0,0,0,0.15); }
+  .paper-title, .book-title { margin: 0 0 .35rem; font-size: 1.1rem; }
+  .paper-authors, .book-author { margin: 0 0 .5rem; font-weight: 500; }
+  .paper-summary, .book-summary { margin: 0 0 1rem; font-size: .9rem; }
+  .paper-meta { display: flex; flex-wrap: wrap; gap: .5rem; margin: .5rem 0 .75rem; font-size: .75rem; }
+  .paper-meta span { background: rgba(3,102,214,.06); border: 1px solid rgba(3,102,214,.15); border-radius: 12px; padding: .25rem .6rem; }
+  .paper-links, .book-links { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: auto; }
+</style>
+
+<section class="research-papers">
+  <h2>Fachpublikationen</h2>
+  <p>Begutachtete wissenschaftliche Arbeiten, an denen ich mitgewirkt habe.</p>
+  <div class="paper-grid">
+    <article class="paper-card">
+      <h3 class="paper-title">Developing a fully automated robot to conduct the loading process of inland tank vessels</h3>
+      <p class="paper-authors">M. Budde, T. Kerkmann, C. Alias, H. Zreik, R. Henn</p>
+      <p class="paper-summary">Konzept eines autonomen Beladeroboters für Binnentankschiffe mit Schwerpunkt auf sicheren und wiederholbaren Abläufen in Hafenbereichen.</p>
+      <div class="paper-meta">
+        <span><i class="fas fa-building"></i> IEEE</span>
+        <span><i class="fas fa-map-marker-alt"></i> MESA 2025, Macau</span>
+        <span><i class="fas fa-university"></i> DST e.V.</span>
+      </div>
+      <div class="paper-links">
+        <a href="https://doi.org/10.1109/MESA68091.2025.11278877" class="btn btn--url" target="_blank" rel="noopener">Beitrag lesen</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="articles">
+  <h2>Artikel</h2>
+  <div class="paper-grid">
+    <article class="paper-card">
+      <h3 class="paper-title">Smuggled Wisdom</h3>
+      <p class="paper-authors">Habib Zreik</p>
+      <div class="paper-links">
+        <a href="https://ideasbeyondborders.org/smuggled-wisdom/" class="btn btn--url" target="_blank" rel="noopener">Artikel lesen</a>
+      </div>
+    </article>
+    <article class="paper-card">
+      <h3 class="paper-title">The Friendly Neighborhood Doctor</h3>
+      <p class="paper-authors">Habib Zreik</p>
+      <p class="paper-summary">Artikel, veröffentlicht im Jahr 2022.</p>
+      <div class="paper-links">
+        <a href="https://www.storyhouse.org/habibz.html" class="btn btn--url" target="_blank" rel="noopener">Artikel lesen</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="individual-translations">
+  <h2>Eigenständige Buchübersetzungen</h2>
+  <p>Vollständige Buchübersetzungen, an denen ich eigenständig gearbeitet habe.</p>
+  <div class="book-grid">
+    <div class="book-item">
+      <div class="book-details">
+        <h3 class="book-title">How to Write Like Chekhov</h3>
+        <p class="book-author">von Anton Chekhov, herausgegeben von Lena Lencek und Piero Brunello</p>
+        <p class="book-arabic-title">كيف تكتب على طريقة تشيخوف</p>
+        <p class="book-summary">Eine Zusammenstellung von Anton Tschechows Ratschlägen zum Schreiben aus seinen Briefen, Theaterstücken und Erzählungen. Das Werk betont Einfachheit, Authentizität und emotionale Zurückhaltung und zeigt, wie sich durch Beobachtung und Disziplin wahrhaftige Literatur gestalten lässt.</p>
+        <div class="book-links">
+          <a href="https://www.goodreads.com/book/show/223735238" class="btn btn--goodreads" target="_blank">Goodreads</a>
+          <a href="https://www.abjjad.com/book/1034046046210/%D9%83%D9%8A%D9%81-%D8%AA%D9%83%D8%AA%D8%A8-%D8%B9%D9%84%D9%89-%D8%B7%D8%B1%D9%8A%D9%82%D8%A9-%D8%AA%D8%B4%D9%8A%D8%AE%D9%88%D9%81/1033745399810" class="btn btn--url" target="_blank">Auf Abjjad ansehen</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="group-translations">
+  <h2 id="collaborative-translation-projects">Kollaborative Übersetzungsprojekte</h2>
+  <p>Im Rahmen des Übersetzungsprojekts <strong>Bayt Al Hikma 2.0</strong> habe ich dazu beigetragen, diese wichtigen Werke auf Arabisch zugänglich zu machen.</p>
+  {% include book-gallery.html %}
+</section>

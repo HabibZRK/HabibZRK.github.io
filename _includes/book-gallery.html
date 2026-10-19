@@ -229,7 +229,7 @@
         <img src="{{ base_path }}/images/books/{{ book.cover_file }}" alt="{{ book.main_title }}{% if book.subtitle %}: {{ book.subtitle }}{% endif %} by {{ book.author }}">
         <div class="book-icons">
           {% if book.goodreads_url and book.goodreads_url != '' %}
-          <a href="{{ book.goodreads_url }}" class="book-icon goodreads-icon" title="View on Goodreads" target="_blank">
+          <a href="{{ book.goodreads_url }}" class="book-icon goodreads-icon" title="{% if page.lang == 'de' %}Auf Goodreads ansehen{% else %}View on Goodreads{% endif %}" target="_blank">
             <i class="fab fa-goodreads" aria-hidden="true"></i>
           </a>
           {% endif %}
@@ -238,20 +238,20 @@
       <div class="book-details">
         <h3 class="book-title">{{ book.main_title }}</h3>
         {% if book.subtitle %}<h4 class="book-subtitle">{{ book.subtitle }}</h4>{% endif %}
-        <p class="book-author">by {{ book.author }} ({{ book.year }})</p>
+        <p class="book-author">{% if page.lang == 'de' %}von{% else %}by{% endif %} {{ book.author }} ({{ book.year }})</p>
         {% if book.arabic_title %}<p class="book-arabic-title">{{ book.arabic_title }}</p>{% endif %}
         <p class="book-summary">{{ book.summary }}</p>
         <div class="book-links">
           {% if book.url and book.url != '' or (book.filename and book.filename != '') %}
           <a href="{% if book.url and book.url != '' %}{{ book.url }}{% else %}{{ base_path }}/files/books/{{ book.filename }}{% endif %}"
-             title="Open / View"
+             title="{% if page.lang == 'de' %}Öffnen / Ansehen{% else %}Open / View{% endif %}"
              class="btn btn--pdf"
              target="_blank">
             <i class="fa fa-download" aria-hidden="true"></i> PDF
           </a>
           {% endif %}
           {% if book.goodreads_url and book.goodreads_url != '' %}
-          <a href="{{ book.goodreads_url }}" title="View on Goodreads" class="btn btn--goodreads" target="_blank">
+          <a href="{{ book.goodreads_url }}" title="{% if page.lang == 'de' %}Auf Goodreads ansehen{% else %}View on Goodreads{% endif %}" class="btn btn--goodreads" target="_blank">
             <i class="fab fa-goodreads" aria-hidden="true"></i> Goodreads
           </a>
           {% endif %}
@@ -260,5 +260,4 @@
     </div>
   {% endfor %}
 </div>
-
 
