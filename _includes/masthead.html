@@ -7,7 +7,9 @@
         <button><div class="navicon"></div></button>
         <ul class="visible-links">
           <!-- Removed duplicate site title link to avoid double linking to home -->
-          {% for link in site.data.navigation.main %}
+          {% assign current_language = page.lang | default: site.default_language | default: "de" %}
+          {% assign navigation = site.data.navigation[current_language].main %}
+          {% for link in navigation %}
             {% if link.url contains 'http' %}
               {% assign domain = '' %}
             {% else %}
