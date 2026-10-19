@@ -22,7 +22,7 @@ Ich bin **Habib Zreik**, Mechatronikingenieur mit Schwerpunkt auf Robotik, einge
 
 ### 2. Mehrfarbiger Tafelzeichnungsroboter – Chalkzilla (akademisches Teamprojekt)
 
-- **Rolle:** Technische Projektleitung und Software-Systemingenieur (7-köpfiges Team | Note: 1,3)
+- **Rolle:** Technische Projektleitung und Software-Systemingenieur, 7-köpfiges Team (Note: 1,3)
 - **Methodik:** Anforderungsengineering, Konzeptbewertungsmatrix, V-Modell
 - **Projektmanagement:** Abstimmung und Abschluss der Anforderungsspezifikation direkt mit dem Auftraggeber. Entwicklung einer quantitativen Bewertungsmatrix zur Auswahl geeigneter Konzepte. Abbildung des vollständigen Systemablaufs.
 - **Software- und Regelungsentwicklung:** Eigenständige Entwicklung der vollständigen Software-Pipeline. Entwicklung eines Python-Werkzeugs zur Umwandlung von SVG-/PNG-Vektorgrafiken in G-Code sowie Programmierung eines ESP32-Mikrocontrollers mit Arduino C/C++ zur Umsetzung des G-Codes in Pulssignale für Schrittmotoren.
@@ -33,8 +33,8 @@ Ich bin **Habib Zreik**, Mechatronikingenieur mit Schwerpunkt auf Robotik, einge
 #### **Fallstudie A: Luftqualitätsvorhersage (Zeitreihenregression)**
 
 - **Ziel:** Vorhersage des Luftqualitätsindex (AQI) über die Zeit anhand von Daten mehrerer Umweltsensoren.
-- **Merkmalsentwicklung:** Erstellung eines kombinierten Zielindex aus chemischen Messgrößen ($CO$, $NO_2$, $C_6H_6$) und zeitlichen Parametern zur Kompensation fehlender Ozon- und $PM_{2.5}$-Messkanäle.
-- **Ergebnisse:** Vergleich einer linearen Regression ($R^2 = 0.848$) mit einem Random-Forest-Modell ($R^2 = 0.859$); Auswahl des nichtlinearen Random-Forest-Ansatzes zur Abbildung atmosphärischer Wechselwirkungen.
+- **Merkmalsentwicklung:** Erstellung eines kombinierten Zielindex aus chemischen Messgrößen (\(CO\), \(NO_2\), \(C_6H_6\)) und zeitlichen Parametern zur Kompensation fehlender Ozon- und \(PM_{2.5}\)-Messkanäle.
+- **Ergebnisse:** Vergleich einer linearen Regression (\(R^2 = 0.848\)) mit einem Random-Forest-Modell (\(R^2 = 0.859\)); Auswahl des nichtlinearen Random-Forest-Ansatzes zur Abbildung atmosphärischer Wechselwirkungen.
 
 #### **Fallstudie B: Klassifikation von Verbundschäden (CWT und Signalverarbeitung)**
 
