@@ -1,22 +1,15 @@
-{% assign current_lang = page.lang | default: site.locale | slice: 0,2 %}
+{% assign current_lang = page.lang | default: "en" %}
 {% assign english_url = page.translation_en | default: page.url %}
 {% assign german_url = page.translation_de | default: page.url %}
-{% assign english_fallback = false %}
-{% assign german_fallback = false %}
-
-{% unless page.translation_en %}
-  {% assign english_fallback = true %}
-{% endunless %}
-{% unless page.translation_de %}
-  {% assign german_fallback = true %}
-{% endunless %}
 
 <nav class="language-switcher" aria-label="Language selection">
   {% if current_lang == "en" %}
-    <span aria-current="page">English</span>
-    <a href="{{ german_url }}"{% if german_fallback %} class="language-fallback" title="German translation unavailable; showing English"{% endif %}>Deutsch{% if german_fallback %} <small>(English)</small>{% endif %}</a>
+    <span aria-current="page" aria-label="English">EN</span>
+    <span class="language-divider" aria-hidden="true">|</span>
+    <a href="{{ german_url }}" hreflang="de" lang="de" aria-label="Deutsch">DE</a>
   {% else %}
-    <a href="{{ english_url }}"{% if english_fallback %} class="language-fallback" title="English translation unavailable; showing German"{% endif %}>English{% if english_fallback %} <small>(Deutsch)</small>{% endif %}</a>
-    <span aria-current="page">Deutsch</span>
+    <a href="{{ english_url }}" hreflang="en" lang="en" aria-label="English">EN</a>
+    <span class="language-divider" aria-hidden="true">|</span>
+    <span aria-current="page" aria-label="Deutsch">DE</span>
   {% endif %}
 </nav>
