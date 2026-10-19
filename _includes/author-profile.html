@@ -7,7 +7,7 @@
 <div itemscope itemtype="http://schema.org/Person">
 
   <div class="author__avatar">
-    {% if author.avatar contains "://" %}
+    {% if author.avatar and author.avatar != empty and author.avatar contains "://" %}
     	<img src="{{ author.avatar }}" alt="{{ author.name }}">
     {% else %}
     	<img src="{{ author.avatar | prepend: "/images/" | prepend: base_path }}" class="author__avatar" alt="{{ author.name }}">
@@ -16,30 +16,30 @@
 
   <div class="author__content">
     <h3 class="author__name">{{ author.name }}</h3>
-    {% if author.pronouns %}<p class="author__pronouns">{{ author.pronouns }}</p>{% endif %}
-    {% if author.bio %}<p class="author__bio">{{ author.bio }}</p>{% endif %}
+    {% if author.pronouns and author.pronouns != empty %}<p class="author__pronouns">{{ author.pronouns }}</p>{% endif %}
+    {% if author.bio and author.bio != empty %}<p class="author__bio">{{ author.bio }}</p>{% endif %}
   </div>
 
   <div class="author__urls-wrapper">
     <button class="btn btn--inverse author__connect-btn" type="button">Connect</button>
     <ul class="author__urls social-icons">
     <!-- Font Awesome icons / Biographic information  -->
-    {% if author.location %}
+    {% if author.location and author.location != empty %}
       <li class="author__desktop"><i class="fa-solid fa-location-dot icon-pad-right" aria-hidden="true"></i>{{ author.location }}</li>
     {% endif %}
-    {% if author.employer and author.employeruri %}
+    {% if author.employer and author.employer != empty and author.employeruri and author.employeruri != empty %}
       <li class="author__desktop" style="white-space: nowrap;"><i class="fas fa-fw fa-building-columns icon-pad-right" aria-hidden="true" style="display: inline-block;"></i><span style="display: inline-block;"><a href="{{ author.employeruri }}">{{ author.employer }}</a></span></li>
-    {% elsif author.employer %}
+    {% elsif author.employer and author.employer != empty %}
       <li class="author__desktop" style="white-space: nowrap;"><i class="fas fa-fw fa-building-columns icon-pad-right" aria-hidden="true" style="display: inline-block;"></i><span style="display: inline-block;">{{ author.employer }}</span></li>
     {% endif %}
     
-    {% if author.uri %}
+    {% if author.uri and author.uri != empty %}
       <li><a href="{{ author.uri }}"><i class="fas fa-fw fa-link icon-pad-right" aria-hidden="true"></i>{{ site.data.ui-text[site.locale].website_label | default: "Website" }}</a></li>
     {% endif %}
-    {% if author.email %}
+    {% if author.email and author.email != empty %}
       <li><a href="mailto:{{ author.email }}"><i class="fas fa-fw fa-envelope icon-pad-right" aria-hidden="true"></i>{{ author.email }}</a></li>
     {% endif %}
-    {% if author.linkedin %}
+    {% if author.linkedin and author.linkedin != empty %}
       <li><a href="https://www.linkedin.com/in/{{ author.linkedin }}"><i class="fab fa-fw fa-linkedin icon-pad-right" aria-hidden="true"></i>LinkedIn</a></li>
     {% endif %}
 
