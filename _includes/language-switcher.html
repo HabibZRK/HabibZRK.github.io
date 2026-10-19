@@ -1,0 +1,22 @@
+{% assign current_lang = page.lang | default: site.locale | slice: 0,2 %}
+{% assign english_url = page.translation_en | default: page.url %}
+{% assign german_url = page.translation_de | default: page.url %}
+{% assign english_fallback = false %}
+{% assign german_fallback = false %}
+
+{% unless page.translation_en %}
+  {% assign english_fallback = true %}
+{% endunless %}
+{% unless page.translation_de %}
+  {% assign german_fallback = true %}
+{% endunless %}
+
+<nav class="language-switcher" aria-label="Language selection">
+  {% if current_lang == "en" %}
+    <span aria-current="page">English</span>
+    <a href="{{ german_url }}"{% if german_fallback %} class="language-fallback" title="German translation unavailable; showing English"{% endif %}>Deutsch{% if german_fallback %} <small>(English)</small>{% endif %}</a>
+  {% else %}
+    <a href="{{ english_url }}"{% if english_fallback %} class="language-fallback" title="English translation unavailable; showing German"{% endif %}>English{% if english_fallback %} <small>(Deutsch)</small>{% endif %}</a>
+    <span aria-current="page">Deutsch</span>
+  {% endif %}
+</nav>

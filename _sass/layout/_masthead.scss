@@ -72,3 +72,39 @@
     font-weight: 700;
   }
 }
+
+.language-switcher {
+  display: inline-flex;
+  gap: 0.35em;
+  margin-left: 0.75em;
+  font-size: 0.85em;
+  line-height: 1;
+
+  a,
+  span {
+    padding: 0.35em 0.45em;
+  }
+
+  a {
+    color: var(--global-link-color);
+  }
+
+  .language-fallback {
+    opacity: 0.8;
+  }
+
+  small {
+    font-size: 0.85em;
+  }
+
+  span[aria-current="page"] {
+    color: var(--global-text-color);
+    font-weight: 700;
+  }
+}
+
+@media (max-width: 600px) {
+  .language-switcher {
+    margin-left: 0.25em;
+  }
+}

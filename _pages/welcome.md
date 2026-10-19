@@ -2,6 +2,8 @@
 layout: archive
 permalink: /
 author_profile: true
+lang: en
+translation_en: /
 ---
 # Welcome to My Personal Website  
 
