@@ -6,7 +6,7 @@
   margin-bottom: 2em;
 
   /* Zoom-out protection for archive layout */
-  min-width: 20rem !important;
+  min-width: 320px !important;
   max-width: 100vw !important;
   font-size: 1rem !important;
 
@@ -16,17 +16,7 @@
 
   @include breakpoint($large) {
     @include span(9 of 12 last);
-  }
-
-  @media screen and (min-width: $sidebar-screen-min-width) {
-    float: none;
-    width: auto;
-    margin-left: 0;
-    margin-right: 0;
-    padding-left: 0;
-    padding-right: 0;
-    min-width: 0;
-    grid-column: 2;
+    @include prefix(0.5 of 12);
   }
 
   a {
@@ -37,7 +27,7 @@
       text-decoration: underline;
 
       img {
-        box-shadow: 0 0 0.625rem rgba(#000, 0.25);
+        box-shadow: 0 0 10px rgba(#000, 0.25);
       }
     }
   }
@@ -48,7 +38,7 @@
   padding-bottom: 0.5em;
   font-size: $type-size-5 !important;
   color: var(--global-text-color-light);
-  border-bottom: 0.0625rem solid var(--global-border-color);
+  border-bottom: 1px solid var(--global-border-color);
 
   + .list__item .archive__item-title {
     margin-top: 0.5em;
@@ -93,7 +83,7 @@
 
 .archive__item:hover {
   .archive__item-teaser {
-    box-shadow: 0 0 0.625rem rgba(#000, 0.25);
+    box-shadow: 0 0 10px rgba(#000, 0.25);
   }
 
   .archive__item-title {
@@ -120,7 +110,7 @@
   }
 
   .page__meta {
-    margin: 0 0 0.25rem;
+    margin: 0 0 4px;
   }
 }
 
@@ -133,7 +123,7 @@
   margin-bottom: 2em;
 
   .page__meta {
-    margin: 0 0 0.25rem;
+    margin: 0 0 4px;
   }
 
   .archive__item-title {
@@ -148,7 +138,7 @@
   @include breakpoint($small) {
     @include gallery(5 of 10);
     .archive__item-teaser {
-      max-height: 12.5rem;
+      max-height: 200px;
     }
   }
 
@@ -158,7 +148,7 @@
     @include gallery(2.5 of 10);
 
     .archive__item-teaser {
-      max-height: 7.5rem;
+      max-height: 120px;
     }
 
     .archive__item-excerpt {
@@ -176,7 +166,7 @@
 .feature__wrapper {
   @include clearfix();
   margin-bottom: 2em;
-  border-bottom: 0.0625rem solid var(--global-border-color);
+  border-bottom: 1px solid var(--global-border-color);
 }
 
 .feature__item {
@@ -188,7 +178,7 @@
     @include gallery(4 of 12);
 
     .feature__item-teaser {
-      max-height: 12.5rem;
+      max-height: 200px;
       overflow: hidden;
     }
   }
