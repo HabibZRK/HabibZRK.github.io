@@ -25,6 +25,7 @@
     position: fixed;
     left: 0;
     top: 0;
+    float: none;
     padding-top: $masthead-height;
     
     /* Add unified box styling only when sidebar is positioned on the side */
@@ -37,6 +38,7 @@
     box-shadow: $box-shadow;
   margin-left: 0;
   margin-right: 0;
+  min-width: 21.875rem;
   width: 21.875rem !important;
   z-index: 10;
   }
