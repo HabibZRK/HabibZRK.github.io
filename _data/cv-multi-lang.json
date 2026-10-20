@@ -138,7 +138,7 @@
       "location": {
         "lang": {
           "en": "New York, United States (Remote)",
-          "de": "New York, Vereinigte Staaten (Fernarbeit)",
+          "de": "New York, NY (Remote)",
           "ar": "نيويورك، الولايات المتحدة (عن بعد)"
         }
       },
@@ -187,7 +187,7 @@
       "location": {
         "lang": {
           "en": "Erbil, Iraq (Remote)",
-          "de": "Erbil, Irak (Fernarbeit)",
+          "de": "Erbil, Irak (Remote)",
           "ar": "أربيل، العراق (عن بعد)"
         }
       },
@@ -300,7 +300,7 @@
       "location": {
         "lang": {
           "en": "Damascus (remote)",
-          "de": "Damaskus (Fernarbeit)",
+          "de": "Damaskus (Remote)",
           "ar": "دمشق (عن بعد)"
         }
       },
@@ -351,8 +351,8 @@
         }
       },
       "website": "",
-      "startDate": "2021-07-31",
-      "endDate": "2021-08-30",
+      "startDate": "2021-06-15",
+      "endDate": "2021-09-15",
       "location": {
         "lang": {
           "en": "Damascus, Syria",
@@ -412,7 +412,7 @@
       "location": {
         "lang": {
           "en": "United States (Remote)",
-          "de": "Vereinigte Staaten (Fernarbeit)",
+          "de": "Vereinigte Staaten (Remote)",
           "ar": "الولايات المتحدة (عن بعد)"
         }
       },
@@ -465,7 +465,7 @@
       "position": {
         "lang": {
           "en": "Trainer (Contract)",
-          "de": "Trainer (Befristet)",
+          "de": "Trainer (Honorarbasis / Befristet)",
           "ar": "مدرب (عقد مؤقت)"
         }
       },
@@ -482,7 +482,7 @@
       "summary": {
         "lang": {
           "en": "Short-term consultant hired to establish a book club initiative at Bab Sharqi Lighthouse center",
-          "de": "Kurzzeitberater zur Einrichtung einer Buchclub-Initiative im Bab Sharqi Lighthouse Zentrum",
+          "de": "Kurzzeitberater zur Einrichtung einer Buchclub-Initiative im Zentrum 'Bab Sharqi Lighthouse'",
           "ar": "استشاري لفترة قصيرة عُيّنت لتأسيس مبادرة نادي القراءة في مركز منارة باب شرقي"
         }
       },
@@ -490,7 +490,7 @@
         {
           "lang": {
             "en": "Designed and launched the book club initiative at \"Bab Sharqi Lighthouse - Syrian Trust for Development\"",
-            "de": "Gestaltete und startete die Buchclub-Initiative im \"Bab Sharqi Lighthouse - Syrian Trust for Development\"",
+            "de": "Gestaltete und startete die Buchclub-Initiative im „Bab Sharqi Lighthouse“",
             "ar": "صمم وأطلق مبادرة نادي الكتاب في \"منارة باب شرقي - الأمانة السورية للتنمية\""
           }
         },
@@ -504,7 +504,7 @@
         {
           "lang": {
             "en": "Facilitated the first 8 book discussion events in the book club",
-            "de": "Leitete die ersten 8 Buchdiskussionsveranstaltungen im Buchclub",
+            "de": "Moderierte die ersten 8 Buchdiskussionsveranstaltungen des Clubs",
             "ar": "أدار أول 8 فعاليات لمناقشة الكتب في نادي القراءة"
           }
         },
@@ -528,7 +528,7 @@
       "position": {
         "lang": {
           "en": "Teacher/Coach",
-          "de": "Lehrer/Trainer",
+          "de": "Lehrer / Trainer",
           "ar": "مدرّب/مدرس"
         }
       },
@@ -545,7 +545,7 @@
       "summary": {
         "lang": {
           "en": "Taught robotics and coached competition teams using Lego EV3 kits",
-          "de": "Unterrichtete Robotik und trainierte Wettbewerbsteams mit Lego EV3 Sets",
+          "de": "Unterrichtete Robotik und trainierte Wettbewerbsteams mit Lego-EV3-Baukästen",
           "ar": "تدريس الروبوتات وتدريب فرق المسابقات باستخدام مجموعات Lego EV3"
         }
       },
@@ -553,7 +553,7 @@
         {
           "lang": {
             "en": "Instructed robotics essentials using Lego EV3 kits to children (9-16 years)",
-            "de": "Unterrichtete Grundlagen der Robotik mit Lego EV3 Sets an Kinder (9-16 Jahre)",
+            "de": "Vermittlung von Robotik-Grundlagen mittels Lego EV3 an Kinder (9–16 Jahre)",
             "ar": "درّس أساسيات الروبوتات باستخدام مجموعات Lego EV3 للأطفال (9-16 سنة)"
           }
         },
@@ -567,7 +567,7 @@
         {
           "lang": {
             "en": "Applied robotics instruction, team coaching, competition preparation, and problem-solving using LEGO Mindstorms EV3.",
-            "de": "Vermittlung von Robotik, Teamcoaching, Wettbewerbsvorbereitung und Problemlösung mit LEGO Mindstorms EV3.",
+            "de": "Praktische Vermittlung von Robotik, Teamcoaching, Wettbewerbsvorbereitung und Problemlösung mit LEGO Mindstorms EV3.",
             "ar": "تطبيق تعليم الروبوتات وتدريب الفرق والتحضير للمسابقات وحل المشكلات باستخدام LEGO Mindstorms EV3."
           }
         }
@@ -585,7 +585,7 @@
       },
       "area": {
         "lang": {
-          "en": "M.Sc. Maschinenbau (Mechatronics)",
+          "en": "M.Sc. Mechanical Engineering (Mechatronics)",
           "de": "M.Sc. Maschinenbau (Mechatronik)",
           "ar": "ماجستير في الهندسة الميكانيكية (الميكاترونيكس)"
         }
@@ -646,14 +646,14 @@
       "area": {
         "lang": {
           "en": "MBA (Master's of Business Administration)",
-          "de": "MBA (Master's of Business Administration)",
+          "de": "MBA (Master of Business Administration)",
           "ar": "ماجستير إدارة الأعمال"
         }
       },
       "studyType": {
         "lang": {
           "en": "Distance learning - Proctored Exams",
-          "de": "Fernstudium - Beaufsichtigte Prüfungen",
+          "de": "Fernstudium – Überwachte Prüfungen",
           "ar": "تعلم عن بعد"
         }
       },
@@ -673,7 +673,7 @@
       "area": {
         "lang": {
           "en": "B.Sc. in General Mechanical Engineering (mechanical forces)",
-          "de": "B.Sc. in Allgemeinem Maschinenbau (mecchanishe Kräfte)",
+          "de": "B.Sc. in Allgemeinem Maschinenbau (Schwerpunkt Mechanische Kräfte / Technische Mechanik)",
           "ar": "إجازة في هندسة الميكانيك العام (قوى ميكانيكية)"
         }
       },
@@ -689,7 +689,7 @@
       "group": {
         "lang": {
           "en": "Programming Languages & Scripting",
-          "de": "Programmiersprachen & Skripting",
+          "de": "Programmiersprachen & Scripting",
           "ar": "لغات البرمجة"
         }
       },
@@ -828,7 +828,7 @@
           "name": {
             "lang": {
               "en": "Problem Solving",
-              "de": "Problemlösung",
+              "de": "Problemlösungskompetenz",
               "ar": "التفكير النقدي"
             }
           }, 
@@ -920,7 +920,7 @@
       "position": {
         "lang": {
           "en": "Head of Department: Logistics and Transport",
-          "de": "Leiter des Fachbereichs: Logistik und Verkehr",
+          "de": "Leiter der Abteilung: Logistik und Verkehr",
           "ar": "رئيس قسم اللوجستيات والنقل"
         }
       },
@@ -938,7 +938,7 @@
       "position": {
         "lang": {
           "en": "CEO/Owner",
-          "de": "CEO/Besitzer",
+          "de": "Geschäftsführer / Inhaber",
           "ar": "المدير التنفيذي لمجموعة الهندسة التقنية، سوريا"
         }
       },
@@ -956,7 +956,7 @@
       "position": {
         "lang": {
           "en": "Professor of Industrial Management and Mechanical Measurements, Damascus University",
-          "de": "Professor für Industriemanagement und Mechanische Messungen, Universität Damaskus",
+          "de": "Professor für Industriemanagement und Mechanische Messtechnik, Universität Damaskus",
           "ar": "أستاذ الإدارة الصناعية والقياسات الميكانيكية، جامعة دمشق"
         }
       },
@@ -974,7 +974,7 @@
       "position": {
         "lang": {
           "en": "Professor of Thermodynamics, 4th Year Project Supervisor (Betreuer)",
-          "de": "Professor für Thermodynamik, Betreuer der Abschlussarbeit (4. Jahr)",
+          "de": "Professor für Thermodynamik, Betreuer der Bachelor-/Projektarbeit",
           "ar": "أستاذ الديناميكا الحرارية، مشرف مشروع التخرج (السنة الرابعة)"
         }
       },
@@ -1039,7 +1039,7 @@
   "references_note": {
     "lang": {
       "en": "Reference contact information can be provided upon request.",
-      "de": "Kontaktdaten von Referenzen können auf Anfrage bereitgestellt werden.",
+      "de": "Referenzen und Kontaktdaten werden auf Anfrage gerne bereitgestellt.",
       "ar": "معلومات التواصل مع المراجع متاحة عند الطلب."
     }
   },
@@ -1048,7 +1048,7 @@
       "name": {
         "lang": {
           "en": "Developing a fully automated robot to conduct the loading process of inland tank vessels",
-          "de": "Entwicklung eines vollautomatischen Roboters zur Durchführung des Beladevorgangs von Binnentankschiffen",
+          "de": "Developing a fully automated robot to conduct the loading process of inland tank vessels",
           "ar": "تطوير روبوت آلي بالكامل لإجراء عملية التحميل لسفن الصهاريج hgkivdm"
         }
       },
@@ -1082,7 +1082,7 @@
           "ar": "DST e.V."
         }
       }
-    },
+    }
   ],
   "volunteering": [
     {
@@ -1113,7 +1113,7 @@
       "summary": {
         "lang": {
           "en": "Led the initiative from the beginning, handling structure, strategy, recruitment, and organization.",
-          "de": "Leitete die Initiative von Anfang an und kümmerte mich um Struktur, Strategie, Rekrutierung und Organisation.",
+          "de": "Leitete die Initiative von Beginn an und verantwortete Struktur, Strategie, Rekrutierung und Organisation.",
           "ar": "قدت المبادرة منذ البداية، وتعاملت مع الهيكل والاستراتيجية والتوظيف والتنظيم."
         }
       },
@@ -1123,7 +1123,7 @@
       "organization": {
         "lang": {
           "en": "Cham Reciprocal Library",
-          "de": "Cham Wechselseitige Bibliothek",
+          "de": "Cham Tauschbibliothek",
           "ar": "مكتبة شام التبادلية"
         }
       },
@@ -1147,7 +1147,7 @@
       "summary": {
         "lang": {
           "en": "Managed a community book-sharing initiative with over 200 participants.",
-          "de": "Verwaltete eine gemeinschaftliche Buchaustauschinitative mit über 200 Teilnehmern.",
+          "de": "Leitung einer gemeinschaftlichen Buchtausch-Initiative mit über 200 Teilnehmern.",
           "ar": "إدارة مبادرة مجتمعية لتبادل الكتب مع أكثر من 200 مشارك."
         }
       },
@@ -1157,7 +1157,7 @@
       "organization": {
         "lang": {
           "en": "Cham cultural Club",
-          "de": "Cham Leseklub",
+          "de": "Cham Kulturklub",
           "ar": "نادي شام الثقافي"
         }
       },
@@ -1215,7 +1215,7 @@
       "summary": {
         "lang": {
           "en": "Linked employers to job-seekers through career fairs and networking events.",
-          "de": "Vermittlung zwischen Arbeitgebern und Arbeitssuchenden durch Karrieremessen und Netzwerkveranstaltungen.",
+          "de": "Vernetzung von Arbeitgebern und Arbeitssuchenden durch Karrieremessen und Networking-Veranstaltungen.",
           "ar": "ربط أصحاب العمل بالباحثين عن عمل من خلال معارض التوظيف وفعاليات التواصل."
         }
       },
@@ -1232,7 +1232,7 @@
       "position": {
         "lang": {
           "en": "Lecturer",
-          "de": "Dozent",
+          "de": "Dozent / Studienberater",
           "ar": "محاضر"
         }
       },
@@ -1249,7 +1249,7 @@
       "summary": {
         "lang": {
           "en": "Provided academic guidance and introduction to different possible majors for recent graduates.",
-          "de": "Akademische Beratung und Einführung in verschiedene mögliche Studienfächer für Schulabsolventen.",
+          "de": "Akademische Beratung und Einführung in mögliche Studiengänge für Studieninteressierte und Absolventen.",
           "ar": "تقديم التوجيه الأكاديمي والتعريف بالتخصصات الممكنة المختلفة للخريجين الجدد."
         }
       },
