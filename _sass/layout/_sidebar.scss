@@ -19,10 +19,11 @@
 
   @media screen and (min-width: $sidebar-screen-min-width) {
     box-sizing: border-box;
-    height: calc(100vh - #{$masthead-height});
+    height: 100vh;
     overflow-y: auto;
-    position: sticky;
-    top: $masthead-height;
+    position: fixed;
+    left: 0;
+    top: 0;
     padding-top: $masthead-height;
     
     /* Add unified box styling only when sidebar is positioned on the side */
@@ -35,8 +36,8 @@
     box-shadow: $box-shadow;
   margin-left: 0;
   margin-right: 0;
-  width: auto !important;
-  grid-column: 1;
+  width: 21.875rem !important;
+  z-index: 10;
   }
 
   @include breakpoint($large) {
