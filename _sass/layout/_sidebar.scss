@@ -18,6 +18,7 @@
   }
 
   @media screen and (min-width: $sidebar-screen-min-width) {
+    box-sizing: border-box;
     height: 100vh;
     overflow-y: auto;               // Add scrollbar if the sidebar is too long
     position: fixed;
@@ -34,7 +35,7 @@
   margin-left: 0; /* flush to left */
   margin-right: 1em; /* keep space on right before content */
   left: 0;
-  width: 21.875rem; /* lock width for reliable content offset */
+  width: 21.875rem !important; /* lock width for reliable content offset */
   }
 
   @include breakpoint($large) {
@@ -49,7 +50,7 @@
   }
 
   @include breakpoint($x-large) {
-    max-width: 21.875rem; /* Increased from $sidebar-link-max-width to match bio text width */
+    max-width: 21.875rem !important; /* Increased from $sidebar-link-max-width to match bio text width */
     padding-right: 0;
   }
 

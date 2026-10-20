@@ -22,8 +22,8 @@ Website/* ======================================================================
 
   /* When fixed sidebar exists (>= sidebar breakpoint), shift main just beyond its width with minimal gap */
   @media screen and (min-width: $sidebar-screen-min-width) {
-    margin-left: calc(21.875rem + 0.5rem); /* fixed sidebar + small content gap */
-    padding-left: 0;
+    margin-left: 0;
+    padding-left: calc(21.875rem + 0.5rem); /* reserve sidebar width and gap */
   }
 }
 
