@@ -1,6 +1,6 @@
 ---
 permalink: /about/
-author_profile: false
+author_profile: true
 ---
 
 # About This Project

@@ -19,8 +19,9 @@
 
   @media screen and (min-width: $sidebar-screen-min-width) {
     box-sizing: border-box;
-    height: 100vh;
-    overflow-y: auto;
+    height: auto;
+    max-height: none;
+    overflow: visible;
     position: fixed;
     left: 0;
     top: 0;

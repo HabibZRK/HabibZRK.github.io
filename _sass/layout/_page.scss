@@ -26,6 +26,10 @@ Website/* ======================================================================
     grid-template-columns: 21.875rem minmax(0, 1fr);
     column-gap: 0.5rem;
     align-items: start;
+    width: 100%;
+    max-width: none;
+    margin-left: 0;
+    margin-right: 0;
     padding-left: 0;
     padding-right: 0;
   }
@@ -36,6 +40,17 @@ Website/* ======================================================================
     @include span(9 of 12 last);
     @include prefix(0.5 of 12);
     @include suffix(2 of 12);
+  }
+
+  @media screen and (min-width: $sidebar-screen-min-width) {
+    grid-column: 2;
+    min-width: 0;
+    width: auto;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+    float: none;
   }
 
   .page__inner-wrap {
