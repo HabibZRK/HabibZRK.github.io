@@ -25,7 +25,7 @@
     
     /* Add unified box styling only when sidebar is positioned on the side */
     background: var(--global-bg-color);
-    border: 1px solid var(--global-border-color);
+    border: 0.0625rem solid var(--global-border-color);
     border-radius: $border-radius;
     padding-left: 1.5em;
     padding-right: 1.5em;
@@ -34,7 +34,7 @@
   margin-left: 0; /* flush to left */
   margin-right: 1em; /* keep space on right before content */
   left: 0;
-  width: 350px; /* lock width for reliable content offset */
+  width: 21.875rem; /* lock width for reliable content offset */
   }
 
   @include breakpoint($large) {
@@ -49,7 +49,7 @@
   }
 
   @include breakpoint($x-large) {
-    max-width: 350px; /* Increased from $sidebar-link-max-width (250px) to match bio text width */
+    max-width: 21.875rem; /* Increased from $sidebar-link-max-width to match bio text width */
     padding-right: 0;
   }
 
@@ -100,9 +100,9 @@
 .author__avatar {
   display: table-cell;
   vertical-align: top;
-  width: 36px;
+  width: 2.25rem;
   // set width only, for non-square avatars
-  // height: 36px;
+  // height: 2.25rem;
 
   @include breakpoint($large) {
     display: block;
@@ -113,15 +113,15 @@
   }
 
   img {
-    max-width: 175px;
+    max-width: 10.9375rem;
     border-radius: 50%;
 
     @include breakpoint($large) {
       padding: 0.3125rem;
-      border: 3px solid var(--global-link-color-hover); /* Use teal for photo border */
+      border: 0.1875rem solid var(--global-link-color-hover); /* Use teal for photo border */
       margin: 0 auto; /* Center the image */
       display: block;
-      box-shadow: 0 0 0 1px var(--global-link-color-hover); /* Extra teal glow */
+      box-shadow: 0 0 0 0.0625rem var(--global-link-color-hover); /* Extra teal glow */
     }
   }
 }
@@ -129,8 +129,8 @@
 .author__content {
   display: table-cell;
   vertical-align: top;
-  padding-left: 15px;
-  padding-right: 25px;
+  padding-left: 0.9375rem;
+  padding-right: 1.5625rem;
   line-height: 1;
 
   @include breakpoint($large) {
@@ -147,8 +147,8 @@
   margin: 0;
 
   @include breakpoint($large) {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 0.625rem;
+    margin-bottom: 0.625rem;
     text-align: center; /* Center the name in the sidebar box */
   }
 }
@@ -159,13 +159,13 @@
 
 .sidebar .author__desktop {
   display: none;
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 64em) {
     display: block;
   }
 }
 
 /* Hide location and employer from mobile dropdown */
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 63.9375em) {
   .author__urls .author__desktop {
     display: none !important;
   }
@@ -175,8 +175,8 @@
   margin: 0;
 
   @include breakpoint($large) {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 0.625rem;
+    margin-bottom: 0.625rem;
   }
 }
 
@@ -187,8 +187,8 @@
   max-width: none; /* Remove any width constraints */
 
   @include breakpoint($large) {
-    margin-top: 10px;
-    margin-bottom: 20px;
+    margin-top: 0.625rem;
+    margin-bottom: 1.25rem;
     text-align: left; /* Left align bio text */
     padding: 0; /* Remove padding for better alignment */
   }
@@ -209,19 +209,19 @@
 .author__urls a { text-decoration: none; font-size: $type-size-6; }
 .author__urls a:hover { text-decoration: underline; }
 
-// Mobile & tablet (<1024px): show button, collapse list until opened
-@media screen and (max-width: 1023px) {
+// Mobile & tablet (<64em): show button, collapse list until opened
+@media screen and (max-width: 63.9375em) {
   [itemscope][itemtype="http://schema.org/Person"] { display: table; width: 100%; }
   .author__avatar, .author__content, .author__urls-wrapper { display: table-cell; vertical-align: top; }
-  .author__urls-wrapper { margin-top: 0; padding-left: 8px; }
+  .author__urls-wrapper { margin-top: 0; padding-left: 0.5rem; }
   .author__connect-btn { display: inline-block !important; font-size: $type-size-7; padding: 0.25em 0.5em; margin-bottom: .5em; }
   .author__urls { display: none; }
   .author__urls.open { display: block; position: relative; margin-top: .5em; }
   .author__urls li { white-space: nowrap; }
 }
 
-// Large screens (>=1024px): force list visible
-@media screen and (min-width: 1024px) {
+// Large screens (>=64em): force list visible
+@media screen and (min-width: 64em) {
   .author__urls { display: block !important; }
   .author__connect-btn { display: none !important; }
 }
